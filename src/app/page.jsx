@@ -7,10 +7,12 @@ export default function Home() {
       <h1>Home</h1>
 
       <Link href={"/login"}>Login</Link>
-      <Link href={"/livrarias"}>Livrarias</Link>
-      <Link href={"/resenhistas"}>Resenhistas</Link>
+      <Link href={"#"}>Home</Link>
+      <Link href={"/resenhas"}>Resenhas</Link>
+      <Link href={"/autores"}>Autores</Link>
       <Link href={"/livros"}>Livros</Link>
-      <Link href={"/usuarios"}>Livros</Link>
+      <Link href={"/sobre"}>Sobre</Link>
+
     </div>
   );
 }

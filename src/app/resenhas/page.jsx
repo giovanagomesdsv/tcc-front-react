@@ -1,9 +1,9 @@
 import styles from "./page.module.css";
 
-export default function Resenhistas() {
+export default function Resenhas() {
     return(
         <div className="container">
-            <h1>Resenhistas</h1>
+            <h1>Resenhas</h1>
         </div>
     );
 }
