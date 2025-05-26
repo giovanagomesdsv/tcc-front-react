@@ -1,9 +1,9 @@
 import styles from "./page.module.css";
 
-export default function Livros() {
-    return(
+export default function ListaLivros() {
+    return (
         <div className="container">
-            <h1>Livros</h1>
+            <h1>ListaLivros</h1>
         </div>
     )
 }
