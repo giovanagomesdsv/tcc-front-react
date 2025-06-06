@@ -1,4 +1,4 @@
-import styles from "./page.module.css";
+import styles from "/page.module.css";
 
 export default function Perfil() {
   return (
@@ -60,14 +60,14 @@ export default function Perfil() {
         </ul>
     </nav>
 <main>
-    <div className="perfil-container">
+    <div className={perfil-container}>
         <h1>Perfil do Usuário</h1>
         <p><strong>Nome:</strong></p>
         <p><strong>Email:</strong></p>
         <p><strong>Senha:</strong></p>
         <p><strong>Data de Criação:</strong></p>
-        <p><strong>Status:</strong> <span className="status"></span></p>
-        <a href="editar-perfil.php">Editar perfil</a>
+        <p><strong>Status:</strong> </p>
+        </div> <a href={editar-perfil."Editar perfil</a>
     </div>
     </main>
    
