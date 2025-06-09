@@ -1,0 +1,6 @@
+.HeaderBackground{
+    background-color:var(--secundaria);
+    padding:2rem 67.5rem;
+    color:white;
+    align-items:start;
+}
