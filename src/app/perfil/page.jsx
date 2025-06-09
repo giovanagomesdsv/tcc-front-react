@@ -4,69 +4,69 @@ import styles from './page.module.css';
     
 export default function Perfil() {
     return (
-      <div className={styles.container}>
-        <h1>Perfil</h1>
+      <div className="container">
+      
   
         <header>
           Administrador BC
         </header>
   
         <nav className="sidebar" id="sidebar">
-          <ul className="nav-list">
+          <ul className="navlist">
             <div className="nome">
               <li className="usuario">
                 <div className="fix"></div>
               </li>
               <div className="menu" id="menu">
-                <i className="bx bx-menu"></i>
+                <i className="bxbxmenu"></i>
               </div>
             </div>
   
             <li>
               <a href="../../index.php">
-                <i className="bx bx-reply-stroke"></i>
-                <span className="link_name">Bibliófilos Community</span>
+                <i className="bxbxreplystroke"></i>
+                <span className="linkname">Bibliófilos Community</span>
               </a>
             </li>
   
             <li>
               <a href="../home.php">
-                <i className="bx bx-home-alt-2"></i>
-                <span className="link_name">Home</span>
+                <i className="bxbxhomealt2"></i>
+                <span className="linkname">Home</span>
               </a>
             </li>
   
             <li>
               <a href="../livrarias/livrarias.php">
-                <i className="bx bx-user"></i>
-                <span className="link_name">Livrarias</span>
+                <i className="bxbxuser"></i>
+                <span className="linkname">Livrarias</span>
               </a>
             </li>
   
             <li>
               <a href="../resenhistas/resenhistas.php">
-                <i className="bx bx-user-pin"></i>
-                <span className="link_name">Resenhistas</span>
+                <i className="bxbxuserpin"></i>
+                <span className="linkname">Resenhistas</span>
               </a>
             </li>
   
             <li>
               <a href="../livro/livros.php">
-                <i className="bx bx-book-bookmark"></i>
-                <span className="link_name">Livros</span>
+                <i className="bxbxbookbookmark"></i>
+                <span className="linkname">Livros</span>
               </a>
             </li>
   
             <li>
               <a href="../usuarios/usuarios.php">
-                <i className="bx bx-book-content"></i>
-                <span className="link_name">Usuarios</span>
+                <i className="bxbxbookcontent"></i>
+                <span className="linkname">Usuarios</span>
               </a>
             </li>
   
             <li className="../sair">
               <a href="logout.php">
-                <i className="bx bx-log-out"></i>
+                <i className="bxbxlogout"></i>
               </a>
             </li>
           </ul>
@@ -80,7 +80,7 @@ export default function Perfil() {
             <p><strong>Senha:</strong></p>
             <p><strong>Data de Criação:</strong></p>
             <p><strong>Status:</strong></p>
-            <a href="/editar-perfil">Editar perfil</a>
+            <a href="/editarperfil">Editar perfil</a>
           </div>
         </main>
       </div>

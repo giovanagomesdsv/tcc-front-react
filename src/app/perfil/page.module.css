@@ -6,19 +6,19 @@
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-.perfil-container h1 {
+.perfilcontainer h1 {
     margin-bottom: 20px;
     color: var(--text);
     display: flex;
     justify-content: center;
 }
-.perfil-container p {
+.perfilcontainer p {
     font-size: 1.6rem;
     color: var(--text);
     margin: 2rem;
     text-align: start;
 }
-.perfil-container a {
+.perfilcontainer a {
     color: var(--text);
     display: flex;
     justify-content: center;
@@ -32,7 +32,7 @@
 
 
 /* inicio editar perfil -----------------------------------------------------------------------------------------------------------------------------------*/
-.editar-perfil-container {
+.editarperfilcontainer {
     width: 70%;
     margin: 3rem ;
     padding: 2rem;
@@ -42,17 +42,17 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.editar-perfil-container h1 {
+.editarperfilcontainer h1 {
     text-align: center;
     margin-bottom: 2rem;
     color: var(--text);
 }
 
-.form-group {
+.formgroup {
     margin-bottom: 1.5rem;
 }
 
-.form-group label {
+.formgroup label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
@@ -60,7 +60,7 @@
     text-align: start;
 }
 
-.form-group input {
+.formgroup input {
     width: 100%;
     padding: 1rem 0;
     border-radius: 5px;
@@ -70,11 +70,11 @@
     text-indent: 1rem;
 }
 
-.form-group input::placeholder {
+.formgroup input::placeholder {
     color: #000;
 }
 
-.editar-perfil-container a {
+.editarperfilcontainer a {
     display: block;
     text-align: center;
     margin-top: 1rem;
@@ -85,6 +85,9 @@
     text-decoration: none;
 }
 
-.editar-perfil-container a:hover {
+.editarperfilcontainer a:hover {
     background-color: var(--secundaria);
 }
+
+
+
