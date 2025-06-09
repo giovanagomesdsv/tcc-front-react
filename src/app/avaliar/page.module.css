@@ -1,6 +1,87 @@
-.HeaderBackground{
-    background-color:var(--secundaria);
-    padding:2rem 67.5rem;
-    color:white;
-    align-items:start;
+
+.card{
+    background-color:var(--principal);
+}
+.cardimgsinopse {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid red;
+}
+
+.imgavalia {
+    margin: 2rem;
+}
+
+/* texto de sinopse */
+.cardimgsinopse p {
+    margin: 3rem;
+    font-size: 2rem;
+    text-align: start;
+    align-items: start;
+    color:var(--text);
+}
+.cardimgsinopse p {
+    margin: 2rem;
+}
+.cardresenha {
+    display: flex;
+    height: auto;
+    background-color:var(--principal)
+}
+.cardresenha p {
+    margin: 2rem;
+    font-size: 2rem;
+    color:var(--text);
+}
+.cardresenha p {
+    margin: 2rem;
+}
+.cardresenha p {
+    margin: 2rem;
+}
+/* Seções internas */
+.card section {
+    background-color: var(--content-bg);
+    color: var(--text-dark);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+/* Títulos das seções */
+.card h3 {
+    color: var(--text-light);
+    margin-top: 1.5rem;
+}
+/* Autor */
+.card .autor {
+    margin-top: 1rem;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+.cardforms {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.barraenvia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+    background-color:var(--principal);
+}
+.notas {
+    color: #000;
+    width: 70rem;
+    margin: 0 0 0 1rem;
+}
+.resultado {
+    color: #000;
+}
+.teste {
+    color: #000;
+    width: 70rem;
+    margin: 0 0 0 1rem;
 }
