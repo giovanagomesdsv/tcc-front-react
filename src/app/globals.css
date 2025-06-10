@@ -4,15 +4,15 @@
   padding: 1rem;
 
   --bg: #DEDEDE;
-    --text: #f5f5f5;
-    --principal: #406E96;
-    --secundaria: #2A4A64;
-    --terciaria: #1F3A50;
+  --text: #f5f5f5;
+  --principal: #406E96;
+  --secundaria: #2A4A64;
+  --terciaria: #1F3A50;
 
-    --font-primary: "Geist", "Geist Fallback";
+  --font-primary: "Geist", "Geist Fallback";
 
 
-     /* Transições */
+  /* Transições */
   --transition-fast: 0.2s ease;
   --transition-base: 0.3s ease;
 
@@ -27,10 +27,10 @@
   /* Melhora a renderização de fontes em navegadores Firefox no macOS */
   -moz-osx-font-smoothing: grayscale;
 
-    text-decoration: none;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -54,76 +54,79 @@ body {
   display: flex;
   justify-content: center;
 
-   /* Define a fonte primária usando uma variável CSS */
-   font-family: var(--font-primary);
-   background-color: var(--bg);
-   color: var(--color-text);
-   font-size: 1.6rem;
- 
-   /* Garante uma largura mínima de 320px para evitar layouts quebrados em telas pequenas */
-   min-width: 32rem;
-   min-height: 100vh;
- 
-   /* Adiciona um preenchimento ao redor do conteúdo do body usando uma variável CSS */
-   padding: var(--padding);
- 
-   /* Força a exibição da barra de rolagem vertical, evitando o deslocamento de elementos quando o conteúdo se torna longo o suficiente para precisar da barra */
-   overflow-y: scroll;
- 
-   max-width: 144rem;
-   margin: 0 auto;
-   text-align: center;
-   width: 100%;
-   border: 2px solid red;
+  /* Define a fonte primária usando uma variável CSS */
+  font-family: var(--font-primary);
+  background-color: var(--bg);
+  color: var(--color-text);
+  font-size: 1.6rem;
+
+  /* Garante uma largura mínima de 320px para evitar layouts quebrados em telas pequenas */
+  min-width: 32rem;
+  min-height: 100vh;
+
+  /* Adiciona um preenchimento ao redor do conteúdo do body usando uma variável CSS */
+  padding: var(--padding);
+
+  /* Força a exibição da barra de rolagem vertical, evitando o deslocamento de elementos quando o conteúdo se torna longo o suficiente para precisar da barra */
+  overflow-y: scroll;
+
+  max-width: 144rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  
 }
 
 /*------------------------------------------------*/
 
 h1 {
   color: var(--color-primary);
-  font-size: 3.2rem; 
+  font-size: 3.2rem;
   margin-bottom: 1rem;
 }
 
 .textoAlternativo {
   color: #757575;
-  text-align: justify; 
+  text-align: justify;
   line-height: 3rem;
 }
 
 .container {
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  /* justify-content: center; 
-  height: 100vh; */
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-header{
-  background-color:var(--terciaria) ;
+header {
+  background-color: var(--terciaria);
   color: var(--text);
-  height:5rem;
+  height: 3rem;
   width: 144rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
+
 /*menu*/
 .sidebar {
-  height:5rem;
-  width: 144rem;
-
+  height: 5rem;
+  max-width: 144rem;
+  width: 100%;
   background: var(--principal);
   display: flex;
-flex-direction: row;
-border: solid 1px red;
+  flex-direction: row;
+  border: solid 1px red;
+  align-items: center;
+  justify-content: center;
 }
 
 .nome {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 7rem;
 }
-.nome .usuario{
+
+.nome .usuario {
   display: none;
 }
 
@@ -132,7 +135,9 @@ border: solid 1px red;
   cursor: pointer;
   display: flex;
   align-items: center;
+
 }
+
 .menu:hover {
   border: 1px solid;
   border-radius: 30%;
@@ -141,12 +146,23 @@ border: solid 1px red;
 .sidebar ul {
   height: 100%;
   font-size: 1.6rem;
-  padding-left: 2rem;
+
 }
 
 .sidebar ul li {
-  margin-bottom: 4rem;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.navlist li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  /* ocupa espaço igual */
+  height: 100%;
 }
 
 .navlist li a {
@@ -158,28 +174,41 @@ border: solid 1px red;
   margin-bottom: 1rem;
   text-align: center;
   width: 100%;
-}  
+  color: var(--text);
+  text-decoration: none;
+
+}
 
 .navlist {
   display: flex;
   flex-direction: row;
   align-items: center;
-
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
 }
+
 .navlist li a.perfil {
   flex-direction: column;
-}  
+}
+
 .sidebar .navlist li a .imgperfil {
   display: none;
   width: 10rem;
-  height: 10rem; /* força a imagem a ser quadrada */
-  object-fit: cover; /* garante que a imagem preencha o quadrado sem distorcer */
-  border-radius: 100rem; /* borda redonda */
-} 
+  height: 10rem;
+  /* força a imagem a ser quadrada */
+  object-fit: cover;
+  /* garante que a imagem preencha o quadrado sem distorcer */
+  border-radius: 100rem;
+  /* borda redonda */
+}
 
 .sidebar ul li a .link_name {
-  margin-left: 1.4rem;
+ 
   display: none;
   width: 100%;
 }
@@ -204,14 +233,16 @@ border: solid 1px red;
   display: flex;
   transition: ease .5s;
 }
-.sidebar.abrir .usuario{
+
+.sidebar.abrir .usuario {
   display: block;
   width: 100%;
 }
 
-.sidebar.abrir .nome{
+.sidebar.abrir .nome {
   margin-top: -6rem;
 }
+
 .sidebar.abrir .link_name {
   display: block;
   width: 100%;
@@ -219,13 +250,14 @@ border: solid 1px red;
 
 .sidebar.abrir ul .fix {
   background: var(--principal);
-  padding: .5rem 0  ;
+  padding: .5rem 0;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   width: 100%;
 }
-.sidebar.abrir ul li{
-  padding: .5rem 0  ;
+
+.sidebar.abrir ul li {
+  padding: .5rem 0;
   transition: ease .5s;
 }
 
@@ -251,10 +283,10 @@ border: solid 1px red;
 
 .sidebar.abrir ul li {
   margin-top: 5rem;
-  
+
 }
 
-.linkname{
+.linkname {
   font-size: 1.4rem;
 }
 
@@ -266,6 +298,7 @@ border: solid 1px red;
   padding-top: 1rem;
   width: 100%;
 }
+
 .buscaform {
   display: flex;
   align-items: center;
@@ -276,6 +309,7 @@ border: solid 1px red;
   gap: 1rem;
   border: 1px solid #000;
 }
+
 .buscaform input[type="text"] {
   border: none;
   /* remove a borda preta */
@@ -288,11 +322,13 @@ border: solid 1px red;
   /* arredonda o lado esquerdo */
   color: #000;
 }
+
 .buscaform button {
   background: none;
   border: none;
   cursor: pointer;
 }
+
 .buscaform button i {
   padding: 0 1rem;
   font-size: 1.4rem;
@@ -323,12 +359,13 @@ border: solid 1px red;
 
 /*card*/
 .card {
-  width: 100%; 
-  margin: 3.5rem 0;
+  width: 100%;
+  margin: 3.5rem;
   background-color: var(--principal);
   color: var(--text);
   border-radius: .8rem;
 }
+
 /* altura do card pequeno height: 15rem; a altura precisa pra por em cards menores */
 /* texto que tem uma linha preta em baixo de fora a fora  */
 .textnotificaçao {
@@ -341,24 +378,28 @@ border: solid 1px red;
   text-align: center;
 }
 
-p{
+p {
   font-size: 1.6rem;
 }
+
 .imagem {
   width: 10rem;
   height: 15rem;
 }
-.imagem img{
+
+.imagem img {
   width: 100%;
   height: 100%;
 }
 
 .input {
-  width: 97.5%; /* Largura total do input */
+  width: 97.5%;
+  /* Largura total do input */
   padding: 1rem;
   border: none;
-  border-radius: 4px; 
-  margin:1rem;
-  background-color: white; /* Cor de fundo do input */
+  border-radius: 4px;
+  margin: 1rem;
+  background-color: white;
+  /* Cor de fundo do input */
   color: #000;
 }
