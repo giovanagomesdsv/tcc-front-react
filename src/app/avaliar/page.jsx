@@ -1,35 +1,58 @@
-import styles from "./page.module.css";
+import styles from './page.module.css';
 
-export default function ReviewCard({ foto, titulo, sinopse, texto, autor, dado }) {
-    return (
-      <>
-        <div className={`${styles.card} ${styles.card3}`}>
-          <div className={styles.cardimgsinopse}>
-            <div className={styles.sinopse}>
-              <p>{titulo}</p>
-              <p><strong>Sinopse</strong></p>
-              <p>{sinopse}</p>
-            </div>
+export default function Avaliar() {
+  // Dados fictícios como exemplo
+  const resenha = {
+    id: 1,
+    titulo: 'Título da Resenha',
+    autor: 'Nome do Resenhista',
+    foto: 'livro.jpg',
+  };
+
+  const livraria = {
+    id: 2,
+    nome: 'Nome da Livraria',
+    usuario: 'Nome do Usuário',
+    foto: 'livraria.jpg',
+  };
+
+  return (
+    <div>
+      <div className="titulo">
+        <h3>Olá, Seja bem-vindo!</h3>
+      </div>
+
+      <div className="avaliar">
+        <div className="textnotificaçao">AVALIAR</div>
+
+        {/* Card da Resenha */}
+        <div className="card card1">
+          <img className="imagem" src={`/imagens/livros/${resenha.foto}`} alt="Livro" />
+          <div className="info">
+            <p>{resenha.titulo}</p>
+            <p>{resenha.autor}</p>
           </div>
-  
-          <div className={styles.cardresenha}>
-            <div className={styles.resenha}>
-              <p><strong>RESENHA</strong></p>
-              <p>{texto}</p>
-              <p>{autor}</p>
-            </div>
+          <div className="acao">
+            <a href={`/avaliar/avaliar.php?id=${resenha.id}`}>
+              <button className="botao">Avaliar</button>
+            </a>
           </div>
-  
-          <form className={styles.barraenvia} action={`?id=${dado}`} method="post">
-            <select className={styles.notas} name="avaliar" required>
-              <option className={styles.resultado} value="">Avaliar</option>
-              <option className={styles.resultado} value="1">Reprovada</option>
-              <option className={styles.resultado} value="3">Corrigir</option>
-              <option className={styles.resultado} value="2">Aprovada</option>
-            </select>
-            <input className={styles.teste} type="submit" value="Enviar" />
-          </form>
         </div>
-      </>
-    );
-  }
+
+        {/* Card da Livraria */}
+        <div className="card card1">
+          <img className="imagem" src={`/imagens/livrarias/${livraria.foto}`} alt="Livraria" />
+          <div className="info">
+            <p>{livraria.nome}</p>
+            <p>{livraria.usuario}</p>
+          </div>
+          <div className="acao">
+            <a href={`/avaliar/avaliar-livraria.php?id=${livraria.id}`}>
+              <button className="botao">Avaliar</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

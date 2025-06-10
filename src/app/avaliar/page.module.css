@@ -1,87 +1,64 @@
-
-.card{
-    background-color:var(--principal);
-}
-.cardimgsinopse {
+/* Container geral */
+.titulo {
+    background-color: #003366; /* Azul escuro */
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  /* Área de avaliação */
+  .avaliar {
     display: flex;
-    flex-direction: row;
-    border: 2px solid red;
-}
-
-.imgavalia {
-    margin: 2rem;
-}
-
-/* texto de sinopse */
-.cardimgsinopse p {
-    margin: 3rem;
-    font-size: 2rem;
-    text-align: start;
-    align-items: start;
-    color:var(--text);
-}
-.cardimgsinopse p {
-    margin: 2rem;
-}
-.cardresenha {
+    gap: 20px; /* Espaço entre cards */
+    flex-wrap: wrap;
+  }
+  
+  /* Cards */
+  .card {
+    background-color: #007BFF; /* Azul vibrante */
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     display: flex;
-    height: auto;
-    background-color:var(--principal)
-}
-.cardresenha p {
-    margin: 2rem;
-    font-size: 2rem;
-    color:var(--text);
-}
-.cardresenha p {
-    margin: 2rem;
-}
-.cardresenha p {
-    margin: 2rem;
-}
-/* Seções internas */
-.card section {
-    background-color: var(--content-bg);
-    color: var(--text-dark);
-    padding: 1rem;
-    margin-top: 1rem;
-    border-radius: 5px;
-}
-/* Títulos das seções */
-.card h3 {
-    color: var(--text-light);
-    margin-top: 1.5rem;
-}
-/* Autor */
-.card .autor {
-    margin-top: 1rem;
-    font-style: italic;
-    font-size: 0.9rem;
-    color: var(--text-light);
-}
-.cardforms {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-}
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card .imagem {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .card .info p {
+    margin: 4px 0;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Botão */
+  .botao {
+    background-color: #0056b3; /* Azul escuro */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao:hover {
+    background-color: #003d80;
+  }
 
-.barraenvia {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 1rem;
-    background-color:var(--principal);
-}
-.notas {
-    color: #000;
-    width: 70rem;
-    margin: 0 0 0 1rem;
-}
-.resultado {
-    color: #000;
-}
-.teste {
-    color: #000;
-    width: 70rem;
-    margin: 0 0 0 1rem;
-}
+  /* Texto da seção "AVALIAR" */
+  .textnotificaçao {
+    font-weight: bold;
+    font-size: 18px;
+    color: #003366;
+    margin-bottom: 15px;
+  }
