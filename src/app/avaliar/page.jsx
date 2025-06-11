@@ -4,20 +4,36 @@ export default function PaginaExemplo() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <span className={styles.texto}>Cabeçalho da Página</span>
+        <span className={styles.mensagem}>Olá Usuário, seja bem vindo!</span>
       </div>
 
       <div className={styles.card}>
         <div className={styles.conteudoCard}>
-          <img
+        <img
             src="/imagens/exemplo.jpg"
             alt="Exemplo"
             className={styles.imagem}
           />
           <div className={styles.descricao}>
-            <p>Texto exemplo da descrição ao lado da imagem.</p>
-            <button className={styles.botao}>Ação</button>
+            <p className={styles.inputText}>Livraria</p>
+            <p className={styles.inputText}>Usuario</p>
           </div>
+          <button className={styles.botao}>Ação</button>
+        </div>
+      </div>
+
+      <div className={styles.card}>
+        <div className={styles.conteudoCard}>
+        <img
+            src="/imagens/exemplo.jpg"
+            alt="Exemplo"
+            className={styles.imagem}
+          />
+          <div className={styles.descricao}>
+            <p className={styles.inputText}>Livraria</p>
+            <p className={styles.inputText}>Usuario</p>
+          </div>
+          <button className={styles.botao}>Ação</button>
         </div>
       </div>
 
@@ -29,23 +45,10 @@ export default function PaginaExemplo() {
             className={styles.imagem}
           />
           <div className={styles.descricao}>
-            <p>Texto exemplo da descrição ao lado da imagem.</p>
-            <button className={styles.botao}>Ação</button>
+            <p className={styles.inputText}>Livraria</p>
+            <p className={styles.inputText}>Usuario</p>
           </div>
-        </div>
-      </div>
-
-      <div className={styles.card}>
-        <div className={styles.conteudoCard}>
-          <img
-            src="/imagens/exemplo3.jpg"
-            alt="Imagem exemplo 3"
-            className={styles.imagem}
-          />
-          <div className={styles.descricao}>
-            <p>Texto exemplo da descrição 3</p>
-            <button className={styles.botao}>Ação</button>
-          </div>
+          <button className={styles.botao}>Ação</button>
         </div>
       </div>
     </div>
