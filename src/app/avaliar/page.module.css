@@ -26,7 +26,17 @@
     gap: 20px; /* Espaço entre cards */
     flex-wrap: wrap;
   }
-  
+
+  .avaliar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top:2rem;
+    text-decoration: underline;
+    color: var(--principal);
+    font-size:2rem;
+  }
   /* Cards */
   .card {
     background-color:var(--principal);

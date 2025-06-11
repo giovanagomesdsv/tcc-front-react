@@ -6,7 +6,8 @@ export default function PaginaExemplo() {
       <div className={styles.header}>
         <span className={styles.mensagem}>Olá Usuário, seja bem vindo!</span>
       </div>
-
+      <div className={styles.avaliar}>
+            <div className={styles.textnotificaçao}> AVALIAR</div></div>
       <div className={styles.card}>
         <div className={styles.conteudoCard}>
         <img
