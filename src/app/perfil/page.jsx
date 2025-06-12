@@ -18,55 +18,55 @@ export default function Perfil() {
                 <div className="fix"></div>
               </li>
               <div className="menu" id="menu">
-                <i className="bxbxmenu"></i>
+                <i className="bx bx-menu"></i>
               </div>
             </div>
   
             <li>
               <a href="../../index.php">
-                <i className="bxbxreplystroke"></i>
+                <i className="bx bx-reply-stroke"></i>
                 <span className="linkname">Bibliófilos Community</span>
               </a>
             </li>
   
             <li>
               <a href="../home.php">
-                <i className="bxbxhomealt2"></i>
+                <i className="bx bx-home-alt-2"></i>
                 <span className="linkname">Home</span>
               </a>
             </li>
   
             <li>
               <a href="../livrarias/livrarias.php">
-                <i className="bxbxuser"></i>
+                <i className="bx bx-user"></i>
                 <span className="linkname">Livrarias</span>
               </a>
             </li>
   
             <li>
               <a href="../resenhistas/resenhistas.php">
-                <i className="bxbxuserpin"></i>
+                <i className="bx bx-user-pin"></i>
                 <span className="linkname">Resenhistas</span>
               </a>
             </li>
   
             <li>
               <a href="../livro/livros.php">
-                <i className="bxbxbookbookmark"></i>
+                <i className="bx bx-book-bookmark"></i>
                 <span className="linkname">Livros</span>
               </a>
             </li>
   
             <li>
               <a href="../usuarios/usuarios.php">
-                <i className="bxbxbookcontent"></i>
+                <i className="bx bx-book-content"></i>
                 <span className="linkname">Usuarios</span>
               </a>
             </li>
   
             <li className="../sair">
               <a href="logout.php">
-                <i className="bxbxlogout"></i>
+                <i className="bx bx-log-out"></i>
               </a>
             </li>
           </ul>
@@ -80,7 +80,9 @@ export default function Perfil() {
             <p><strong>Senha:</strong></p>
             <p><strong>Data de Criação:</strong></p>
             <p><strong>Status:</strong></p>
-            <a href="/editarperfil">Editar perfil</a>
+            <a href={"/perfil/editar"}>Editar perfil</a>
+            
+
           </div>
         </main>
       </div>
