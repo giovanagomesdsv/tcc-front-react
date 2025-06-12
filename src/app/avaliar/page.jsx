@@ -7,34 +7,23 @@ export default function PaginaExemplo() {
         <span className={styles.mensagem}>Olá Usuário, seja bem vindo!</span>
       </div>
       <div className={styles.avaliar}>
-            <div className={styles.textnotificaçao}> AVALIAR</div></div>
-      <div className={styles.card}>
-        <div className={styles.conteudoCard}>
-        <img
-            src="/imagens/exemplo.jpg"
-            alt="Exemplo"
-            className={styles.imagem}
-          />
-          <div className={styles.descricao}>
-            <p className={styles.inputText}>Livraria</p>
-            <p className={styles.inputText}>Usuario</p>
-          </div>
-          <button className={styles.botao}>Ação</button>
-        </div>
-      </div>
+        <div className={styles.textnotificaçao}> AVALIAR</div></div>
 
       <div className={styles.card}>
         <div className={styles.conteudoCard}>
-        <img
+          <img
             src="/imagens/exemplo.jpg"
             alt="Exemplo"
             className={styles.imagem}
           />
           <div className={styles.descricao}>
             <p className={styles.inputText}>Livraria</p>
+            <br />
+            <br />
+            <br />
             <p className={styles.inputText}>Usuario</p>
           </div>
-          <button className={styles.botao}>Ação</button>
+          <button className={styles.botao}>Avaliar</button>
         </div>
       </div>
 
@@ -47,9 +36,34 @@ export default function PaginaExemplo() {
           />
           <div className={styles.descricao}>
             <p className={styles.inputText}>Livraria</p>
+            <br />
+            <br />
+            <br />
             <p className={styles.inputText}>Usuario</p>
           </div>
-          <button className={styles.botao}>Ação</button>
+          <a href={"avaliar/avaliar-livraria"}>
+          <button className={styles.botao}>Avaliar</button>
+          </a>
+        </div>
+      </div>
+
+      <div className={styles.card}>
+        <div className={styles.conteudoCard}>
+          <img
+            src="/imagens/exemplo.jpg"
+            alt="Exemplo"
+            className={styles.imagem}
+          />
+          <div className={styles.descricao}>
+            <p className={styles.inputText}>Resenhista</p>
+            <br />
+            <br />
+            <br />
+            <p className={styles.inputText}>Usuario</p>
+          </div>
+          <a href={"avaliar/avaliar-resenha"}>
+          <button className={styles.botao}>Avaliar</button>
+          </a>
         </div>
       </div>
     </div>

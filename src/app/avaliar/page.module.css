@@ -14,6 +14,17 @@
 
 }
 
+.textnotificaçao{
+  width: 100%;
+    border-bottom: 2px solid var(--terciaria);
+    color: var(--terciaria);
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top:1rem;
+}
+
 .titulo {
     background-color: #003366; /* Azul escuro */
     font-family: Arial, sans-serif;
@@ -27,16 +38,6 @@
     flex-wrap: wrap;
   }
 
-  .avaliar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top:2rem;
-    text-decoration: underline;
-    color: var(--principal);
-    font-size:2rem;
-  }
   /* Cards */
   .card {
     background-color:var(--principal);
@@ -48,18 +49,22 @@
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column; /* Mantém os blocos verticais (ex: título + conteúdo) */
+    display: flex;
     align-items: center;
+    justify-content: center;
     border: 2px red solid;
   }
   
   /* Novo wrapper para alinhar imagem e descrição lado a lado */
   .card .conteudoCard {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
     gap: 2rem;
     width: 100%;
+    border: 2px solid rgb(76, 0, 255);
   }
   
   /* Estilo da imagem */
@@ -71,30 +76,27 @@
     border-radius: 6px;
     margin-bottom: 10px;
   }
-  
-  /* Texto da info */
-  .card .info p {
-    margin: 4px 0;
-    font-weight: 600;
-    text-align: center;
-  }
-  
+
   /* Estilo da descrição ao lado */
   .card .descricao {
-    padding: 1rem;
-    flex: 1; /* Ocupa o espaço restante ao lado da imagem */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid red;
   }
 
   .inputText{
-    margin-top:4rem;
     display:flex;
     align-items:center;
     font-size:2rem;
   }
 
   .botao {
-    margin-top: 7rem;
     padding: 2rem 5rem;
+    justify-content:center;
+    align-items: center;
     background-color: var(--secundaria);
     color: white;
     border: none;
@@ -102,6 +104,7 @@
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    font-size:1.5rem;
   }
   
   .botao:hover {
