@@ -65,7 +65,7 @@ body {
   min-height: 100vh;
 
   /* Adiciona um preenchimento ao redor do conteúdo do body usando uma variável CSS */
-  padding: var(--padding);
+
 
   /* Força a exibição da barra de rolagem vertical, evitando o deslocamento de elementos quando o conteúdo se torna longo o suficiente para precisar da barra */
   overflow-y: scroll;
@@ -94,7 +94,8 @@ h1 {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  max-width: 144rem;
+  width: 100%;
 }
 
 header {
@@ -115,21 +116,17 @@ header {
   background: var(--principal);
   display: flex;
   flex-direction: row;
-  border: solid 1px red;
   align-items: center;
- 
 }
 
 .nome {
   display: flex;
   flex-direction: row;
   align-items: center;
-  
 }
 
 .nome .usuario {
   display: none;
-  
 }
 
 .menu {
@@ -137,7 +134,7 @@ header {
   cursor: pointer;
   display: flex;
   align-items: center;
-
+  margin: 2rem;
 }
 
 .menu:hover {
@@ -148,7 +145,6 @@ header {
 .sidebar ul {
   height: 100%;
   font-size: 1.6rem;
-
 }
 
 .sidebar ul li {
@@ -156,7 +152,6 @@ header {
   align-items: center;
   justify-content: center;
   display: flex;
- 
 }
 
 .navlist li {
@@ -166,7 +161,6 @@ header {
   flex: 1;
   /* ocupa espaço igual */
   height: 100%;
-  
 }
 
 .navlist li a {
@@ -181,7 +175,6 @@ header {
   color: var(--text);
   text-decoration: none;
   justify-content: center;
-  border: solid 1px red;
 }
 
 .navlist {
@@ -194,7 +187,6 @@ header {
   padding: 0;
   margin: 0;
   list-style: none;
-
 }
 
 .navlist li a.perfil {
@@ -213,7 +205,6 @@ header {
 }
 
 .sidebar ul li a .link_name {
- 
   display: none;
   width: 100%;
 }
@@ -238,21 +229,17 @@ header {
   display: flex;
   transition: ease .5s;
 }
-
 .sidebar.abrir .usuario {
   display: block;
   width: 100%;
 }
-
 .sidebar.abrir .nome {
   margin-top: -6rem;
 }
-
 .sidebar.abrir .link_name {
   display: block;
   width: 100%;
 }
-
 .sidebar.abrir ul .fix {
   background: var(--principal);
   padding: .5rem 0;
@@ -260,16 +247,13 @@ header {
   border-bottom-left-radius: 15px;
   width: 100%;
 }
-
 .sidebar.abrir ul li {
   padding: .5rem 0;
   transition: ease .5s;
 }
-
 .sidebar.abrir .navlist li a img {
   display: block;
 }
-
 .sidebar.abrir .sair {
   border: 1px solid;
   width: 2rem;
@@ -281,14 +265,11 @@ header {
   transition: 0.2s;
   color: var(--secundaria)
 }
-
 .sidebar.abrir .sair:hover {
   background-color: #406E96;
 }
-
 .sidebar.abrir ul li {
   margin-top: 5rem;
-
 }
 
 .linkname {

@@ -1,6 +1,6 @@
 
 import styles from './page.module.css';
-
+import Link from "next/link";
     
 export default function Perfil() {
     return (
@@ -8,8 +8,8 @@ export default function Perfil() {
       
   
         <header>
-          Administrador BC
-        </header>
+        BACKSTAGE Community
+                </header>
   
         <nav className="sidebar" id="sidebar">
           <ul className="navlist">
@@ -80,8 +80,7 @@ export default function Perfil() {
             <p><strong>Senha:</strong></p>
             <p><strong>Data de Criação:</strong></p>
             <p><strong>Status:</strong></p>
-            <a href={"/perfil/editar"}>Editar perfil</a>
-            
+            <Link href={"/perfil/editar"}>Editar perfil</Link>
 
           </div>
         </main>
