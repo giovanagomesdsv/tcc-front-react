@@ -1,38 +1,93 @@
-/*Input da contagem de usúarios*/
+.card{
+    background-color:var(--principal);
+}
 
-.linha {
+.resenhabox{
+    background-color: white;
+    color:black;
+    padding: 10rem;
+    border: 2px solid blue;
+}
+.cardimgsinopse {
     display: flex;
-    align-items: center;
-    gap: 8px; /* Espaçamento entre o texto e o input */
-    margin-bottom: 8px; /* Espaço entre as linhas */
+    flex-direction: row;
+    border: 2px solid red;
 }
 
-.textUsuario {
-    font-weight: bold;
-    color: #333;
+.imgavalia {
+    margin: 2rem;
 }
 
-.inputContagem{
-    width: 30%; /* Largura total do input */
+/* texto de sinopse */
+.cardimgsinopse p {
+    margin: 3rem;
+    font-size: 2rem;
+    text-align: start;
+    align-items: start;
+    color:var(--text);
+}
+.cardimgsinopse p {
+    margin: 2rem;
+}
+.cardresenha {
+    display: flex;
+    height: auto;
+    background-color:var(--principal)
+}
+.cardresenha p {
+    margin: 2rem;
+    font-size: 2rem;
+    color:var(--text);
+}
+.cardresenha p {
+    margin: 2rem;
+}
+.cardresenha p {
+    margin: 2rem;
+}
+/* Seções internas */
+.card section {
+    background-color: var(--content-bg);
+    color: var(--text-dark);
     padding: 1rem;
-    border: none;
-    border-radius: 4px; 
-    background-color: white; /* Cor de fundo do input */
-    color: #000;
-    display:flex;
-    margin-left:105rem;
-    border: solid 1px red;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+/* Títulos das seções */
+.card h3 {
+    color: var(--text-light);
+    margin-top: 1.5rem;
+}
+/* Autor */
+.card .autor {
+    margin-top: 1rem;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+.cardforms {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
 }
 
-/*Responsividade da DIV contagem de úsuarios*/
-
-@media (max-width: 500px) {
-    .linha {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .textUsuario {
-        min-width: auto;
-    }
+.barraenvia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+    background-color:var(--principal);
+}
+.notas {
+    color: #000;
+    width: 70rem;
+    margin: 0 0 0 1rem;
+}
+.resultado {
+    color: #000;
+}
+.teste {
+    color: #000;
+    width: 70rem;
+    margin: 0 0 0 1rem;
 }
