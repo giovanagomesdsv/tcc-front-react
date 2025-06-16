@@ -1,24 +1,67 @@
 .card{
     background-color:var(--principal);
+    padding-bottom:1rem;
+}
+
+.sinopseText{
+    padding-left:27rem;
+}
+
+.resenhaText{
+    padding-right:130rem;
+}
+
+.displayImageText{
+    display:flex;
+    flex-direction: row;
 }
 
 .resenhabox{
-    color:black;
+    color: black !important;
     padding: 2rem;
-    background-color:var(--secundaria);
-    border: 2px solid blue;
-    border-radius:2rem;
-    font-size:3099rem
+    border: 2px solid black;
+    border-radius: 2rem;
+    background-color: white;
+    height:auto;
 }
 .cardimgsinopse {
     display: flex;
     flex-direction: row;
-    border: 2px solid red;
+}
+
+.textnotificaçao{
+    width: 100%;
+      border-bottom: 2px solid var(--terciaria);
+      color: var(--terciaria);
+      font-weight: bold;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      margin-top:1rem;
+  }
+    
+/* Área de avaliação */
+.avaliar {
+    display: flex;
+    gap: 20px; /* Espaço entre cards */
+    flex-wrap: wrap;
 }
 
 .imgavalia {
     margin: 2rem;
 }
+
+.imagem {
+    border: 2px solid red;
+    border-radius: 6px;
+    width: 25rem;
+    height: 25rem;
+    margin-bottom: 1rem;
+    margin-top:2rem;
+    margin-left: 2rem;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
 
 /* texto de sinopse */
 .cardimgsinopse p {
@@ -88,7 +131,8 @@
 .resultado {
     color: #000;
 }
-.teste {
+
+.inputs {
     color: #000;
     width: 70rem;
     margin: 0 0 0 1rem;

@@ -1,38 +1,139 @@
-/*Input da contagem de usúarios*/
-
-.linha {
-    display: flex;
-    align-items: center;
-    gap: 8px; /* Espaçamento entre o texto e o input */
-    margin-bottom: 8px; /* Espaço entre as linhas */
+.card{
+    background-color:var(--principal);
+    padding-bottom:1rem;
 }
 
-.textUsuario {
-    font-weight: bold;
-    color: #333;
+.sinopseText{
+    padding-left:27rem;
 }
 
-.inputContagem{
-    width: 30%; /* Largura total do input */
-    padding: 1rem;
-    border: none;
-    border-radius: 4px; 
-    background-color: white; /* Cor de fundo do input */
-    color: #000;
+.resenhaText{
+    padding-right:130rem;
+}
+
+.displayImageText{
     display:flex;
-    margin-left:105rem;
-    border: solid 1px red;
+    flex-direction: row;
 }
 
-/*Responsividade da DIV contagem de úsuarios*/
+.resenhabox{
+    color: black !important;
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 2rem;
+    background-color: white;
+    height:auto;
+}
+.cardimgsinopse {
+    display: flex;
+    flex-direction: row;
+}
 
-@media (max-width: 500px) {
-    .linha {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.textnotificaçao{
+    width: 100%;
+      border-bottom: 2px solid var(--terciaria);
+      color: var(--terciaria);
+      font-weight: bold;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      margin-top:1rem;
+  }
+    
+/* Área de avaliação */
+.avaliar {
+    display: flex;
+    gap: 20px; /* Espaço entre cards */
+    flex-wrap: wrap;
+}
 
-    .textUsuario {
-        min-width: auto;
-    }
+.imgavalia {
+    margin: 2rem;
+}
+
+.imagem {
+    border: 2px solid red;
+    border-radius: 6px;
+    width: 25rem;
+    height: 25rem;
+    margin-bottom: 1rem;
+    margin-top:2rem;
+    margin-left: 2rem;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+/* texto de sinopse */
+.cardimgsinopse p {
+    margin: 3rem;
+    font-size: 2rem;
+    text-align: start;
+    align-items: start;
+    color:var(--text);
+}
+.cardimgsinopse p {
+    margin: 2rem;
+}
+.cardresenha {
+    display: flex;
+    height: auto;
+    background-color:var(--principal)
+}
+.cardresenha p {
+    margin: 2rem;
+    font-size: 2rem;
+    color:var(--text);
+}
+.cardresenha p {
+    margin: 2rem;
+}
+.cardresenha p {
+    margin: 2rem;
+}
+/* Seções internas */
+.card section {
+    background-color: var(--content-bg);
+    color: var(--text-dark);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+/* Títulos das seções */
+.card h3 {
+    color: var(--text-light);
+    margin-top: 1.5rem;
+}
+/* Autor */
+.card .autor {
+    margin-top: 1rem;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+.cardforms {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.barraenvia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+    background-color:var(--principal);
+}
+.notas {
+    color: #000;
+    width: 70rem;
+    margin: 0 0 0 1rem;
+}
+.resultado {
+    color: #000;
+}
+
+.inputs {
+    color: #000;
+    width: 70rem;
+    margin: 0 0 0 1rem;
 }
