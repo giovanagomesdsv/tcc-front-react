@@ -1,4 +1,4 @@
-import styles from "./page.module.css";
+import styles from './page.module.css';
 
 export default function Editar() {
     return (
@@ -68,25 +68,25 @@ export default function Editar() {
         </nav>
     <main>
 
-        <div className="editar-perfil-container">
+        <div className="editarperfilcontainer">
             <h1>Editar Perfil</h1>
             <form method="POST">
-                <div className="form-group">
+                <div className="formgroup">
                     <label>Nome:</label>
-                    <input type="text" name="nome" required><br><br>
+                    <input type="text" name="nome" required/>
                 </div>
-                <div className="form-group">
+                <div className="formgroup">
                     <label>Email:</label>
-                    <input type="email" name="email" required>
+                    <input type="email" name="email" required/>
                 </div>
-                <div className="form-group">
+                <div className="formgroup">
                     <label>Nova senha:</label>
-                    <input type="password" name="senha" placeholder="Deixe em branco para manter a mesma senha">
+                    <input type="password" name="senha" placeholder="Deixe em branco para manter a mesma senha"/>
                 </div>
                 <button type="submit">Salvar Alterações</button>
             </form>
-            <br>
-            <a href="perfil.php">Voltar ao perfil</a>
+          
+            <Link href="perfil.php">Voltar ao perfil</Link>
         </div>
     </main>
         </div>
