@@ -1,4 +1,5 @@
 import styles from './page.module.css';
+import Link from "next/link";
 
 export default function Editar() {
     return (
@@ -85,8 +86,8 @@ export default function Editar() {
                 </div>
                 <button type="submit">Salvar Alterações</button>
             </form>
-          
-            <Link href="perfil.php">Voltar ao perfil</Link>
+
+            <Link href={"/perfil"}>Voltar ao perfil</Link>
         </div>
     </main>
         </div>
