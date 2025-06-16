@@ -3,10 +3,12 @@
 }
 
 .resenhabox{
-    background-color: white;
     color:black;
-    padding: 10rem;
+    padding: 2rem;
+    background-color:var(--secundaria);
     border: 2px solid blue;
+    border-radius:2rem;
+    font-size:3099rem
 }
 .cardimgsinopse {
     display: flex;
