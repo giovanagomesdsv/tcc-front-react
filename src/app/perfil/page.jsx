@@ -1,90 +1,95 @@
 
 import styles from './page.module.css';
 import Link from "next/link";
-    
-export default function Perfil() {
-    return (
-      <div className="container">
-      
-  
-        <header>
-        BACKSTAGE Community
-                </header>
-  
-        <nav className="sidebar" id="sidebar">
-          <ul className="navlist">
-            <div className="nome">
-              <li className="usuario">
-                <div className="fix"></div>
-              </li>
-              <div className="menu" id="menu">
-                <i className="bx bx-menu"></i>
-              </div>
-            </div>
-  
-            <li>
-              <a href="../../index.php">
-                <i className="bx bx-reply-stroke"></i>
-                <span className="linkname">Bibliófilos Community</span>
-              </a>
-            </li>
-  
-            <li>
-              <a href="../home.php">
-                <i className="bx bx-home-alt-2"></i>
-                <span className="linkname">Home</span>
-              </a>
-            </li>
-  
-            <li>
-              <a href="../livrarias/livrarias.php">
-                <i className="bx bx-user"></i>
-                <span className="linkname">Livrarias</span>
-              </a>
-            </li>
-  
-            <li>
-              <a href="../resenhistas/resenhistas.php">
-                <i className="bx bx-user-pin"></i>
-                <span className="linkname">Resenhistas</span>
-              </a>
-            </li>
-  
-            <li>
-              <a href="../livro/livros.php">
-                <i className="bx bx-book-bookmark"></i>
-                <span className="linkname">Livros</span>
-              </a>
-            </li>
-  
-            <li>
-              <a href="../usuarios/usuarios.php">
-                <i className="bx bx-book-content"></i>
-                <span className="linkname">Usuarios</span>
-              </a>
-            </li>
-  
-            <li className="../sair">
-              <a href="logout.php">
-                <i className="bx bx-log-out"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-  
-        <main>
-          <div className={styles.perfilcontainer}>
-            <h1>Perfil do Usuário</h1>
-            <p><strong>Nome:</strong></p>
-            <p><strong>Email:</strong></p>
-            <p><strong>Senha:</strong></p>
-            <p><strong>Data de Criação:</strong></p>
-            <p><strong>Status:</strong></p>
-            <Link href={"/perfil/editar"}>Editar perfil</Link>
 
-          </div>
-        </main>
-      </div>
-    
+export default function Perfil() {
+  return (
+    <div className="container">
+
+
+      <header>
+        BACKSTAGE Community
+      </header>
+      <nav className="sidebar" id="sidebar">
+        <ul className="navlist">
+         
+            <li>
+              <Link href="/perfil" className="linkname fix">
+                <i className="bx bx-home-alt-2"></i>
+                <span className="linkname">Perfil</span>
+              </Link>
+            </li>
+           
+            {/* icone de menu
+            <div className="menu" id="menu">
+              <i className="bx bx-menu"></i>
+            </div>
+            */}
+         
+
+          <li>
+            <a href="../../index.php">
+              <i className="bx bx-reply-stroke"></i>
+              <span className="linkname">Bibliófilos Community</span>
+            </a>
+          </li>
+
+          <li>
+            <Link href="/avaliar" className="linkname">
+              <i className="bx bx-home-alt-2"></i>
+              <span className="linkname">Home</span>
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/lista-livrarias" className="linkname">
+              <i className="bx bx-user"></i>
+              <span className="linkname">Livrarias</span>
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/lista-resenhistas" className="linkname">
+              <i className="bx bx-user-pin"></i>
+              <span className="linkname">Resenhistas</span>
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/lista-livros" className="linkname">
+              <i className="bx bx-book-bookmark"></i>
+              <span className="linkname">Livros</span>
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/usuarios" className="linkname">
+              <i className="bx bx-book-content"></i>
+              <span className="linkname">Usuários</span>
+            </Link>
+          </li>
+
+          <li className="/page">
+            <a href="logout.php">
+              <i className="bx bx-log-out"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main>
+        <div className={styles.perfilcontainer}>
+          <h1>Perfil do Usuário</h1>
+          <p><strong>Nome:</strong></p>
+          <p><strong>Email:</strong></p>
+          <p><strong>Senha:</strong></p>
+          <p><strong>Data de Criação:</strong></p>
+          <p><strong>Status:</strong></p>
+          <Link href={"/perfil/editar"}>Editar perfil</Link>
+
+        </div>
+      </main>
+    </div>
+
   );
 }

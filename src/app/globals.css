@@ -118,16 +118,8 @@ header {
   flex-direction: row;
   align-items: center;
 }
+/*é o perfil*/
 
-.nome {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.nome .usuario {
-  display: none;
-}
 
 .menu {
   font-size: 1.6rem;
@@ -204,7 +196,14 @@ header {
   /* borda redonda */
 }
 
+
+
 .sidebar ul li a .link_name {
+  display: none;
+  width: 100%;
+}
+
+.sidebar ul li a .link_name .fix {
   display: none;
   width: 100%;
 }
@@ -216,10 +215,8 @@ header {
 }
 
 .sidebar ul .fix {
-  background: var(--principal);
-  border-top-left-radius: 15px;
-  padding: 1rem;
-  border-bottom-left-radius: 15px;
+  background: var(--secundaria);
+  padding: 1.8rem;
   width: 100%;
 }
 
@@ -229,13 +226,7 @@ header {
   display: flex;
   transition: ease .5s;
 }
-.sidebar.abrir .usuario {
-  display: block;
-  width: 100%;
-}
-.sidebar.abrir .nome {
-  margin-top: -6rem;
-}
+
 .sidebar.abrir .link_name {
   display: block;
   width: 100%;
@@ -275,6 +266,8 @@ header {
 .linkname {
   font-size: 1.4rem;
 }
+
+
 
 /* padrao de pesquisa */
 .buscacontainer {

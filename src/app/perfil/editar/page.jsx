@@ -1,4 +1,4 @@
-import styles from './page.module.css';
+import styles from "./page.module.css";
 import Link from "next/link";
 
 export default function Editar() {
@@ -69,22 +69,22 @@ export default function Editar() {
         </nav>
     <main>
 
-        <div className="editarperfilcontainer">
+        <div className={styles.editarperfilcontainer}>
             <h1>Editar Perfil</h1>
             <form method="POST">
-                <div className="formgroup">
+                <div className={styles.formgroup}>
                     <label>Nome:</label>
                     <input type="text" name="nome" required/>
                 </div>
-                <div className="formgroup">
+                <div className={styles.formgroup}>
                     <label>Email:</label>
                     <input type="email" name="email" required/>
                 </div>
-                <div className="formgroup">
+                <div className={styles.formgroup}>
                     <label>Nova senha:</label>
                     <input type="password" name="senha" placeholder="Deixe em branco para manter a mesma senha"/>
                 </div>
-                <button type="submit">Salvar Alterações</button>
+                <button className={styles.botaosavechange} type="submit">Salvar Alterações</button>
             </form>
 
             <Link href={"/perfil"}>Voltar ao perfil</Link>
