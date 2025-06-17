@@ -99,57 +99,87 @@
     background-color:var(--terciaria); /* mais escuro no hover */
   }
 
-  /*Responsividade*/
+  /*RESPONSIVIDADE*/
 
   @media (max-width: 1024px) {
+    .card {
+      width: 100%;
+      margin-top: 5rem;
+      padding: 2rem;
+    }
+  
     .card .conteudoCard {
       flex-direction: column;
-      align-items: center;
       text-align: center;
+      gap: 1.5rem;
     }
   
     .card .imagem {
-      width: 60%;
-      max-height: 15rem;
+      width: 50%;
+      height: auto;
     }
   
-    .card .descricao {
-      width: 100%;
+    .botao {
+      padding: 1.5rem 4rem;
+      font-size: 1.3rem;
+    }
+  
+    .mensagem {
+      font-size: 2.5rem;
+      height: 6rem;
+    }
+  
+    .inputText {
+      font-size: 1.8rem;
     }
   }
   
   @media (max-width: 768px) {
-    .card {
-      padding: 10px;
-      margin-top: 3rem;
+    .card .imagem {
+      width: 70%;
+      max-height: 15rem;
+    }
+  
+    .botao {
+      padding: 1rem 3rem;
+      font-size: 1.2rem;
+    }
+  
+    .mensagem {
+      font-size: 2rem;
+      height: 5rem;
     }
   
     .inputText {
       font-size: 1.5rem;
     }
   
-    .botao {
-      padding: 1.5rem 4rem;
-      font-size: 0.9rem;
+    .textnotificaçao {
+      font-size: 1.2rem;
     }
   }
   
   @media (max-width: 480px) {
-    .card {
-      margin-top: 2rem;
-    }
-  
     .card .imagem {
-      width: 100%;
+      width: 90%;
       max-height: 12rem;
     }
   
     .botao {
-      width: 100%;
-      padding: 1rem;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+    }
+  
+    .mensagem {
+      font-size: 1.5rem;
+      height: 4rem;
     }
   
     .inputText {
       font-size: 1.2rem;
+    }
+  
+    .textnotificaçao {
+      font-size: 1rem;
     }
   }
