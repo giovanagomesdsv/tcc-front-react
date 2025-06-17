@@ -12,23 +12,21 @@ export default function Perfil() {
       </header>
       <nav className="sidebar" id="sidebar">
         <ul className="navlist">
-         
-            <li>
-              <Link href="/perfil" className="linkname fix">
-                <i className="bx bx-home-alt-2"></i>
-                <span className="linkname">Perfil</span>
-              </Link>
-            </li>
-           
-            {/* icone de menu
+
+          <li>
+            <Link href="/perfil" className="linkname fix">
+              <i className="bx bx-home-alt-2"></i>
+              <span className="linkname">Perfil</span>
+            </Link>
+          </li>
+          {/* icone de menu
             <div className="menu" id="menu">
               <i className="bx bx-menu"></i>
             </div>
             */}
-         
 
           <li>
-            <a href="../../index.php">
+            <a href="/">
               <i className="bx bx-reply-stroke"></i>
               <span className="linkname">Bibliófilos Community</span>
             </a>
@@ -69,10 +67,11 @@ export default function Perfil() {
             </Link>
           </li>
 
-          <li className="/page">
-            <a href="logout.php">
+          <li>
+            <Link href="/login" className="linkname">
               <i className="bx bx-log-out"></i>
-            </a>
+              <span className="linkname">Sair</span>
+            </Link>
           </li>
         </ul>
       </nav>
