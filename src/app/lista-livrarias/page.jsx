@@ -86,7 +86,7 @@ export default function ListaLivrarias() {
 
                     <div className="pesquisa">
 
-                        <div className='card-liv'>
+                        <div className={StyleS.card-liv}>
 
 {/*isso é so um teste pra parar de dar erro, quando back-end ficar pronto precisa arrumar certinho */}
                             <Link href={whatsApp} /*var foto linkada no whatsapp*/target="_blank">
@@ -97,17 +97,17 @@ export default function ListaLivrarias() {
                             <p>nome{/*var nome*/}</p>
                             <p>email{/*var email*/}</p>
                             <p>cidade{/*var cidade e o estado*/}</p>
-                            <div className='input'>Total de Livros:{/*var qntd livro*/}
+                            <div className="input">Total de Livros:{/*var qntd livro*/}
                             </div>
                         </div>
                     </div>
                     <h2>TODAS LIVRARIAS</h2>
-                    <div className="livrarias">
+                    <div className={styles.livrarias}>
                         {/*TODAS AS LIVRARIAS----------------------------------------------*/}
 
 
-                        <div className='card-liv'>
-                            <{/*isso é so um teste pra parar de dar erro, quando back-end ficar pronto precisa arrumar certinho */}
+                        <div className={styles.card-liv}>
+                            {/*isso é so um teste pra parar de dar erro, quando back-end ficar pronto precisa arrumar certinho */}
                             <Link href={whatsApp} /*var foto linkada no whatsapp*/target="_blank">
                                 <img src={foto}  /*var foto da livraria*/alt="" />
                             </Link>
@@ -115,7 +115,7 @@ export default function ListaLivrarias() {
                         <p>{$nome}</p>
                         <p>{$email}</p>
                         <p>{$cidade} ({$estado})</p>
-                        <div className='input'>Total de Livros: {$total}</div>
+                        <div className="input">Total de Livros: {$total}</div>
                     </div>
 
 
