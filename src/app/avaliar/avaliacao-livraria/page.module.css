@@ -1,0 +1,130 @@
+.card{
+    background-color:var(--principal);
+    padding-bottom:1rem;
+}
+
+.sinopseText{
+    padding-left:31rem;
+}
+
+.resenhaText{
+    padding-right:130rem;
+}
+
+.displayImageText{
+    display:flex;
+    flex-direction: row;
+}
+
+.infobox{
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: white;
+    height:auto;
+    padding-right:16rem;
+}
+.cardimgsinopse {
+    display: flex;
+    flex-direction: row;
+}
+
+.textnotificaçao{
+    width: 100%;
+      border-bottom: 2px solid var(--terciaria);
+      color: var(--terciaria);
+      font-weight: bold;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      margin-top:1rem;
+  }
+    
+/* Área de avaliação */
+.avaliar {
+    display: flex;
+    gap: 20px; /* Espaço entre cards */
+    flex-wrap: wrap;
+}
+
+.imgavalia {
+    margin: 2rem;
+}
+
+.imagem {
+    border: 2px solid red;
+    border-radius: 6px;
+    width: 30rem;
+    height: 30rem;
+    margin-right:1rem;
+    margin-left: 2rem;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+/* texto de sinopse */
+.cardimgsinopse p {
+    margin: 3rem;
+    font-size: 2rem;
+    text-align: start;
+    align-items: start;
+    color:var(--text);
+}
+.cardimgsinopse p {
+    margin: 2rem;
+}
+/* Seções internas */
+.card section {
+    background-color: var(--content-bg);
+    color: var(--text-dark);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+/* Títulos das seções */
+.card h3 {
+    color: var(--text-light);
+    margin-top: 1.5rem;
+}
+/* Autor */
+.card .autor {
+    margin-top: 1rem;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+.cardforms {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.barraenvia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+    background-color:var(--principal);
+}
+.notas {
+    color: #000;
+    width: 70rem;
+    margin: 0 0 0 1rem;
+}
+
+.resultado {
+    color: #000;
+}
+
+.inputs {
+    color: #000 !important;
+    width: 70rem;
+    margin: 0 0 0 1rem;
+}
+
+.inputTitles1{
+    margin-right:40%;
+}
+
+.inputTitles2{
+    margin-right:53%;
+}
