@@ -14,6 +14,8 @@
 .displayImageText{
     display:flex;
     flex-direction: row;
+    margin-left:1rem;
+    gap:1rem;
 }
 
 .resenhabox{
@@ -137,3 +139,120 @@
     width: 70rem;
     margin: 0 0 0 1rem;
 }
+
+/*RESPONSIVIDADE*/
+
+/* Responsivo até 1024px (Tablet) */
+@media (max-width: 1024px) {
+    .sinopseText,
+    .resenhaText {
+      padding: 0 2rem;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+  
+    .displayImageText,
+    .cardimgsinopse,
+    .cardresenha,
+    .cardforms,
+    .barraenvia {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .imagem {
+      width: 70%;
+      height: auto;
+      margin: 1rem 0;
+    }
+  
+    .resenhabox,
+    .notas,
+    .inputs {
+      width: 90%;
+      margin: 1rem auto;
+      padding: 1rem;
+    }
+  
+    .cardimgsinopse p,
+    .cardresenha p {
+      margin: 1rem;
+      font-size: 1.6rem;
+    }
+  }
+  
+  /* Responsivo até 768px (Mobile Grande) */
+  @media (max-width: 768px) {
+    .sinopseText,
+    .resenhaText {
+      padding: 0 1rem;
+      font-size: 1.5rem;
+    }
+  
+    .imagem {
+      width: 85%;
+      max-height: 18rem;
+      margin: 1rem 0;
+    }
+  
+    .resenhabox,
+    .notas,
+    .inputs {
+      width: 95%;
+      padding: 0.8rem;
+    }
+  
+    .cardimgsinopse p,
+    .cardresenha p {
+      font-size: 1.4rem;
+      margin: 0.8rem;
+      text-align: center;
+    }
+  
+    .cardforms,
+    .barraenvia {
+      padding: 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Responsivo até 480px (Mobile Pequeno) */
+  @media (max-width: 480px) {
+    .sinopseText,
+    .resenhaText {
+      padding: 0 0.5rem;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  
+    .imagem {
+      width: 100%;
+      max-height: 14rem;
+      margin: 0.5rem 0;
+    }
+  
+    .resenhabox,
+    .notas,
+    .inputs {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+    }
+  
+    .cardimgsinopse p,
+    .cardresenha p {
+      font-size: 1.2rem;
+      margin: 0.5rem;
+      text-align: center;
+    }
+  
+    .cardforms,
+    .barraenvia {
+      padding: 0.5rem;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
