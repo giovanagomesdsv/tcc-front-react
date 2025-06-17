@@ -2,9 +2,8 @@
 .tdliv {
     font-size: 25px;
     margin-top: 5rem;
-    color: var(--terciaria);
+    color: var(--text);
 }
- 
 .livrarias {
     display: flex;
     flex-wrap: wrap;
@@ -45,6 +44,6 @@
     font-size: 14px;
     border-radius: 20px;
     padding: 4px 10px;
-    color: #333;
+    color: var(--text);
 }
 
