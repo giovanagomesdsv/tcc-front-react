@@ -4,7 +4,7 @@ export default function ReviewCard({ foto, titulo, sinopse, texto, autor, dado }
     return (
       <div>
       <div className={styles.avaliar}>
-      <div className={styles.textnotificaçao}>AVALIAR</div></div>
+      <div className={styles.textnotificaçao}>AVALIAR LIVRARIA</div></div>
       <br/><br/>
 
         <div className={`${styles.card} ${styles.card3}`}>
@@ -18,13 +18,13 @@ export default function ReviewCard({ foto, titulo, sinopse, texto, autor, dado }
             className={styles.imagem}
               />
               <div className={styles.infobox}>
-                <h1 className={styles.inputTitles}>Informações do administrador</h1>
+                <h1 className={styles.inputTitles1}>Informações do administrador</h1>
 
 
                     <p className={styles.inputs}><strong>Nome:</strong></p>
                     <p className={styles.inputs}><strong>Email:</strong></p>
 
-                    <h1>Informações da Livraria</h1>
+                    <h1 className={styles.inputTitles2}>Informações da Livraria</h1>
 
                     <p className={styles.inputs}><strong>Nome:</strong> </p>
                     <p className={styles.inputs}><strong>Email:</strong> </p>
