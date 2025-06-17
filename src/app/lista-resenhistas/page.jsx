@@ -5,5 +5,6 @@ export default function ListaResenhas() {
         <div className="container">
             <h1>ListaResenhas</h1>
         </div>
+        
     )
 }

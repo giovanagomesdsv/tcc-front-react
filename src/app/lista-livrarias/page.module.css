@@ -1,0 +1,50 @@
+/* TÍTULO H2 */
+h2 {
+    font-size: 25px;
+    margin-top: 5rem;
+    color: var(--terciaria);
+}
+ 
+.livrarias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* CSS CARDS DAS LIVRARIAS */
+.card-liv {
+    width: 20rem;
+    max-width: 30rem;
+    height: auto;
+    background-color: var(--principal);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: .8rem;
+    flex: 1 1 calc(25% - 40px); /* 4 por linha com espaçamento */
+}
+
+.card-liv:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-liv img {
+    background-color: #fff;
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+}
+
+.card-liv p {
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 4px 10px;
+    color: #333;
+}
+
