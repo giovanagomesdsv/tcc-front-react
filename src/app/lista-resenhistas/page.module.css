@@ -1,0 +1,53 @@
+/* Container geral do card */
+.resenhistabox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  margin: 3.5rem 0;
+  background-color: var(--principal);
+  color: var(--text);
+  border-radius: .8rem;
+  height: 17rem;
+}
+
+.resenhistainfo{
+        width: 10rem;
+        height: 15rem;
+}
+.cardtext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 45rem;
+    flex-wrap: wrap;
+}
+.cardtext p{
+margin: 1rem;
+}
+
+/* Informações alinhadas à esquerda */
+.resenhistainfo a {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+/* Contador de resenhas à direita */
+.resenhacontador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg);
+    color: #000;
+    border-radius: 4px;
+    font-weight: bold;
+    height: 60%;
+}
+.resenhacontador p {
+    color: #000;
+    margin: 1rem;
+}

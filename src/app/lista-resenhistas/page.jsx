@@ -3,9 +3,9 @@ import Link from "next/link";
 
 
 export default function ListaResenhas() {
-    return (
-        <div className="container">
-           <header>
+  return (
+    <div className="container">
+      <header>
         BACKSTAGE Community
       </header>
       <nav className="sidebar" id="sidebar">
@@ -73,7 +73,55 @@ export default function ListaResenhas() {
           </li>
         </ul>
       </nav>
-
+      <main>
+        <div className="buscacontainer">
+          <form action="" method="GET" className="buscaform">
+            <input type="text" name="busca" placeholder="pseudonimo do resenhista" />
+            <button type="submit"><i class='bx bx-search'></i></button>
+          </form>
         </div>
+        
+
+
+          <div className={styles.resenhistabox}>
+            <div className={styles.resenhistainfo}>
+              {/* IMAGEM DO RESENHISTA LINKADO COM TELEFONE
+              <a href='https://wa.me/{$telefone}?text={$mensagem}' target='_blank'>
+                <img class='imagem' src='../imagens/resenhistas/$foto' alt=''>
+              </a>
+              */}
+            </div>
+            <div className={styles.cardtext}>
+              <p>Nome usuario: VAR</p>
+              <p><strong>Pseudônimo: VAR</strong></p>
+              <p><strong>Título: VAR</strong> </p>
+            </div>
+            <div className={styles.resenhacontador}>
+              <p>Total de resenhas:</p>
+              VAR totalResenhas
+            </div>
+          </div>
+        <div className={styles.resenhistabox}>
+          <div className={styles.resenhistainfo}>
+            {/*IMAGEM DO RESENHISTA LINKADO COM TELEFONE
+            <a href='https://wa.me/{$telefone}?text={$mensagem}' target='_blank'>
+              <img class='imagem' src='../imagens/resenhistas/$foto' alt=''>
+            </a>
+            */}
+          </div>
+          <div className={styles.cardtext}>
+            <p>Nome usuario VAR</p>
+            <p><strong>Pseudônimo: VAR</strong></p>
+            <p><strong>Título: VAR</strong></p>
+          </div>
+          <div className={styles.resenhacontador}>
+            <p>Total de resenhas:</p>
+            VAR totalResenhas
+          </div>
+        </div>
+        </main >
+    </div>
+    
+       
     )
 }
