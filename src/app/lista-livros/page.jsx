@@ -74,36 +74,40 @@ export default function ListaLivros() {
         </ul>
       </nav>
       <main>
-        <div className="busca-container">
-          <form action="" method="GET" className="busca-form">
+        <div className="buscacontainer">
+          <form action="" method="GET" className="buscaform">
             <input type="text" name="busca" placeholder="nome do usuário"/>
               <button type="submit"><i className='bx bx-search'></i></button>
           </form>
         </div>
        
 
-          <div className='card card-livro'>
+          <div className={styles.cardlivro}>
+            {/* 
             <div className='imagem'>
               <img src='../imagens/livros/$foto' alt='$titulo'>
             </div>
-            <div className='informacoes'>
-              <p className='input' style='color: #000'>$titulo</p>
-              <p className='input'>Escritor: $autor</p>
-              <p className='input'>R$ $preco</p>
-              <p className='input'>$nome</p>
+            */}
+            <div className={styles.informacoes}>
+              <p className="input">$titulo</p>
+              <p className="input">Escritor: $autor</p>
+              <p className="input">R$ $preco</p>
+              <p className="input">$nome</p>
             </div>
           </div>
                
 
-          <div className='card-livro'>
+          <div className={styles.cardlivro}>
+            {/* 
             <div className='imagem'>
               <img src='../imagens/livros/$foto' alt='$titulo'>
             </div>
-            <div className='informacoes'>
-              <p className='input' style='color: #000'>$titulo</p>
-              <p className='input'>Escritor: $autor</p>
-              <p className='input'>R$ $preco</p>
-              <p className='input'>$nome</p>
+            */}
+            <div className={styles.informacoes}>
+              <p className="input">$titulo</p>
+              <p className="input">Escritor: $autor</p>
+              <p className="input">R$ $preco</p>
+              <p className="input">$nome</p>
             </div>
           </div>
 
