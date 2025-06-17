@@ -77,7 +77,7 @@ export default function ListaResenhas() {
         <div className="buscacontainer">
           <form action="" method="GET" className="buscaform">
             <input type="text" name="busca" placeholder="pseudonimo do resenhista" />
-            <button type="submit"><i class='bx bx-search'></i></button>
+            <button type="submit"><i className='bx bx-search'></i></button>
           </form>
         </div>
         
