@@ -46,7 +46,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px red solid;
   }
   .card .conteudoCard {
     display: flex;
@@ -56,12 +55,10 @@
     align-items: center;
     gap: 2rem;
     width: 100%;
-    border: 2px solid rgb(76, 0, 255);
   }
   
   /* Estilo da imagem */
   .card .imagem {
-    border: 2px solid red;
     width: 10%;
     height: 20rem;
     object-fit: cover;
@@ -76,7 +73,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 2px solid red;
   }
 
   .inputText{

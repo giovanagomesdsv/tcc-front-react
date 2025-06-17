@@ -365,6 +365,7 @@ p {
 .imagem {
   width: 10rem;
   height: 15rem;
+  border: solid 1px red;
 }
 
 .imagem img {

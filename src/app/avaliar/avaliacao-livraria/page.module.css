@@ -50,16 +50,7 @@
     margin: 2rem;
 }
 
-.imagem {
-    border: 2px solid red;
-    border-radius: 6px;
-    width: 30rem;
-    height: 30rem;
-    margin-right:1rem;
-    margin-left: 2rem;
-    object-fit: cover;
-    flex-shrink: 0;
-  }
+
 
 /* texto de sinopse */
 .cardimgsinopse p {

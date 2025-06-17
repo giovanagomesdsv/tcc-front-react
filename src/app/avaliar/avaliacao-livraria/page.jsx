@@ -15,7 +15,7 @@ export default function ReviewCard({ foto, titulo, sinopse, texto, autor, dado }
               <img
             src="/imagens/exemplo.jpg"
             alt="Exemplo"
-            className={styles.imagem}
+            className="imagem"
               />
               <div className={styles.infobox}>
                 <h1 className={styles.inputTitles1}>Informações do administrador</h1>
