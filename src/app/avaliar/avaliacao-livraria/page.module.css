@@ -16,9 +16,7 @@
     flex-direction: row;
 }
 
-.resenhabox{
-    color: black !important;
-    padding: 2rem;
+.infobox{
     border: 2px solid black;
     border-radius: 2rem;
     background-color: white;
@@ -54,10 +52,9 @@
 .imagem {
     border: 2px solid red;
     border-radius: 6px;
-    width: 25rem;
-    height: 25rem;
-    margin-bottom: 1rem;
-    margin-top:2rem;
+    width: 30rem;
+    height: 30rem;
+    margin-right:1rem;
     margin-left: 2rem;
     object-fit: cover;
     flex-shrink: 0;
@@ -72,22 +69,6 @@
     color:var(--text);
 }
 .cardimgsinopse p {
-    margin: 2rem;
-}
-.cardresenha {
-    display: flex;
-    height: auto;
-    background-color:var(--principal)
-}
-.cardresenha p {
-    margin: 2rem;
-    font-size: 2rem;
-    color:var(--text);
-}
-.cardresenha p {
-    margin: 2rem;
-}
-.cardresenha p {
     margin: 2rem;
 }
 /* Seções internas */
@@ -128,12 +109,17 @@
     width: 70rem;
     margin: 0 0 0 1rem;
 }
+
 .resultado {
     color: #000;
 }
 
 .inputs {
-    color: #000;
+    color: #000 !important;
     width: 70rem;
     margin: 0 0 0 1rem;
+}
+
+.inputTitles{
+    margin-right:25rem;
 }
