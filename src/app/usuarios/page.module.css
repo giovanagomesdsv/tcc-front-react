@@ -1,0 +1,181 @@
+/* Barra de busca */
+.buscaContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    width: 100%;
+  }
+  
+  .botao {
+    background-color: #406E96;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .buscaForm {
+    display: flex;
+  }
+  
+  .buscaForm input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  .buscaForm button {
+    padding: 0.5rem;
+    background-color: #406E96;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Lista de usuários */
+  .pesquisa {
+    margin-top: 2rem;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .containerInput {
+    width: 100%;
+  }
+  
+  .inativo {
+    background-color: rgba(119, 136, 153, 0.6);
+  }
+  
+  .inputID {
+    width: 70%;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+  }
+  
+  .textoUsuario {
+    color: black;
+  }
+  
+  .containerBtnInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  /* Contagem de usuários */
+  .linha {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  
+  /* Form Editar Usuário */
+  .formEditar {
+    background-color: #1F3A50;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .labelEditar {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .inputEditar,
+  .selectEditar,
+  .submitEditar {
+    width: 98%;
+    padding: 10px;
+    margin: 10px 0 15px 0;
+    background-color: #2A4A64;
+    color: white;
+    border: 1px solid #406E96;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .submitEditar {
+    background-color: #406E96;
+    cursor: pointer;
+  }
+  
+  .submitEditar:hover {
+    background-color: #1b354d;
+  }
+  
+  /* Form Cadastrar Usuário */
+  .formCadastrar {
+    background-color: var(--terciaria);
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .labelCadastrar {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .inputCadastrar,
+  .selectCadastrar,
+  .submitCadastrar {
+    width: 98%;
+    padding: 10px;
+    margin: 10px 0 15px 0;
+    background-color: var(--secundaria);
+    color: white;
+    border: 1px solid #406E96;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .selectResenhista {
+    width: 101%;
+  }
+  
+  .submitCadastrar {
+    background-color: var(--principal);
+    cursor: pointer;
+  }
+  
+  .submitCadastrar:hover {
+    background-color: var(--secundaria);
+  }
+  
+  .tamanhoSubmit {
+    width: 21%;
+  }
+  
+  @media (max-width: 768px) {
+    .formCadastrar {
+      padding: 15px;
+    }
+  
+    .labelCadastrar {
+      font-size: 14px;
+    }
+  
+    .inputCadastrar,
+    .selectCadastrar,
+    .submitCadastrar {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
