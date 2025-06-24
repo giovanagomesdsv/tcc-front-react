@@ -6,12 +6,13 @@
     width: 100%;
   }
   
-  .botao {
-    background-color: #406E96;
-    color: white;
+  .cadastrarbtn {
+    background-color: var(--secundaria);
+    color: white !important;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    text-decoration: none;
+    text-decoration: none !important;
+    display: inline-block;
   }
   
   .buscaForm {
@@ -35,11 +36,19 @@
   .pesquisa {
     margin-top: 2rem;
   }
+
+  .contagemContainer {
+    border: 2px solid red;
+    margin-top: 2rem;
+    background-color: var(--principal);
+    padding:1rem;
+  }
   
   .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 1rem;
     margin-bottom: 1rem;
+    background-color: var(--principal);
   }
   
   .containerInput {
@@ -57,6 +66,15 @@
     background-color: white;
     color: black;
   }
+
+  .inputID2 {
+    width: 99%;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    margin-left: 0.9rem;
+  }
   
   .textoUsuario {
     color: black;
@@ -72,9 +90,22 @@
   /* Contagem de usuários */
   .linha {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 8px;
     margin-bottom: 8px;
+    padding: 1rem;
+    border-radius:6px;
+    background-color: white;
+    border: 2px solid red;
+  }
+  
+  .linha:last-child {
+    border-bottom: none; /* Tira a linha da última */
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #1F3A50;
   }
   
   /* Form Editar Usuário */
@@ -162,7 +193,7 @@
   .tamanhoSubmit {
     width: 21%;
   }
-  
+
   @media (max-width: 768px) {
     .formCadastrar {
       padding: 15px;

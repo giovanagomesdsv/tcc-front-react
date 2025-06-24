@@ -76,37 +76,50 @@ export default function UsuariosPage() {
       <main className={styles.main}>
         {/* Barra de pesquisa */}
         <div className={styles.buscaContainer}>
-          <div className={styles.botao}>
-            <Link href="/usuarios/cadastrar">Cadastrar usuário</Link>
-          </div>
+          <Link href="/usuarios/cadastrar" legacyBehavior>
+          <a className={styles.cadastrarbtn}>Cadastrar usuário</a>
+          </Link>
 
           <form className={styles.buscaForm}>
-            <input type="text" placeholder="nome do usuário" />
-            <button type="submit">
-              <i className="bx bx-search"></i>
-            </button>
+            <input type="text" placeholder="Buscar por um usuário..." />
           </form>
         </div>
+
+        {/* Contador de Usuários */}
+        <div className={styles.contagemContainer}>
+        <div className={styles.linha}>
+          <p className={styles.label}>Resenhistas:</p>
+        <p>3</p>
+        </div>
+        <div className={styles.linha}>
+          <p className={styles.label}>Livrarias:</p>
+          <p>3</p>
+        </div>
+        <div className={styles.linha}>
+          <p className={styles.label}>Administradores:</p>
+          <p>2</p>
+        </div>
+      </div>
 
         {/* Resultados de busca */}
         <div className={styles.pesquisa}>
           <div className={`${styles.card} ${styles.containerInput}`}>
-            <p className={styles.input}>Nome do Usuário Exemplo</p>
+            <p className={styles.inputID && styles.inputID2}>MARIANA ARISSA SAKAGUCHI</p>
             <div className={styles.containerBtnInput}>
               <p className={styles.inputID}>RESENHISTA</p>
-              <Link href="/usuarios/editar/1">
-                <div className={styles.botao}>ATUALIZAR</div>
-              </Link>
+            <Link href="/usuarios/editar/2" legacyBehavior>
+              <a className={styles.cadastrarbtn}>ATUALIZAR</a>
+            </Link>
             </div>
           </div>
 
           <div className={`${styles.card} ${styles.containerInput} ${styles.inativo}`}>
-            <p className={styles.input}>Outro Usuário Inativo</p>
+            <p className={styles.inputID && styles.inputID2}>CLEVERSON MARCELO A. DE MELO</p>
             <div className={styles.containerBtnInput}>
               <p className={styles.inputID}>LIVRARIA</p>
-              <Link href="/usuarios/editar/2">
-                <div className={styles.botao}>ATUALIZAR</div>
-              </Link>
+              <Link href="/usuarios/editar/2" legacyBehavior>
+              <a className={styles.cadastrarbtn}>ATUALIZAR</a>
+            </Link>
             </div>
           </div>
 
