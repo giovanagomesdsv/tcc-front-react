@@ -4,65 +4,70 @@ import styles from "./page.module.css";
 export default function UsuariosPage() {
   return (
     <div className={styles.container}>
-      <header className={styles.header}>
+      <header>
         BACKSTAGE Community
       </header>
+      <nav className="sidebar" id="sidebar">
+        <ul className="navlist">
 
-      <nav className={styles.sidebar} id="sidebar">
-        <ul className={styles.navlist}>
           <li>
-            <Link href="/perfil" className={styles.linkname}>
+            <Link href="/perfil" className="linkname">
               <i className="bx bx-home-alt-2"></i>
-              <span className={styles.linkname}>Perfil</span>
+              <span className="linkname">Perfil</span>
             </Link>
           </li>
+          {/* icone de menu
+            <div className="menu" id="menu">
+              <i className="bx bx-menu"></i>
+            </div>
+            */}
 
           <li>
-            <Link href="/" className={styles.linkname}>
+            <a href="/">
               <i className="bx bx-reply-stroke"></i>
-              <span className={styles.linkname}>Bibliófilos Community</span>
-            </Link>
+              <span className="linkname">Bibliófilos Community</span>
+            </a>
           </li>
 
           <li>
-            <Link href="/avaliar" className={styles.linkname}>
+            <Link href="/avaliar" className="linkname fix">
               <i className="bx bx-home-alt-2"></i>
-              <span className={styles.linkname}>Home</span>
+              <span className="linkname">Home</span>
             </Link>
           </li>
 
           <li>
-            <Link href="/lista-livrarias" className={styles.linkname}>
+            <Link href="/lista-livrarias" className="linkname">
               <i className="bx bx-user"></i>
-              <span className={styles.linkname}>Livrarias</span>
+              <span className="linkname">Livrarias</span>
             </Link>
           </li>
 
           <li>
-            <Link href="/lista-resenhistas" className={styles.linkname}>
+            <Link href="/lista-resenhistas" className="linkname">
               <i className="bx bx-user-pin"></i>
-              <span className={styles.linkname}>Resenhistas</span>
+              <span className="linkname">Resenhistas</span>
             </Link>
           </li>
 
           <li>
-            <Link href="/lista-livros" className={styles.linkname}>
+            <Link href="/lista-livros" className="linkname">
               <i className="bx bx-book-bookmark"></i>
-              <span className={styles.linkname}>Livros</span>
+              <span className="linkname">Livros</span>
             </Link>
           </li>
 
           <li>
-            <Link href="/usuarios" className={`${styles.linkname} ${styles.fix}`}>
+            <Link href="/usuarios" className="linkname">
               <i className="bx bx-book-content"></i>
-              <span className={styles.linkname}>Usuários</span>
+              <span className="linkname">Usuários</span>
             </Link>
           </li>
 
           <li>
-            <Link href="/login" className={styles.linkname}>
+            <Link href="/login" className="linkname">
               <i className="bx bx-log-out"></i>
-              <span className={styles.linkname}>Sair</span>
+              <span className="linkname">Sair</span>
             </Link>
           </li>
         </ul>
