@@ -107,7 +107,7 @@ export default function UsuariosPage() {
             <p className={styles.inputID && styles.inputID2}>MARIANA ARISSA SAKAGUCHI</p>
             <div className={styles.containerBtnInput}>
               <p className={styles.inputID}>RESENHISTA</p>
-            <Link href="/usuarios/editar/2" legacyBehavior>
+            <Link href="/usuarios/atualizar" legacyBehavior>
               <a className={styles.cadastrarbtn}>ATUALIZAR</a>
             </Link>
             </div>
@@ -117,7 +117,7 @@ export default function UsuariosPage() {
             <p className={styles.inputID && styles.inputID2}>CLEVERSON MARCELO A. DE MELO</p>
             <div className={styles.containerBtnInput}>
               <p className={styles.inputID}>LIVRARIA</p>
-              <Link href="/usuarios/editar/2" legacyBehavior>
+              <Link href="/usuarios/atualizar" legacyBehavior>
               <a className={styles.cadastrarbtn}>ATUALIZAR</a>
             </Link>
             </div>
