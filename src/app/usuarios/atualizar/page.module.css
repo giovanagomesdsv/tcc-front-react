@@ -1,0 +1,84 @@
+/* Form.module.css */
+
+/* Container do formulário */
+.format {
+    background-color: var(--terciaria);
+    width:100rem;
+    margin: 40px auto;
+    padding: 2.5rem 3rem;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Labels grandes */
+  .label {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    display: block;
+  }
+  
+  /* Select grande */
+  .select {
+    width: 100%;
+    padding: 1.2rem 1rem;
+    margin: 12px 0 20px 0;
+    background-color: var(--secundaria);
+    color: white;
+    border: 2px solid #406E96;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+  /* Botão Atualizar */
+  .inputEditar {
+    width: 100%;
+    padding: 1.2rem 1rem;
+    background-color: #406E96;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .inputEditar:hover {
+    background-color: #2a4a64;
+  }
+  
+  /* Responsividade Tablets */
+  @media (max-width: 768px) {
+    .format {
+      padding: 2rem;
+      max-width: 90%;
+    }
+  
+    .label {
+      font-size: 18px;
+    }
+  
+    .select,
+    .inputEditar {
+      font-size: 16px;
+      padding: 1rem;
+    }
+  }
+  
+  /* Responsividade Celular */
+  @media (max-width: 480px) {
+    .format {
+      padding: 1.5rem;
+    }
+  
+    .label {
+      font-size: 16px;
+    }
+  
+    .select,
+    .inputEditar {
+      font-size: 14px;
+      padding: 0.8rem;
+    }
+  }

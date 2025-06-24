@@ -1,0 +1,121 @@
+/* Form.module.css */
+
+/* Container do formulário */
+.format2 {
+    background-color: var(--terciaria);
+    width: 100rem;
+    margin: 40px auto;
+    padding: 5rem;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Labels grandes */
+  .label {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    display: block;
+    border: none;
+    margin-top: 1.5rem;
+  }
+  
+  /* Inputs, selects e textarea - grandes */
+  .select,
+  .inputEditar2,
+  .textarea {
+    width: 100%;
+    padding: 1.2rem 1rem;
+    margin: 12px 0 20px 0;
+    background-color: var(--secundaria);
+    color: white;
+    border: 2px solid #406E96;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 2px solid red;
+  }
+
+  .inputConfirmar{
+    padding: 1.2rem 1rem;
+    margin: 12px 0 20px 0;
+    background-color: var(--secundaria);
+    color: white;
+    border: 2px solid #406E96;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 2px solid red;
+  }
+  
+  /* Botão de submit grande */
+  .inputConfirmar {
+    width: 100%;
+    background-color: #406E96;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .inputConfirmar:hover {
+    background-color: #2a4a64;
+  }
+  
+  /* Inputs de senha e textarea */
+  .inputSenha,
+  .textarea {
+    width: 100%;
+  }
+  
+  /* Caso use para resenhista */
+  .selectResenhista {
+    width: 102%;
+  }
+  
+  /* Submit pequeno opcional */
+  .tamanhoSubmit {
+    width: 30%;
+    font-size: 16px;
+  }
+  
+  /* Responsividade Tablets */
+  @media (max-width: 768px) {
+    .format2 {
+      padding: 2rem;
+      max-width: 90%;
+    }
+  
+    .label {
+      font-size: 18px;
+    }
+  
+    .inputEditar2,
+    .inputConfirmar,
+    .select,
+    .textarea {
+      font-size: 16px;
+      padding: 1rem;
+    }
+  }
+  
+  /* Responsividade Celular */
+  @media (max-width: 480px) {
+    .format2 {
+      padding: 1.5rem;
+    }
+  
+    .label {
+      font-size: 16px;
+    }
+  
+    .inputEditar2,
+    .inputConfirmar,
+    .select,
+    .textarea {
+      font-size: 14px;
+      padding: 0.8rem;
+    }
+  
+    .inputConfirmar {
+      width: 100%;
+    }
+  }
+  
