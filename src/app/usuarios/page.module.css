@@ -38,7 +38,6 @@
   }
 
   .contagemContainer {
-    border: 2px solid red;
     margin-top: 2rem;
     background-color: var(--principal);
     padding:1rem;
@@ -96,7 +95,6 @@
     padding: 1rem;
     border-radius:6px;
     background-color: white;
-    border: 2px solid red;
   }
   
   .linha:last-child {

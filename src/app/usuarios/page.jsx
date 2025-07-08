@@ -76,8 +76,8 @@ export default function UsuariosPage() {
       <main className={styles.main}>
         {/* Barra de pesquisa */}
         <div className={styles.buscaContainer}>
-          <Link href="/usuarios/cadastrar" legacyBehavior>
-          <a className={styles.cadastrarbtn}>Cadastrar usuário</a>
+          <Link href="/usuarios/cadastrar" className={styles.cadastrarbtn}>
+            Cadastrar Usuário
           </Link>
 
           <form className={styles.buscaForm}>
@@ -107,8 +107,8 @@ export default function UsuariosPage() {
             <p className={styles.inputID && styles.inputID2}>MARIANA ARISSA SAKAGUCHI</p>
             <div className={styles.containerBtnInput}>
               <p className={styles.inputID}>RESENHISTA</p>
-            <Link href="/usuarios/atualizar" legacyBehavior>
-              <a className={styles.cadastrarbtn}>ATUALIZAR</a>
+            <Link href="/usuarios/atualizar" className={styles.cadastrarbtn}>
+              ATUALIZAR
             </Link>
             </div>
           </div>
@@ -117,9 +117,9 @@ export default function UsuariosPage() {
             <p className={styles.inputID && styles.inputID2}>CLEVERSON MARCELO A. DE MELO</p>
             <div className={styles.containerBtnInput}>
               <p className={styles.inputID}>LIVRARIA</p>
-              <Link href="/usuarios/atualizar" legacyBehavior>
-              <a className={styles.cadastrarbtn}>ATUALIZAR</a>
-            </Link>
+              <Link href="/usuarios/atualizar" className={styles.cadastrarbtn}>
+                ATUALIZAR
+              </Link>
             </div>
           </div>
 
