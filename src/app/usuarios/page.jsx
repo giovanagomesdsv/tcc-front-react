@@ -1,10 +1,10 @@
-import styles from "./page.module.css";
 import Link from "next/link";
+import styles from "./page.module.css";
 
-export default function Usuarios() {
-    return (
-        <div className="container">
-            <header>
+export default function UsuariosPage() {
+  return (
+    <div className={styles.container}>
+      <header>
         BACKSTAGE Community
       </header>
       <nav className="sidebar" id="sidebar">
@@ -30,7 +30,7 @@ export default function Usuarios() {
           </li>
 
           <li>
-            <Link href="/avaliar" className="linkname">
+            <Link href="/avaliar" className="linkname fix">
               <i className="bx bx-home-alt-2"></i>
               <span className="linkname">Home</span>
             </Link>
@@ -58,7 +58,7 @@ export default function Usuarios() {
           </li>
 
           <li>
-            <Link href="/usuarios" className="linkname fix">
+            <Link href="/usuarios" className="linkname">
               <i className="bx bx-book-content"></i>
               <span className="linkname">Usuários</span>
             </Link>
@@ -72,6 +72,60 @@ export default function Usuarios() {
           </li>
         </ul>
       </nav>
+
+      <main className={styles.main}>
+        {/* Barra de pesquisa */}
+        <div className={styles.buscaContainer}>
+          <Link href="/usuarios/cadastrar" className={styles.cadastrarbtn}>
+            Cadastrar Usuário
+          </Link>
+
+          <form className={styles.buscaForm}>
+            <input type="text" placeholder="Buscar por um usuário..." />
+          </form>
         </div>
-    )
+
+        {/* Contador de Usuários */}
+        <div className={styles.contagemContainer}>
+        <div className={styles.linha}>
+          <p className={styles.label}>Resenhistas:</p>
+        <p>3</p>
+        </div>
+        <div className={styles.linha}>
+          <p className={styles.label}>Livrarias:</p>
+          <p>3</p>
+        </div>
+        <div className={styles.linha}>
+          <p className={styles.label}>Administradores:</p>
+          <p>2</p>
+        </div>
+      </div>
+
+        {/* Resultados de busca */}
+        <div className={styles.pesquisa}>
+          <div className={`${styles.card} ${styles.containerInput}`}>
+            <p className={styles.inputID && styles.inputID2}>MARIANA ARISSA SAKAGUCHI</p>
+            <div className={styles.containerBtnInput}>
+              <p className={styles.inputID}>RESENHISTA</p>
+            <Link href="/usuarios/atualizar" className={styles.cadastrarbtn}>
+              ATUALIZAR
+            </Link>
+            </div>
+          </div>
+
+          <div className={`${styles.card} ${styles.containerInput} ${styles.inativo}`}>
+            <p className={styles.inputID && styles.inputID2}>CLEVERSON MARCELO A. DE MELO</p>
+            <div className={styles.containerBtnInput}>
+              <p className={styles.inputID}>LIVRARIA</p>
+              <Link href="/usuarios/atualizar" className={styles.cadastrarbtn}>
+                ATUALIZAR
+              </Link>
+            </div>
+          </div>
+
+          {/* Você pode adicionar mais cards fixos como mockup visual */}
+        </div>
+      </main>
+    </div>
+  );
 }
