@@ -3,9 +3,9 @@ import Link from "next/link";
 
 
 export default function ListaLivros() {
-    return (
-        <div className="container">
-          <header>
+  return (
+    <div className="container">
+      <header>
         BACKSTAGE Community
       </header>
       <nav className="sidebar" id="sidebar">
@@ -73,7 +73,45 @@ export default function ListaLivros() {
           </li>
         </ul>
       </nav>
-
+      <main>
+        <div className="buscacontainer">
+          <form action="" method="GET" className="buscaform">
+            <input type="text" name="busca" placeholder="nome do usuário"/>
+              <button type="submit"><i className='bx bx-search'></i></button>
+          </form>
         </div>
-    )
+       
+
+          <div className={styles.cardlivro}>
+            {/* 
+            <div className='imagem'>
+              <img src='../imagens/livros/$foto' alt='$titulo'>
+            </div>
+            */}
+            <div className={styles.informacoes}>
+              <p className="input">$titulo</p>
+              <p className="input">Escritor: $autor</p>
+              <p className="input">R$ $preco</p>
+              <p className="input">$nome</p>
+            </div>
+          </div>
+               
+
+          <div className={styles.cardlivro}>
+            {/* 
+            <div className='imagem'>
+              <img src='../imagens/livros/$foto' alt='$titulo'>
+            </div>
+            */}
+            <div className={styles.informacoes}>
+              <p className="input">$titulo</p>
+              <p className="input">Escritor: $autor</p>
+              <p className="input">R$ $preco</p>
+              <p className="input">$nome</p>
+            </div>
+          </div>
+
+      </main>
+    </div>
+  )
 }
