@@ -12,8 +12,8 @@ export default function CriarResenha() {
             <nav className="sidebar" id="sidebar">
                 <ul className="navlist">
 
-                    <li>
-                        <Link href="/perfil" className="linkname fix">
+                    <li>  {/*PRECISA ADAPTAR A FOTO DE PERFIL AINDA, PRECISA DO BACKEND */}
+                        <Link href="/perfil" className="linkname">
                             <i className="bx bx-home-alt-2"></i>
                             <span className="linkname">Perfil</span>
                         </Link>
@@ -33,21 +33,21 @@ export default function CriarResenha() {
 
                     <li>
                         <Link href="/anuncios" className="linkname">
-                            <i className="bx bx-home-alt-2"></i>
+                            <i className="bx bx-user"></i>
                             <span className="linkname">anuncios</span>
                         </Link>
                     </li>
 
                     <li>
-                        <Link href="/criar-resenha" className="linkname">
-                            <i className="bx bx-user"></i>
+                        <Link href="/criar-resenha" className="linkname fix">
+                            <i className="bx  bx-pencil-circle"></i>
                             <span className="linkname">criar resenhas</span>
                         </Link>
                     </li>
 
                     <li>
                         <Link href="/minhas-resenhas" className="linkname">
-                            <i className="bx bx-user-pin"></i>
+                            <i className="bx bx-book-bookmark"></i>
                             <span className="linkname">minhas resenhas</span>
                         </Link>
                     </li>
@@ -68,39 +68,42 @@ export default function CriarResenha() {
 
                     <form action="" method="GET" className="buscaform">
                         <input type="text" name="busca" placeholder="nome do usuário" />
-                        <button type="submit"><i class='bx bx-search'></i></button>
+                        <button type="submit"><i className='bx bx-search'></i></button>
                     </form>
                 </div>
                 <div className={styles.pesquisa}>
 
                     <div className="card">
                         <div className={styles.cont}>
-                            <img src='../../adm/imagens/livros/$foto' alt=''/>
-                                <div>
-                                    <h2>$titulo</h2>
-                                    <p>$sinopse</p>
-                                </div>
+                            <img src='../../adm/imagens/livros/$foto' alt='' />
+                            <div>
+                                <h2 className={styles.h2}>$titulo</h2>
+                                <p className={styles.p}>$sinopse</p>
+                            </div>
                         </div>
                         <div>
-                            <Link href="/criar-resenha">//PRECISA DE LINKAR COM  A IMAGEM//
-                             
-                                <button>Criar Resenha</button>
+                            <Link href="/criar-resenha">{/*PRECISA DE LINKAR COM  A IMAGEM*/}
+
+                                <button className={styles.button}>Criar Resenha</button>
                             </Link>
                         </div>
                     </div>
-                            <div className={StyleSheet.boxcard}>
-                        <div className='card'>
-                            <div className='cont'>
-                                <img src='../../adm/imagens/livros/$foto' alt=''/>
-                                    <div>
-                                        <h2>$titulo</h2>
-                                        <p>$sinopse</p>
-                                    </div>
+                    <div className={styles.boxcard}>
+                        <div className="card">
+                            <div className={styles.cont}>
+                                <img src='../../adm/imagens/livros/$foto' alt='' />
+                                <div>
+                                    <h2 className={styles.h2}>$titulo</h2>
+                                    <p className={styles.p}>$sinopse </p>
+                                </div>
                             </div>
                             <div>
-                                <a href='criar-resenha.php?id={$idLivro}'>
-                                    <button className='button1'>Criar Resenha</button>
-                                </a>
+                                <Link href={"/criar-resenha/cria"}>   {/*id=${idLivro}    ESSA É A  VARIAVEL DO ID DO LIVRO QUE PRECISA COLOCAR QUANDO IMPLEMENTAR O BACKEND, É SO COLOCAR DE VOLTA NO LIMK QUE JA FUNCIONA*/}
+                                    <button className={styles.button1}>Criar Resenha</button>
+                                </Link>
+
+
+                             
                             </div>
                         </div>
 
