@@ -8,8 +8,8 @@
 
 /*primeira tela__________________________________________________________________________________________*/
 .tela1 {
-    background-color: var(--principal);
-    color: #ffffff;
+    background-color: var(--bg2);
+    color:white;
 }
 
 /* TEXTO DESTAQUE */
@@ -29,10 +29,12 @@
 
 .letreiro h3.nome1 {
     text-indent: -30%;
+    color: var(--principal)
 }
 
 .letreiro h3.nome2 {
     text-indent: 30%;
+    color: var(--principal)
 }
 
 /*carrossel de frases*/
@@ -144,6 +146,7 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    border: 2px solid red;
 }
 
 /* Imagem de fundo usando <img> */

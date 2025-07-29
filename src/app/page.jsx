@@ -1,19 +1,11 @@
-import React from 'react';
 import styles from './page.module.css';
-
-const LimitarTexto = (texto, limite, final = '...') => {
-    if (texto.length <= limite) {
-        return texto;
-    }
-    return texto.substring(0, limite) + final;
-};
 
 const App = () => {
     const usuario = null; // Simulate user session
     const nome = 'Visitante'; // Default name
 
     return (
-        <div>
+        <div className={styles.tela1}>
             <nav className={styles.navbarB}>
                 <div className={styles.cont}>
                     {usuario && (
@@ -157,7 +149,7 @@ const App = () => {
                         <div>
                             <a href="#">
                                 <div className={`${styles.card} ${styles.destaqueMedio}`}>
-                                    <img src="adm/imagens/livros/default.jpg" alt="" />
+                                    <img src="adm/imagens/livros/default.jpg" alt=""/>
                                     <p>Título da Resenha 2</p>
                                 </div>
                             </a>
