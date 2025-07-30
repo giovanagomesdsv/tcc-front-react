@@ -8,8 +8,8 @@
 
 /*primeira tela__________________________________________________________________________________________*/
 .tela1 {
-    background-color: var(--bg2);
-    color:white;
+    background-color: var(--b2);
+    color:black;
 }
 
 /* TEXTO DESTAQUE */
