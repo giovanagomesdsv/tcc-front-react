@@ -16,7 +16,7 @@ const App = () => {
 
                     <div id="menu-container">
                         {usuario === 2 ? (
-                            <nav className={styles.sidebar} id='sidebar'>
+                            <nav className={styles.navbar} id='sidebar'>
                                 <div className={styles.nome}>
                                     <li>
                                         <a href='#'>
@@ -64,7 +64,7 @@ const App = () => {
                                 </ul>
                             </nav>
                         ) : (
-                            <nav className={styles.sidebar} id='sidebar'>
+                            <nav className={styles.navbarhome}>
                                 <div className={styles.nome}>
                                     <li className={styles.logoName}>
                                         <a href='#'>
