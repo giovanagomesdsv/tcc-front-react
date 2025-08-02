@@ -6,6 +6,14 @@
     --secundaria: #11114E;
 }
 
+/*Estilo do perfil da navbar*/
+
+.perfilstyle{
+    padding:4rem 0rem 2rem 0rem;
+    border: 2px solid red;
+    border-radius:50%;
+}
+
 /*primeira tela__________________________________________________________________________________________*/
 .navbar {
     background-color: var(--principal);
@@ -162,6 +170,7 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    border: 2px solid red;
 }
 
 /* Imagem de fundo usando <img> */
@@ -387,6 +396,14 @@
     font-size: 1.2rem;
     text-align: justify;
     line-height: 1.4;
+}
+
+/*estilo específico para a caixa 4*/
+.box4style{
+    display:flex;
+    justify-content:space-between;
+    gap:1rem;
+    padding:1rem;
 }
 
 .site-footer {
