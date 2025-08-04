@@ -20,7 +20,7 @@ export default function Home() {
                     <h3 className={styles.nome1}>Bibliófilos</h3>
                     <h3 className={styles.nome2}>COMMUNITY</h3>
                     <br/><br/>
-                    <div className={styles.barra}><p>Teesteeeeeeeeeeeeeeeeeeeee</p></div>
+                    <div className={styles.barra}><p>livros são sonhos que seguramos com as mãos</p></div>
                 </div>
     </div>
 <main>
@@ -44,7 +44,10 @@ export default function Home() {
             <img src="/imagem1.png" alt="Imagem 1" />
           </div>
           <div className={styles.info}>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+            <br/><br/><br/><br/>
+            <p style={{ fontSize: '1rem'}}>Texto 1</p>
+            <br/><br/><br/><br/>
+            <p style={{ fontSize: '2rem'}}>Texto 2</p>
           </div>
         </div>
       </a>
@@ -54,10 +57,17 @@ export default function Home() {
             <img src="/imagem1.png" alt="Imagem 1" />
           </div>
           <div className={styles.info}>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+            <br/><br/><br/><br/>
+            <p style={{ fontSize: '1rem'}}>Texto 1</p>
+            <br/><br/><br/><br/>
+            <p style={{ fontSize: '2rem'}}>Texto 2</p>
           </div>
         </div>
       </a>
+    </div>
+
+    <div>
+      <p>teste</p>
     </div>
 
     {/* DIREITA: Imagem com texto ao lado */}
@@ -68,7 +78,9 @@ export default function Home() {
             <img src="/imagem2.png" alt="Imagem 2" />
           </div>
           <div className={styles.info}>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+            <p>Texto 1</p>
+            <br/>
+            <p>Texto 2</p>
           </div>
         </div>
       </a>
@@ -78,7 +90,9 @@ export default function Home() {
             <img src="/imagem2.png" alt="Imagem 2" />
           </div>
           <div className={styles.info}>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+            <p>Texto 1</p>
+            <br/>
+            <p>Texto 2</p>
           </div>
         </div>
       </a>
@@ -92,7 +106,7 @@ export default function Home() {
       {/*Segunda barra que separa informações */}
     <div style={{ textAlign: 'center', margin: '2rem 0' }}>
       <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
-        <h1>Terror</h1>
+        <h1>Horror</h1>
       </div>
       <hr style={{ width: '100%', border: '1px solid #ccc' }} />
     </div>
@@ -105,7 +119,9 @@ export default function Home() {
         <img src="/imagem3.png" alt="Imagem 3" />
       </div>
       <div className={styles.info}>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+        <p style={{fontSize: '2rem'}}>Texto 1</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 2</p>
       </div>
     </div>
   </a>
@@ -116,7 +132,9 @@ export default function Home() {
         <img src="/imagem4.png" alt="Imagem 4" />
       </div>
       <div className={styles.info}>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+        <p style={{fontSize: '2rem'}}>Texto 1</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 2</p>
       </div>
     </div>
   </a>
@@ -140,7 +158,9 @@ export default function Home() {
         <img src="/imagem5.png" alt="Imagem 5" />
       </div>
       <div className={styles.info}>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+        <p style={{fontSize: '2rem'}}>Texto 1</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 2</p>
       </div>
     </div>
   </a>
@@ -151,7 +171,9 @@ export default function Home() {
         <img src="/imagem6.png" alt="Imagem 6" />
       </div>
       <div className={styles.info}>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+        <p style={{fontSize: '2rem'}}>Texto 1</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 2</p>
       </div>
     </div>
   </a>
@@ -162,7 +184,9 @@ export default function Home() {
         <img src="/imagem7.png" alt="Imagem 7" />
       </div>
       <div className={styles.info}>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+        <p style={{fontSize: '2rem'}}>Texto 1</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 2</p>
       </div>
     </div>
   </a>
@@ -173,7 +197,9 @@ export default function Home() {
         <img src="/imagem8.png" alt="Imagem 8" />
       </div>
       <div className={styles.info}>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+        <p style={{fontSize: '2rem'}}>Texto 1</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 2</p>
       </div>
     </div>
   </a>
@@ -198,7 +224,12 @@ export default function Home() {
           <img src="/imagem1.png" alt="Imagem 1" style={{ width: '100%' }} />
         </div>
         <div className={styles.info}>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+        <br/><br/><br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 1</p>
+        <br/><br/>
+        <p style={{fontSize: '2rem'}}>Texto 2</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 3</p>
         </div>
       </div>
     </a>
@@ -212,7 +243,12 @@ export default function Home() {
           <img src="/imagem2.png" alt="Imagem 2" style={{ width: '100%' }} />
         </div>
         <div className={styles.info}>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+        <br/><br/><br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 1</p>
+        <br/><br/>
+        <p style={{fontSize: '2rem'}}>Texto 2</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 3</p>
         </div>
       </div>
     </a>
@@ -226,7 +262,12 @@ export default function Home() {
           <img src="/imagem3.png" alt="Imagem 3" style={{ width: '100%' }} />
         </div>
         <div className={styles.info}>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+        <br/><br/><br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 1</p>
+        <br/><br/>
+        <p style={{fontSize: '2rem'}}>Texto 2</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 3</p>
         </div>
       </div>
     </a>
@@ -240,7 +281,12 @@ export default function Home() {
           <img src="/imagem4.png" alt="Imagem 4" style={{ width: '100%' }} />
         </div>
         <div className={styles.info}>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+        <br/><br/><br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 1</p>
+        <br/><br/>
+        <p style={{fontSize: '2rem'}}>Texto 2</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 3</p>
         </div>
       </div>
     </a>
@@ -252,7 +298,7 @@ export default function Home() {
 {/*Quinta barra que separa informações */}
     <div style={{ textAlign: 'center', margin: '2rem 0' }}>
       <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
-        <h1>Fantasia e Ficção</h1>
+        <h1>Fantasia</h1>
       </div>
       <hr style={{ width: '100%', border: '1px solid #ccc' }} />
     </div>
@@ -268,7 +314,10 @@ export default function Home() {
             <img src="/imagem1.png" alt="Imagem 1" />
           </div>
           <div className={styles.info}>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+          <br/><br/><br/><br/>
+          <p style={{fontSize: '1rem'}}>Texto 1</p>
+          <br/><br/>
+          <p style={{fontSize: '2rem'}}>Texto 2</p>
           </div>
         </div>
       </a>
@@ -278,7 +327,10 @@ export default function Home() {
             <img src="/imagem1.png" alt="Imagem 1" />
           </div>
           <div className={styles.info}>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+          <br/><br/><br/><br/>
+          <p style={{fontSize: '1rem'}}>Texto 1</p>
+          <br/><br/>
+          <p style={{fontSize: '2rem'}}>Texto 2</p>
           </div>
         </div>
       </a>
@@ -292,7 +344,9 @@ export default function Home() {
             <img src="/imagem2.png" alt="Imagem 2" />
           </div>
           <div className={styles.info}>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+          <p style={{fontSize: '1rem'}}>Texto 1</p>
+          <br/><br/>
+          <p style={{fontSize: '2rem'}}>Texto 2</p>
           </div>
         </div>
       </a>
@@ -302,7 +356,9 @@ export default function Home() {
             <img src="/imagem2.png" alt="Imagem 2" />
           </div>
           <div className={styles.info}>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+          <p style={{fontSize: '1rem'}}>Texto 1</p>
+          <br/><br/>
+          <p style={{fontSize: '2rem'}}>Texto 2</p>
           </div>
         </div>
       </a>
@@ -329,7 +385,12 @@ export default function Home() {
         <img src="/imagem3.png" alt="Imagem 3" />
       </div>
       <div className={styles.info}>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+        <br/><br/><br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 1</p>
+        <br/><br/>
+        <p style={{fontSize: '2rem'}}>Texto 2</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 3</p>
       </div>
     </div>
   </a>
@@ -340,7 +401,12 @@ export default function Home() {
         <img src="/imagem4.png" alt="Imagem 4" />
       </div>
       <div className={styles.info}>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+        <br/><br/><br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 1</p>
+        <br/><br/>
+        <p style={{fontSize: '2rem'}}>Texto 2</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 3</p>
       </div>
     </div>
   </a>
@@ -364,7 +430,12 @@ export default function Home() {
         <img src="/imagem5.png" alt="Imagem 5" />
       </div>
       <div className={styles.info}>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+        <br/><br/><br/><br/>
+        <p style={{fontSize: '2rem'}}>Texto 1</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 2</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 3</p>
       </div>
     </div>
   </a>
@@ -375,7 +446,12 @@ export default function Home() {
         <img src="/imagem6.png" alt="Imagem 6" />
       </div>
       <div className={styles.info}>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+        <br/><br/><br/><br/>
+        <p style={{fontSize: '2rem'}}>Texto 1</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 2</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 3</p>
       </div>
     </div>
   </a>
@@ -386,7 +462,12 @@ export default function Home() {
         <img src="/imagem7.png" alt="Imagem 7" />
       </div>
       <div className={styles.info}>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+      <br/><br/><br/><br/>
+        <p style={{fontSize: '2rem'}}>Texto 1</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 2</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 3</p>        
       </div>
     </div>
   </a>
@@ -397,7 +478,12 @@ export default function Home() {
         <img src="/imagem8.png" alt="Imagem 8" />
       </div>
       <div className={styles.info}>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id molestias labore. Corporis nostrum obcaecati eum ipsum sapiente vitae ab autem inventore quidem optio aliquid, a unde animi molestiae tenetur?</p>
+        <br/><br/><br/><br/>
+        <p style={{fontSize: '2rem'}}>Texto 1</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 2</p>
+        <br/><br/>
+        <p style={{fontSize: '1rem'}}>Texto 3</p>
       </div>
     </div>
   </a>
