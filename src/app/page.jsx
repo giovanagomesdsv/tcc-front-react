@@ -19,6 +19,8 @@ export default function Home() {
                 <div className={styles.letreiro}>
                     <h3 className={styles.nome1}>Bibliófilos</h3>
                     <h3 className={styles.nome2}>COMMUNITY</h3>
+                    <br/><br/>
+                    <div className={styles.barra}><p>Teesteeeeeeeeeeeeeeeeeeeee</p></div>
                 </div>
     </div>
 <main>
