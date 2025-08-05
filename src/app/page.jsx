@@ -23,6 +23,48 @@ export default function Home() {
                     <div className={styles.barra}><p>livros são sonhos que seguramos com as mãos</p></div>
                 </div>
     </div>
+
+<div className={styles.Caixa1}>
+  {/* imagemRetangular: Imagem retangular em cima */}
+  <div className={styles.imagemRetangular}></div>
+
+  {/* conteudoInferior: Parte inferior do layout */}
+  <div className={styles.conteudoInferior}>
+    
+    {/* esquerda: Lado esquerdo */}
+    <div className={styles.esquerda}>
+      <div className={styles.Caixa2}></div>
+
+      <div className={styles.direitaDoQuadradoGrande}>
+        <div className={styles.Caixa3}></div>
+        <div className={styles.Caixa4}></div>
+      </div>
+
+      {/* Aqui dentro da esquerda vamos adicionar as caixas 5 a 8 conforme sua hierarquia */}
+      <div className={styles.Caixa5}></div>
+
+      <div className={styles.Caixa6}>
+        <div className={styles.Caixa7}></div>
+        <div className={styles.Caixa8}></div>
+      </div>
+    </div>
+
+    {/* direita: Lado direito */}
+    <div className={styles.direita}>
+      <div className={styles.quadradosRegulares}>
+        <div className={styles.Caixa9}>
+          <div className={styles.Caixa10}>
+            <div className={styles.Caixa11}></div>
+            <div className={styles.Caixa12}></div>
+          </div>
+          <div className={styles.Caixa13}></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <main>
     {/*Primeira barra que separa informações */}
     <div style={{ textAlign: 'center', margin: '2rem 0' }}>

@@ -161,6 +161,91 @@ padding: 1rem 1rem 1rem 0rem
     width: 100%;
 }
 
+/** 
+ * Caixa1 é o container principal da estrutura. 
+ * Ele centraliza todos os elementos na vertical, com espaçamento entre eles 
+ * e uma borda vermelha ao redor.
+ */
+.Caixa1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid red;
+}
+
+.imagemRetangular {
+  width: 100%;
+  height: 10rem;
+  background-color: #ccc;
+  border: 2px solid blue;
+}
+
+.conteudoInferior {
+  display: flex;
+  gap: 40px;
+  border: 2px solid red;
+}
+
+.esquerda {
+  display: flex;
+  border: 2px solid red;
+}
+
+.Caixa5 {
+  width: 120px;
+  height: 120px;
+  background-color: #a2d2ff;
+  border: 2px solid red;
+}
+
+.Caixa6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+  border: 2px solid red;
+}
+
+.Caixa7,
+.Caixa8 {
+  width: 60px;
+  height: 60px;
+  background-color: #ffc8dd;
+  border: 2px solid red;
+}
+
+.direita {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid red;
+}
+
+.Caixa10 {
+  display: flex;
+  gap: 10px;
+  border: 2px solid red;
+}
+
+.Caixa11,
+.Caixa12 {
+  width: 80px;
+  height: 80px;
+  background-color: #b5ead7;
+  border: 2px solid red;
+}
+
+.Caixa13 {
+  margin-top: 10px;
+  width: 170px;
+  height: 50px;
+  background-color: #fbc4ab;
+  border: 2px solid red;
+}
+
+
+
 /* Estilo das caixinhas */
 .caixa {
     position: relative;
