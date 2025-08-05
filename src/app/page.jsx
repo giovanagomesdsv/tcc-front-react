@@ -13,6 +13,7 @@ export default function Home() {
       <Link href={"/autores"} className={styles.navlinkstyle}>Autores</Link>
       <Link href={"/livros"} className={styles.navlinkstyle}>Livros</Link>
       <Link href={"/sobre"} className={styles.navlinkstyle}>Sobre</Link>
+      
     </div>
     <div className={styles.tela1}>
       <section className={styles.tela1} id="sec1"/>
@@ -24,43 +25,42 @@ export default function Home() {
                 </div>
     </div>
 
-<div className={styles.Caixa1}>
-  {/* imagemRetangular: Imagem retangular em cima */}
-  <div className={styles.imagemRetangular}></div>
+<div className={styles.gridContainer}>
+  <div className={`${styles.caixa1} ${styles.caixa}`}>
+    <img src="/images/img1.jpg" alt="Imagem 1" className={styles.imagem} />
+    <span className={styles.textoCanto}>Texto 1</span>
+  </div>
 
-  {/* conteudoInferior: Parte inferior do layout */}
-  <div className={styles.conteudoInferior}>
-    
-    {/* esquerda: Lado esquerdo */}
-    <div className={styles.esquerda}>
-      <div className={styles.Caixa2}></div>
+  <div className={`${styles.caixa2} ${styles.caixa}`}>
+    <img src="/images/img2.jpg" alt="Imagem 2" className={styles.imagem} />
+    <span className={styles.textoCanto}>Texto 2</span>
+  </div>
 
-      <div className={styles.direitaDoQuadradoGrande}>
-        <div className={styles.Caixa3}></div>
-        <div className={styles.Caixa4}></div>
-      </div>
+  <div className={`${styles.caixa3} ${styles.caixa}`}>
+    <img src="/images/img3.jpg" alt="Imagem 3" className={styles.imagem} />
+    <span className={styles.textoCanto}>Texto 3</span>
+  </div>
 
-      {/* Aqui dentro da esquerda vamos adicionar as caixas 5 a 8 conforme sua hierarquia */}
-      <div className={styles.Caixa5}></div>
+  <div className={`${styles.caixa4} ${styles.caixa}`}>
+    <img src="/images/img4.jpg" alt="Imagem 4" className={styles.imagem} />
+    <span className={styles.textoCanto}>Texto 4</span>
+  </div>
 
-      <div className={styles.Caixa6}>
-        <div className={styles.Caixa7}></div>
-        <div className={styles.Caixa8}></div>
-      </div>
+  <div className={styles.caixa56Container}>
+    <div className={`${styles.caixa5} ${styles.caixa}`}>
+      <img src="/images/img5.jpg" alt="Imagem 5" className={styles.imagem} />
+      <span className={styles.textoCanto}>Texto 5</span>
     </div>
 
-    {/* direita: Lado direito */}
-    <div className={styles.direita}>
-      <div className={styles.quadradosRegulares}>
-        <div className={styles.Caixa9}>
-          <div className={styles.Caixa10}>
-            <div className={styles.Caixa11}></div>
-            <div className={styles.Caixa12}></div>
-          </div>
-          <div className={styles.Caixa13}></div>
-        </div>
-      </div>
+    <div className={`${styles.caixa6} ${styles.caixa}`}>
+      <img src="/images/img6.jpg" alt="Imagem 6" className={styles.imagem} />
+      <span className={styles.textoCanto}>Texto 6</span>
     </div>
+  </div>
+
+  <div className={`${styles.caixa7} ${styles.caixa}`}>
+    <img src="/images/img7.jpg" alt="Imagem 7" className={styles.imagem} />
+    <span className={styles.textoCanto}>Texto 7</span>
   </div>
 </div>
 
@@ -530,6 +530,48 @@ export default function Home() {
     </div>
   </a>
 </div>
+
+<footer className={styles.siteFooter}>
+  {/* Logo redonda no canto esquerdo */}
+  <div className={styles.footerLogo}>
+    <img src="/logo.png" alt="Logo do site" className={styles.footerLogo}/>
+  </div>
+
+  {/* Texto centralizado */}
+  <div>
+  <h3>Participe da nossa comunidade.</h3>
+  <br/>
+  <p className={styles.footerTexto}>Se torne um resenhista.<br/><br/>Entre em contato já!</p>
+  </div>
+
+  {/* Ícones das redes sociais no canto direito */}
+  <div className={styles.footerRedes}>
+  <a
+    href="https://twitter.com/seuperfil"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bx bxl-twitter"
+    aria-label="Twitter"
+  ></a>
+
+  <a
+    href="https://instagram.com/seuperfil"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bx bxl-instagram"
+    aria-label="Instagram"
+  ></a>
+
+  <a
+    href="https://tiktok.com/@seuperfil"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bx bxl-tiktok"
+    aria-label="TikTok"
+  ></a>
+</div>
+</footer>
+
 </main>
   
 
