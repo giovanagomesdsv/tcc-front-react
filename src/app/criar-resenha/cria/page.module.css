@@ -1,0 +1,29 @@
+.box1{
+    background-color: var(--principal);
+    margin-top:2rem;
+    padding: 5rem 0rem 30rem 10rem;
+    border-radius:1rem;
+}
+.boxdisplay{
+    display:flex;
+}
+.color1{
+    color:white;
+}
+.imgbox{
+    padding: 10rem 3rem;
+    margin-bottom:10rem;
+}
+.textbox{
+    margin-top:5rem;
+    margin-right:10rem; 
+    background-color:white;
+    padding:1rem 1rem 0rem 0rem;
+    width: auto;
+    height: auto;
+    
+}
+.textdisplay{
+    display:flex;
+    margin-left:1rem;
+}
