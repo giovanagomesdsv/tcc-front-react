@@ -1,9 +1,14 @@
 import styles from "./page.module.css";
 import Link from "next/link";
+import Slider from "@/components/slider";
+import LivrosHome from "@/components/LivrosHome";
+
+import{}from 'react-icons/md'
 
 export default function Home() {
   return (
     <div className="container">
+      <Slider />
     <h1>Home</h1>
 
       <Link href={"/login"}>Login</Link>
