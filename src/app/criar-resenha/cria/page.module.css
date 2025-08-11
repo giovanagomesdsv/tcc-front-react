@@ -27,3 +27,22 @@
     display:flex;
     margin-left:1rem;
 }
+
+.textstyles1{
+    margin-right:10rem;
+    color: white;
+}
+
+.estrelas{
+    font-size: 3rem;
+}
+
+.buttonstyle1{
+    color:white;
+    margin-top:2rem;
+    margin-right:10rem;
+    padding:2rem;
+    border-radius:1rem;
+    width:90%;
+    background-color:var(--secundaria);
+}
