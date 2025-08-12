@@ -55,34 +55,38 @@ padding: 1rem 1rem 1rem 0rem
   grid-column: 1 / 2; /* 6 colunas */
   height: 300px;
   background-color: #fff;
-  border: 2px solid red;
+  
+  border-radius:0.3rem;
 }
 
 .caixa2 {
   grid-column: 0 / 3; /* 6 colunas */
   height: 300px;
   background-color: #fff;
-  border: 2px solid red;
+  
+  border-radius:0.3rem;
 }
 
 .caixa3 {
   grid-column: 3 / 5; /* 3 colunas */
   height: 300px;
   background-color: #fff;
-  border: 2px solid red;
+  
   display: flex;
   align-items: center;
   gap: 10px;
+  border-radius:0.3rem;
 }
 
 .caixa4 {
   grid-column: 1 / 5; /* 3 colunas */
   height: 300px;
   background-color: #fff;
-  border: 2px solid red;
+  
   display: flex;         /* Coloca imagem e textos lado a lado */
   align-items: center;   /* Alinha verticalmente */
   gap: 10px;             /* Espaço entre a imagem e os textos */
+  border-radius:0.3rem;
 }
 
 .caixadisplay{
@@ -90,13 +94,13 @@ padding: 1rem 1rem 1rem 0rem
 }
 
 .imagem{
-    border: 2px solid red;
-    margin-top:3rem;
+    
+    margin-top:10rem;
     
 }
 
 .imagem2{
-    border: 2px solid blue;
+    
     margin-right:10rem;
     margin-left:20rem;
 }
@@ -104,7 +108,7 @@ padding: 1rem 1rem 1rem 0rem
 .imagem3{
     margin-left:10rem;
     margin-right:10rem;
-    border: 2px solid red;
+    
     
 }
 
@@ -140,6 +144,59 @@ padding: 1rem 1rem 1rem 0rem
 
 /*Estilo da fonte da Box TITULO (Pequena)*/
 .textstyle2{
+    margin-top:2rem;
     font-size:2rem;
     font-weight: bold;
+}
+
+.siteFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--principal1); /* ou qualquer cor escura */
+    padding: 2rem 5%;
+    color: #fff;
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: 50vh;
+}
+
+.footerLogo img {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footerTexto h3 {
+    font-size: 2rem;
+    margin: 0;
+        color: #fff;
+
+}
+
+.footerTexto p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+        color: #fff;
+        text-decoration: none;
+
+}
+
+.footerRedes {
+    display: flex;
+    gap: 1rem;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+.footerRedes a {
+    color: #fff;
+    transition: transform 0.2s, color 0.2s;
+    text-decoration: none;
+}
+
+.footerRedes a:hover {
+    transform: scale(1.2);
+    color: white; /* destaque ao passar o mouse */
 }
