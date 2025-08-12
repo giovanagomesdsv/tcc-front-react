@@ -9,6 +9,13 @@ export default function Home() {
   return (
     <div className="container">
       <Slider />
+
+      <div className={styles.tipos}>
+
+        <className={styles.tpicon}/>
+      </div>
+
+      <LivrosHome/>
     <h1>Home</h1>
 
       <Link href={"/login"}>Login</Link>
