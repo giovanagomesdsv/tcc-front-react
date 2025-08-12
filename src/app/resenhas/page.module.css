@@ -38,192 +38,108 @@ padding: 1rem 1rem 1rem 0rem
     margin-left:10rem;
 }
 
-/*Styles das Caixas com Grid Layout*/
-.box {
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-direction: row;
+/** 
+ * Caixa1 é o container principal da estrutura. 
+ * Ele centraliza todos os elementos na vertical, com espaçamento entre eles 
+ * e uma borda vermelha ao redor.
+ */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
 }
 
-/* Blocos verticais e horizontais compartilhados */
-.box .box-vert1,
-.box .box-hor1 {
-    width: 50%;
-    display: flex;
-    box-sizing: border-box;
+/* Linha de cima */
+.caixa1 {
+  grid-column: 1 / 2; /* 6 colunas */
+  height: 300px;
+  background-color: #fff;
+  border: 2px solid red;
 }
 
-/* ----------- VERTICAL - tipo 1  ----------- */
-.box .box-vert1 {
-    flex-direction: row;
-    gap: 1rem;
-    padding: 1rem;
+.caixa2 {
+  grid-column: 0 / 3; /* 6 colunas */
+  height: 300px;
+  background-color: #fff;
+  border: 2px solid red;
 }
 
-.box1 .box-vert1 a {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    transition: transform 0.3s ease-in-out;
+.caixa3 {
+  grid-column: 3 / 5; /* 3 colunas */
+  height: 300px;
+  background-color: #fff;
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.box1 .box-vert1 a:hover {
-    transform: scale(0.98);
+.caixa4 {
+  grid-column: 1 / 5; /* 3 colunas */
+  height: 300px;
+  background-color: #fff;
+  border: 2px solid red;
+  display: flex;         /* Coloca imagem e textos lado a lado */
+  align-items: center;   /* Alinha verticalmente */
+  gap: 10px;             /* Espaço entre a imagem e os textos */
 }
 
-.box1 .box-vert1 .vert1 {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-.box1 .box-vert1 .vert1 .image,
-.box1 .box-vert1 .vert1 .info {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box1 .box-vert1 .vert1 .image img {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: cover;
-}
-
-.box1 .box-vert1 .vert1 .info {
-    flex-direction: column;
-    padding: 0 1rem;
-    text-align: center;
-}
-
-.box1 .box-vert1 .vert1 .info p {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-}
-
-/* ----------- HORIZONTAL tipo 3 - box1.hor1 (usado em "Suspense e Mistério" e "Drama") ----------- */
-.box .box-hor1 {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.box .box-hor1 a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-    height: auto;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-}
-
-.box .box-hor1 a:hover {
-    transform: scale(0.98);
-}
-
-.box .box-hor1 .hor1 {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.box .box-hor1 .hor1 .image,
-.box .box-hor1 .hor1 .info {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-
-}
-
-.box .box-hor1 .hor1 .image img {
-    width: 25rem;
-    height: 100%;
-
-}
-
-.box .box-hor1 .hor1 .info {
-    text-align: justify;
-    line-height: 1.4;
-    flex-direction: column;
-}
-.box .box-hor1 .hor1 .info p {
-    font-size: 1.2rem;
-    text-align: justify;
-    line-height: 1.4;
-}
-
-
-/* ----------- TIPO 2 ----------- */
-.box2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem;
-    box-sizing: border-box;
-}
-
-.box2 a {
-    flex: 1 1 48%;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s ease-in-out;
-}
-
-.box2 a:hover {
-    transform: scale(0.98);
-}
-
-.box2 .hor2 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-    height: 100%;
-}
-
-.box2 .hor2 .image,
-.box2 .hor2 .info {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-}
-.box2 .hor2 .info {
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.box2 .hor2 .image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.box2 .hor2 .info p {
-    font-size: 1.2rem;
-    text-align: justify;
-    line-height: 1.4;
-}
-
-/*estilo específico para a caixa 4*/
-.box4style{
+.caixadisplay{
     display:flex;
-    justify-content:space-between;
-    gap:1rem;
-    padding:1rem;
+}
+
+.imagem{
+    border: 2px solid red;
+    margin-top:3rem;
+    
+}
+
+.imagem2{
+    border: 2px solid blue;
+    margin-right:10rem;
+    margin-left:20rem;
+}
+
+.imagem3{
+    margin-left:10rem;
+    margin-right:10rem;
+    border: 2px solid red;
+    
+}
+
+.textosContainer {
+  display: flex;
+  flex-direction: column; /* Um embaixo do outro */
+  justify-content: center;
+}
+/*Box vertical (Padrão)*/
+.boxText{
+    border-radius: 0.3rem;
+    padding: 1rem 0rem;
+    overflow: hidden;
+    text-align:start;
+    width:90rem;
+    margin-top:1rem;
+    background-color: #c9c9c9d8;
+}
+/*Box vertical (Pequena)*/
+.boxText2{
+    border-radius: 0.3rem;
+    padding: 1rem 0rem;
+    overflow: hidden;
+    text-align:start;
+    width:30rem;
+    margin-top:1rem;
+    background-color: #c9c9c9d8;
+}
+/*Estilo da fonte da Box TITULO (Padrão)*/
+.textstyle1{
+    font-weight: bold;
+}
+
+/*Estilo da fonte da Box TITULO (Pequena)*/
+.textstyle2{
+    font-size:2rem;
+    font-weight: bold;
 }
