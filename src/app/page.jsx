@@ -39,7 +39,6 @@ export default function Home() {
       <Link href={"/autores"} className={styles.navlinkstyle}>Autores</Link>
       <Link href={"/livros"} className={styles.navlinkstyle}>Livros</Link>
       <Link href={"/sobre"} className={styles.navlinkstyle}>Sobre</Link>
-      
     </div>
     <div className={styles.tela1}>
       <section className={styles.tela1} id="sec1"/>
@@ -132,10 +131,6 @@ export default function Home() {
           </div>
         </div>
       </a>
-    </div>
-
-    <div>
-      <p>teste</p>
     </div>
 
     {/* DIREITA: Imagem com texto ao lado */}

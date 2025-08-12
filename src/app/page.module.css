@@ -117,51 +117,6 @@ padding: 1rem 1rem 1rem 0rem
     transform: rotateX(-90deg);
 }
 
-/*segunda tela__________________________________________________________________________________________*/
-.tela2 {
-    background-color: var(--bg2);
-    color: #ffffff;
-    padding: 1rem;
-}
-
-.tela2 .carrossel-cards {
-    display: flex;
-    margin: 0 10%;
-    height: 20%;
-    background-color: var(--principal1);
-}
-.destaques {
-    display: flex;
-    gap: 0.5rem;
-    padding: 1rem;
-    flex-wrap: wrap;
-    height: 80vh;
-    width: 80%;
-    margin: 10vh auto;
-}
-
-.destaques > div {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    flex: 1;
-}
-
-.destaques > div > div,
-.destaques > div > a {
-    display: flex;
-    gap: 0.5rem;
-    height: 50%;
-}
-
-/* Reset dos links */
-.destaques a {
-    text-decoration: none;
-    color: inherit;
-    height: 100%;
-    width: 100%;
-}
-
 /** 
  * Caixa1 é o container principal da estrutura. 
  * Ele centraliza todos os elementos na vertical, com espaçamento entre eles 
