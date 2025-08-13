@@ -196,6 +196,9 @@ header {
   /* borda redonda */
 }
 
+.teste{
+  border: 2px solid red;
+}
 
 
 .sidebar ul li a .link_name {
@@ -216,6 +219,14 @@ header {
 
 .sidebar ul .fix {
   background: var(--secundaria);
+  padding: 1.8rem;
+  width: 100%;
+}
+
+/*Fix 2*/
+
+.sidebar ul .fix2 {
+  background:#310000;
   padding: 1.8rem;
   width: 100%;
 }

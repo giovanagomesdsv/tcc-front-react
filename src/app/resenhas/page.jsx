@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import Link from "next/link";
+import clsx from 'clsx';
 
 export default function Resenhas() {
     return(
@@ -8,7 +9,7 @@ export default function Resenhas() {
       <img src='imagem.png' alt="img.png" className={styles.perfilstyle}/>
       <Link href={"/link"}  className={styles.navlinkstyle}>Login</Link>
       <Link href={"#"} className={styles.navlinkstyle}>Home</Link>
-      <Link href={"#"} className={styles.navlinkstyle}>Resenhas</Link>
+      <Link href="#" className={clsx(styles.navlinkstyle, "fix2" , "linkname")}>Resenhas</Link>
       <Link href={"#"} className={styles.navlinkstyle}>Autores</Link>
       <Link href={"#"} className={styles.navlinkstyle}>Livros</Link>
       <Link href={"#"} className={styles.navlinkstyle}>Sobre</Link>
