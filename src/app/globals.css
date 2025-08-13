@@ -196,10 +196,6 @@ header {
   /* borda redonda */
 }
 
-.teste{
-  border: 2px solid red;
-}
-
 
 .sidebar ul li a .link_name {
   display: none;
@@ -225,11 +221,7 @@ header {
 
 /*Fix 2*/
 
-.sidebar ul .fix2 {
-  background:#310000;
-  padding: 1.8rem;
-  width: 100%;
-}
+
 
 /* classe js -> abrir e fechar menu*/
 .sidebar.abrir {
@@ -277,9 +269,24 @@ header {
 .linkname {
   font-size: 1.4rem;
 }
+/*===========================================*/
+.fix2 {
+  background: rgb(66, 0, 0);
+  padding:4.5rem 5rem;
+  width: 100%;
+}
 
+.fix2-alt {
+  background: var(--secundaria);
+  padding: 1.8rem;
+  width: 100%;
+}
 
-
+.linkname-fix2 {
+  display: none;
+  width: 100%;
+}
+/*=============================================*/
 /* padrao de pesquisa */
 .buscacontainer {
   display: flex;

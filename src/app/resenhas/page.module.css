@@ -8,34 +8,37 @@
 
 /*Estilo do perfil da navbar*/
 
-.perfilstyle{
+.navlinkstyle img {
     width: 14rem;
     height: 14rem;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.barra{
-justify-content: center;
-align-items: center;
-background-color: var(--principal1);
-color:white;
-width: 100%;
-padding: 1rem 1rem 1rem 0rem
+.barra {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--principal1);
+    color: white;
+    width: 100%;
+    padding: 1rem 1rem 1rem 0rem;
 }
-/*primeira tela__________________________________________________________________________________________*/
+
+/* Primeira tela */
 .navbar {
     background-color: var(--principal1);
     color: #ffffff;
-    padding:5rem;
+    padding: 5rem;
+    gap: 10rem;              /* espaçamento entre itens */
 }
 
-/*Estilo do Link da navbar*/
-.navlinkstyle{
+/* Estilo do Link da navbar */
+.navlinkstyle {
+    padding:4rem;
     text-decoration: none;
-    color:white;
-    font-size:1.5rem;
-    margin-left:10rem;
+    color: white;
+    font-size: 1.5rem;
+    flex-shrink: 0; /* impede o encolhimento automático */
 }
 
 /** 
@@ -94,13 +97,10 @@ padding: 1rem 1rem 1rem 0rem
 }
 
 .imagem{
-    
     margin-top:10rem;
-    
 }
 
 .imagem2{
-    
     margin-right:10rem;
     margin-left:20rem;
 }
@@ -108,8 +108,6 @@ padding: 1rem 1rem 1rem 0rem
 .imagem3{
     margin-left:10rem;
     margin-right:10rem;
-    
-    
 }
 
 .textosContainer {
@@ -199,4 +197,15 @@ padding: 1rem 1rem 1rem 0rem
 .footerRedes a:hover {
     transform: scale(1.2);
     color: white; /* destaque ao passar o mouse */
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .navlinkstyle {
+    display: block; /* Faz cada link ocupar uma linha */
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem; /* reduz levemente o texto */
+  }
 }

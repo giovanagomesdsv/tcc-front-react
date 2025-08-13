@@ -6,10 +6,10 @@ export default function Resenhas() {
     return(
 <div className="container">
     <div className={styles.navbar}>
-      <img src='imagem.png' alt="img.png" className={styles.perfilstyle}/>
+      <img src='imagem.png' alt="img.png" className={styles.navlinkstyle}/>
       <Link href={"/link"}  className={styles.navlinkstyle}>Login</Link>
       <Link href={"#"} className={styles.navlinkstyle}>Home</Link>
-      <Link href="#" className={clsx(styles.navlinkstyle, "fix2" , "linkname")}>Resenhas</Link>
+      <Link href="#" className={clsx(styles.navlinkstyle, "fix2")}>Resenhas</Link>
       <Link href={"#"} className={styles.navlinkstyle}>Autores</Link>
       <Link href={"#"} className={styles.navlinkstyle}>Livros</Link>
       <Link href={"#"} className={styles.navlinkstyle}>Sobre</Link>
