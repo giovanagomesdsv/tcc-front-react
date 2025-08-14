@@ -1,4 +1,7 @@
-import livroImagem from '';
+import azkaban from '../../../../public/temp/imagens/livros/Harry Potter e o Prisioneiro de Azkaban.jpg';
+import camaraSecreta from '../../../../public/temp/imagens/livros/.Harry Potter e a Câmara Secreta.jpg';
+import caliceFogo from '../../../../public/temp/imagens/livros/Harry Potter e o Cálice de Fogo.jpg';
+import fenix from '../../../../public/temp/imagens/livros/Harry Potter e a Ordem da Fênix.jpg';
 
 
 
@@ -12,7 +15,7 @@ const livros = [
 			"livro_isbn": "-8532529812",
 			"livro_ano": 1990,
 			"livro_classidd": "12+",
-			"livro_foto": ".Harry Potter e a Câmara Secreta.jpg"
+			"livro_foto": camaraSecreta
 		},
 		{
 			"livro_titulo": "Harry Potter e o Prisioneiro de Azkaban",
@@ -21,7 +24,7 @@ const livros = [
 			"livro_isbn": "-8532529828",
 			"livro_ano": 1990,
 			"livro_classidd": "12+",
-			"livro_foto": "Harry Potter e o Prisioneiro de Azkaban.jpg"
+			"livro_foto":azkaban
 		},
 		{
 			"livro_titulo": "Harry Potter  e o Calice de Fogo",
@@ -30,7 +33,7 @@ const livros = [
 			"livro_isbn": "-8532529835",
 			"livro_ano": 1990,
 			"livro_classidd": "12+",
-			"livro_foto": "Harry Potter e o Cálice de Fogo.jpg"
+			"livro_foto":caliceFogo
 		},
 		{
 			"livro_titulo": "Harry Potter  e a Ordem da Fenix",
@@ -39,7 +42,7 @@ const livros = [
 			"livro_isbn": "-8532529842",
 			"livro_ano": 1990,
 			"livro_classidd": "12+",
-			"livro_foto": "Harry Potter e a Ordem da Fênix.jpg"
+			"livro_foto": fenix
 		}
 ];
 

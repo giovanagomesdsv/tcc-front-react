@@ -1,18 +1,21 @@
 import styles from "./page.module.css";
 import Link from "next/link";
 import Slider from "@/components/slider";
-import LivrosHome from "@/components/LivrosHome";
+import LivrosHome from "@/components/homelivrosBC";
 
-import{}from 'react-icons/md'
+import{por os nomes da var aq}from 'react-icons/md'
 
 export default function Home() {
   return (
     <div className="container">
       <Slider />
 
-      <div className={styles.tipos}>
+      <div className={styles.livro}>
 
-        <className={styles.tpicon}/>
+        <Azkaban className={styles.livroImg}/>
+        <CamaraSecreta className={styles.livroImg}/>
+        <CaliceFogo className={styles.livroImg}/>
+        <Fenix className={styles.livroImg}/>
       </div>
 
       <LivrosHome/>
