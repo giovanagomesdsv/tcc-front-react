@@ -28,17 +28,23 @@
 .navbar {
     background-color: var(--principal1);
     color: #ffffff;
-    padding: 5rem;
+    padding: 0.4rem;
     gap: 10rem;              /* espaçamento entre itens */
 }
 
 /* Estilo do Link da navbar */
 .navlinkstyle {
-    padding:4rem;
+    padding:3rem;
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
-    flex-shrink: 0; /* impede o encolhimento automático */
+}
+
+.navlinkstyle2 {
+    padding:1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
 }
 
 /** 
@@ -197,15 +203,4 @@
 .footerRedes a:hover {
     transform: scale(1.2);
     color: white; /* destaque ao passar o mouse */
-}
-
-/* Responsivo para telas menores */
-@media (max-width: 768px) {
-  .navlinkstyle {
-    display: block; /* Faz cada link ocupar uma linha */
-    width: 100%;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem; /* reduz levemente o texto */
-  }
 }

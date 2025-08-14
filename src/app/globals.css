@@ -271,14 +271,13 @@ header {
 }
 /*===========================================*/
 .fix2 {
-  background: rgb(66, 0, 0);
-  padding:4.5rem 5rem;
+  background:#11114E;
+  border-radius: 60%;
   width: 100%;
 }
 
 .fix2-alt {
   background: var(--secundaria);
-  padding: 1.8rem;
   width: 100%;
 }
 
