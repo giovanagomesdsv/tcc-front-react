@@ -3,7 +3,7 @@ import Link from "next/link";
 import Slider from "@/components/slider";
 import LivrosHome from "@/components/homelivrosBC";
 
-import{por os nomes da var aq}from 'react-icons/md'
+import{Azkaban, CamaraSecreta, CaliceFogo, Fenix}from 'react-icons/md'
 
 export default function Home() {
   return (
