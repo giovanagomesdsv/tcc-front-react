@@ -1,5 +1,5 @@
 import azkaban from '../../../../public/temp/imagens/livros/Harry Potter e o Prisioneiro de Azkaban.jpg';
-import camaraSecreta from '../../../../public/temp/imagens/livros/.Harry Potter e a Câmara Secreta.jpg';
+import camaraSecreta from '../../../../public/temp/imagens/livros/Harry Potter e a Câmara Secreta.jpg';
 import caliceFogo from '../../../../public/temp/imagens/livros/Harry Potter e o Cálice de Fogo.jpg';
 import fenix from '../../../../public/temp/imagens/livros/Harry Potter e a Ordem da Fênix.jpg';
 
