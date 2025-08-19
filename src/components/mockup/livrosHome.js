@@ -1,9 +1,7 @@
-import azkaban from '../../../../public/temp/imagens/livros/Harry Potter e o Prisioneiro de Azkaban.jpg';
-import camaraSecreta from '../../../../public/temp/imagens/livros/Harry Potter e a Camara Secreta.jpg';
-import caliceFogo from '../../../../public/temp/imagens/livros/Harry Potter e o Calice de Fogo.jpg';
-import fenix from '../../../../public/temp/imagens/livros/Harry Potter e a Ordem da Fenix.jpg';
-
-
+import azkaban from '../../../public/temp/imagens/livros/Harry Potter e o Prisioneiro de Azkaban.jpg';
+import camaraSecreta from '../../../public/temp/imagens/livros/Harry Potter e a Camara Secreta.jpg';
+import caliceFogo from '../../../public/temp/imagens/livros/Harry Potter e o Calice de Fogo.jpg';
+import fenix from '../../../public/temp/imagens/livros/Harry Potter e a Ordem da Fenix.jpg';
 
 
 const livros = [

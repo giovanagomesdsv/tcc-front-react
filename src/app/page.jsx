@@ -1,21 +1,30 @@
 import styles from "./page.module.css";
 import Link from "next/link";
-import Slider from "@/components/slider";
+// import Slider from "@/components/slider";
 import LivrosHome from "@/components/homelivrosBC";
+import Image from "next/image";
+
+
 
 
 
 export default function Home() {
   return (
     <div className="container">
-      <Slider />
+      {/* <Slider /> */}
 
       <div className={styles.livro}>
 
-        <Azkaban className={styles.livroImg}/>
+        <Image 
+          src={'/temp/imagens/livros/Harry Potter e o Prisioneiro de Azkaban.jpg'} 
+          alt='Harry Potter e o Prisioneiro de Azkaban.jpg' 
+          width={50} 
+          height={50}
+        />
+        {/* <Azkaban className={styles.livroImg}/>
         <CamaraSecreta className={styles.livroImg}/>
         <CaliceFogo className={styles.livroImg}/>
-        <Fenix className={styles.livroImg}/>
+        <Fenix className={styles.livroImg}/> */}
       </div>
 
       <LivrosHome/>
