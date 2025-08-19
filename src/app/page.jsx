@@ -4,30 +4,13 @@ import Link from "next/link";
 import LivrosHome from "@/components/homelivrosBC";
 import Image from "next/image";
 
-
-
-
-
 export default function Home() {
   return (
     <div className="container">
       {/* <Slider /> */}
 
-      <div className={styles.livro}>
-
-        <Image 
-          src={'/temp/imagens/livros/Harry Potter e o Prisioneiro de Azkaban.jpg'} 
-          alt='Harry Potter e o Prisioneiro de Azkaban.jpg' 
-          width={50} 
-          height={50}
-        />
-        {/* <Azkaban className={styles.livroImg}/>
-        <CamaraSecreta className={styles.livroImg}/>
-        <CaliceFogo className={styles.livroImg}/>
-        <Fenix className={styles.livroImg}/> */}
-      </div>
-
       <LivrosHome/>
+
     <h1>Home</h1>
 
       <Link href={"/login"}>Login</Link>

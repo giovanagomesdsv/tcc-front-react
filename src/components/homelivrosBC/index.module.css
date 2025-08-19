@@ -1,0 +1,535 @@
+:root {
+    --bg: #f4f4f4;
+    --bg2: #f0f0f0;
+    --text: #f5f5f5;
+    --principal1: #56070C;
+    --secundaria2: #11114E;
+}
+
+/*Estilo do perfil da navbar*/
+
+.perfilstyle{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.barra{
+justify-content: center;
+align-items: center;
+background-color: var(--principal1);
+color:white;
+width: 100%;
+padding: 1rem 1rem 1rem 0rem
+}
+/*primeira tela__________________________________________________________________________________________*/
+.navbar {
+    background-color: var(--principal1);
+    color: #ffffff;
+    padding:5rem;
+}
+
+/*Estilo do Link da navbar*/
+.navlinkstyle{
+    text-decoration: none;
+    color:white;
+    font-size:1.5rem;
+    margin-left:10rem;
+}
+
+.tela1 {
+    background-color: var(--bg2);
+    color: var(--principal1);
+    text-decoration: none;
+    padding:5rem;
+}
+
+/* TEXTO DESTAQUE */
+.letreiro {
+    text-align: center;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.letreiro h3 {
+    font-size: 15rem;
+    margin: 0;
+    color: #fff;
+}
+
+.letreiro h3.nome1 {
+    text-indent: -30%;
+    color:var(--principal1)
+}
+
+.letreiro h3.nome2 {
+    text-indent: 30%;
+    color:var(--principal1)
+}
+
+/*carrossel de frases*/
+.change-text {
+    background-color: #000a52;
+    width: 80%;
+    height: 4rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 10%;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: center;
+}
+
+.change-text h3 {
+    display: inline-flex;
+    margin: 0;
+    font-weight: 300;
+    vertical-align: top;
+    color: #fff;
+}
+
+.change-text h3 .word {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+}
+
+/*js letras*/
+/*saida das letras*/
+.change-text h3 .word .letter {
+    transform-origin: center center 25px;
+}
+
+.change-text h3 .word .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+/*entrada das letras*/
+.change-text h3 .word .letter.in {
+    transition: .38s ease;
+}
+
+.change-text h3 .word .letter.behind {
+    transform: rotateX(-90deg);
+}
+
+/*segunda tela__________________________________________________________________________________________*/
+.tela2 {
+    background-color: var(--bg2);
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.tela2 .carrossel-cards {
+    display: flex;
+    margin: 0 10%;
+    height: 20%;
+    background-color: var(--principal1);
+}
+.destaques {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    height: 80vh;
+    width: 80%;
+    margin: 10vh auto;
+}
+
+.destaques > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.destaques > div > div,
+.destaques > div > a {
+    display: flex;
+    gap: 0.5rem;
+    height: 50%;
+}
+
+/* Reset dos links */
+.destaques a {
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+/** 
+ * Caixa1 é o container principal da estrutura. 
+ * Ele centraliza todos os elementos na vertical, com espaçamento entre eles 
+ * e uma borda vermelha ao redor.
+ */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Linha de cima */
+.caixa1 {
+  grid-column: 1 / 7; /* 6 colunas */
+  height: 300px;
+  background-color: #fff;
+  border: 2px solid red;
+}
+
+.caixa2 {
+  grid-column: 7 / 10; /* 3 colunas = 1.5 "virtuais" */
+  height: 300px;
+  background-color: #fff;
+  border: 2px solid red;
+}
+
+.caixa3 {
+  grid-column: 10 / 13; /* 3 colunas */
+  height: 300px;
+  background-color: #fff;
+  border: 2px solid red;
+}
+
+/* Linha de baixo */
+.caixa4 {
+  grid-column: 1 / 5;
+  height: 400px;
+  background-color: #fff;
+  border: 2px solid red;
+}
+
+.caixa56Container {
+  grid-column: 5 / 7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.caixa5,
+.caixa6 {
+  height: 190px;
+  border: 2px solid red;
+}
+
+.caixa5 {
+  background-color: #fff;
+}
+
+.caixa6 {
+  background-color: #fff;
+}
+
+.caixa7 {
+  grid-column: 7 / 13;
+  height: 400px;
+  background-color: #fff;
+  border: 2px solid red;
+}
+
+
+/* Estilo das caixinhas */
+.caixa {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+
+/* Imagem de fundo usando <img> */
+.caixa img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 8px;
+}
+
+/* Escurece a imagem */
+.caixa::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: background 0.3s ease;
+}
+
+.caixa:hover {
+    transform: scale(0.97);
+}
+
+.caixa:hover::before {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Texto acima da imagem */
+.caixa p, .caixa span {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    color: #fff;
+    font-size: 2rem;
+}
+
+/*terceira tela__________________________________________________________________________________________*/
+.tela3 {
+    height: 500vh;
+}
+
+.box {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Blocos verticais e horizontais compartilhados */
+.box .box-vert1,
+.box .box-hor1 {
+    width: 50%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+/* ----------- VERTICAL - tipo 1  ----------- */
+.box .box-vert1 {
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.box1 .box-vert1 a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box1 .box-vert1 a:hover {
+    transform: scale(0.98);
+}
+
+.box1 .box-vert1 .vert1 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.box1 .box-vert1 .vert1 .image,
+.box1 .box-vert1 .vert1 .info {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 .box-vert1 .vert1 .image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.box1 .box-vert1 .vert1 .info {
+    flex-direction: column;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.box1 .box-vert1 .vert1 .info p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* ----------- HORIZONTAL tipo 3 - box1.hor1 (usado em "Suspense e Mistério" e "Drama") ----------- */
+.box .box-hor1 {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.box .box-hor1 a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    height: auto;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box .box-hor1 a:hover {
+    transform: scale(0.98);
+}
+
+.box .box-hor1 .hor1 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box .box-hor1 .hor1 .image,
+.box .box-hor1 .hor1 .info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.box .box-hor1 .hor1 .image img {
+    width: 25rem;
+    height: 100%;
+
+}
+
+.box .box-hor1 .hor1 .info {
+    text-align: justify;
+    line-height: 1.4;
+    flex-direction: column;
+}
+.box .box-hor1 .hor1 .info p {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+
+/* ----------- TIPO 2 ----------- */
+.box2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.box2 a {
+    flex: 1 1 48%;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box2 a:hover {
+    transform: scale(0.98);
+}
+
+.box2 .hor2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.box2 .hor2 .image,
+.box2 .hor2 .info {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.box2 .hor2 .info {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box2 .hor2 .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.box2 .hor2 .info p {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+/*estilo específico para a caixa 4*/
+.box4style{
+    display:flex;
+    justify-content:space-between;
+    gap:1rem;
+    padding:1rem;
+}
+
+.siteFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--principal1); /* ou qualquer cor escura */
+    padding: 2rem 5%;
+    color: #fff;
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: 50vh;
+}
+
+.footerLogo img {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footerTexto h3 {
+    font-size: 2rem;
+    margin: 0;
+        color: #fff;
+
+}
+
+.footerTexto p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+        color: #fff;
+        text-decoration: none;
+
+}
+
+.footerRedes {
+    display: flex;
+    gap: 1rem;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+.footerRedes a {
+    color: #fff;
+    transition: transform 0.2s, color 0.2s;
+    text-decoration: none;
+}
+
+.footerRedes a:hover {
+    transform: scale(1.2);
+    color: white; /* destaque ao passar o mouse */
+}

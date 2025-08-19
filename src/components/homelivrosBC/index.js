@@ -1,4 +1,4 @@
-// import styles from './index.module.css';
+import styles from './index.module.css';
 import livrosHomeMockup from '@/components/mockup/livrosHome';
 import Card from '../homeLivros/card';
 
@@ -6,7 +6,7 @@ export default function livrosHomeBC() {
 
     //console.log(livrosHomeMockup);
     return (
-        <div /*className={styles.livros}*/>
+        <div className={styles.livros}>
             {/*  
             <div className={styles.card}>
             <div className={styles.ImagemContainer}>

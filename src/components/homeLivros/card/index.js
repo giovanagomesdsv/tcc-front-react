@@ -6,7 +6,7 @@ export default function Card({ livro }) {
         <div className={styles.card}>
             <div className={styles.ImagemContainer}>
                 <Image
-                    src={livro.imgLivro}
+                    src={livro.livro_foto}
                     alt={livro.nome}
                     width={200}
                     height={200}
