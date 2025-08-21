@@ -179,7 +179,7 @@ padding: 1rem 1rem 1rem 0rem
   grid-column: 1 / 7; /* 6 colunas */
   height: 300px;
   background-color: #fff;
-  border: 2px solid red;
+  border: 2px solid blue;
 }
 
 .caixa2 {
