@@ -2,6 +2,9 @@ import azkaban from '../../../public/temp/imagens/livros/Harry Potter e o Prisio
 import camaraSecreta from '../../../public/temp/imagens/livros/Harry Potter e a Camara Secreta.jpg';
 import caliceFogo from '../../../public/temp/imagens/livros/Harry Potter e o Calice de Fogo.jpg';
 import fenix from '../../../public/temp/imagens/livros/Harry Potter e a Ordem da Fenix.jpg';
+import chamado from '../../../public/temp/imagens/livros/O chamado selvagem.jpg';
+import morte from '../../../public/temp/imagens/livros/Harry Potter e as Reliquias da Morte.jpg';
+import principe from '../../../public/temp/imagens/livros/Harry Potter e o Enigma do Principe.jpg';
 
 
 const livros = [
@@ -41,6 +44,33 @@ const livros = [
 			"livro_ano": 1990,
 			"livro_classidd": "12+",
 			"livro_foto": fenix
+		},
+		{
+			"livro_titulo": "Harry Potter  e o Enigma do Principe",
+			"livro_sinopse": "Harry Potter e o enigma do príncipe dá continuidade à saga do jovem bruxo Harry Potter a partir do ponto em que o livro anterior parou o momento em que fica provado que o poder de Voldemort e dos Comensais da Morte, seus seguidores, cresce mais a cada dia, em meio à batalha entre o bem e o mal. A onda de terror provocada pelo Lorde das Trevas estaria afetando, até mesmo, o mundo dos trouxas (nãobruxos), e sendo agravada pela ação dos dementadores, criaturas mágicas aterrorizantes que sugam a esperança e a felicidade das pessoas. Harry, que acabou de completar 16 anos, parte rumo ao sexto ano na Escola de Magia e Bruxaria de Hogwarts, animado e ao mesmo tempo apreensivo com a perspectiva de ter aulas particulares com o professor Dumbledore, o diretor da escola e o bruxo mais respeitado em toda comunidade mágica. Harry, longe de ser aquele menino magricela que vivia no quarto debaixo da escada na casa dos tios trouxas.",
+			"livro_editora": "Rocco",
+			"livro_isbn": "-8532529859",
+			"livro_ano": 1990,
+			"livro_classidd": "12+",
+			"livro_foto":principe
+		},
+		{
+			"livro_titulo": "Harry Potter e as Relíquias da Morte",
+			"livro_sinopse": "Harry Potter  e as Relíquias da Morte, Harry Potter e as relíquias da morte, de J.K. Rowling, é o sétimo e último livro da série. Voldemorte está cada vez mais forte e Harry Potter precisa encontrar e aniquilar as Horcruxes para enfraquecer o lorde e poder enfrentálo. Nessa busca desenfreada, contando apenas com os amigos Rony e Hermione, Harry descobre as Relíquias da Morte, que serão úteis na batalha do bem contra o mal.",
+			"livro_editora": "Rocco",
+			"livro_isbn": "-8532529866",
+			"livro_ano": 1990,
+			"livro_classidd": "12+",
+			"livro_foto":morte
+		},
+		{
+			"livro_titulo": "O chamado selvagem",
+			"livro_sinopse": "Buck é um cachorro enorme e afável que leva uma boa vida em um rancho na Califórnia, comendo e dormindo ao sol. Porém, durante a febre do ouro nos anos 1890, ele é sequestrado e vendido para trabalhar puxando trenós no gélido norte da América.\nPassando por donos rudes e cruéis, Buck precisa lutar pela vida. À medida que aprende a se defender do porrete dos humanos e dos caninos de outros cães, ele cede a seus instintos primitivos, reconectando-se a seus antepassados.",
+			"livro_editora": "Arqueiro",
+			"livro_isbn": "-6555652173",
+			"livro_ano": 2002,
+			"livro_classidd": "12+",
+			"livro_foto":chamado
 		}
 ];
 

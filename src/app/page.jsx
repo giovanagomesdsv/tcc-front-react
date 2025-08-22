@@ -58,46 +58,7 @@ export default function Home() {
         </div>
       </div>
       <LivrosHome />
-      <div className={styles.gridContainer}>
-        <div className={`${styles.caixa1} ${styles.caixa}`}>
-          <img src="/images/img1.jpg" alt="Imagem 1" className={styles.imagem} />
-          <span className={styles.textoCanto}>Texto 1</span>
-        </div>
-
-        <div className={`${styles.caixa2} ${styles.caixa}`}>
-          <img src="/images/img2.jpg" alt="Imagem 2" className={styles.imagem} />
-          <span className={styles.textoCanto}>Texto 2</span>
-        </div>
-
-        <div className={`${styles.caixa3} ${styles.caixa}`}>
-          <img src="/images/img3.jpg" alt="Imagem 3" className={styles.imagem} />
-          <span className={styles.textoCanto}>Texto 3</span>
-        </div>
-
-        <div className={`${styles.caixa4} ${styles.caixa}`}>
-          <img src="/images/img4.jpg" alt="Imagem 4" className={styles.imagem} />
-          <span className={styles.textoCanto}>Texto 4</span>
-        </div>
-
-        <div className={styles.caixa56Container}>
-          <div className={`${styles.caixa5} ${styles.caixa}`}>
-            <img src="/images/img5.jpg" alt="Imagem 5" className={styles.imagem} />
-            <span className={styles.textoCanto}>Texto 5</span>
-          </div>
-
-          <div className={`${styles.caixa6} ${styles.caixa}`}>
-            <img src="/images/img6.jpg" alt="Imagem 6" className={styles.imagem} />
-            <span className={styles.textoCanto}>Texto 6</span>
-          </div>
-        </div>
-
-        <div className={`${styles.caixa7} ${styles.caixa}`}>
-          <img src="/images/img7.jpg" alt="Imagem 7" className={styles.imagem} />
-          <span className={styles.textoCanto}>Texto 7</span>
-        </div>
-      </div>
-
-
+      
       <main>
         {/*Primeira barra que separa informações */}
         <div style={{ textAlign: 'center', margin: '2rem 0' }}>
