@@ -1,0 +1,176 @@
+:root {
+    --bg: #f0f0f0;
+    --text: #f5f5f5;
+    --principal: #56070C;
+    --secundaria: #11114E;
+}
+
+.headerStyle{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--principal);
+    margin-bottom:3rem;
+}
+
+.headerStyle p {
+    color: var(--text);
+    font-size:0.5rem;
+}
+
+/*corpo da página*/
+/*Style da parte a esquerda*/
+.sec1 {
+    margin-right:2rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 15%;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 1px solid;
+    gap: 10%;
+}
+.imgStyle{
+    margin-top:1rem;
+    width: auto;
+    height: 18rem;
+}
+/*Para deixar a section 1 e 2 uma ao lado da outra*/
+.display{
+display:flex;
+}
+
+/*Style da parte a direita*/
+.sec2{
+    width: 85%;
+    padding-left: 2rem;
+}
+.sec2 .cabecalho{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.textLivro{
+    font-size: 1.2rem;
+    margin: 2rem 0rem;
+}
+.textSinopse{
+    font-size: 2rem;
+    margin: 2rem 0rem;
+    margin-right:90%;
+}
+.bottombar{
+    margin: 2rem 0rem;
+    border-bottom:1px solid;
+}
+.sec2 .conteudo > div{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    text-indent: 2rem;
+    padding: 2rem;
+}
+.sec2 .conteudo .sinopse{
+    margin-bottom: 3rem;
+}
+.sec2 .conteudo .estrelas {
+    font-size: 24px;
+    color: gold;
+    margin: 10px 0;
+    text-align: center;
+}
+.sec2 .conteudo > div p{
+    line-height: 2;
+}
+.sec2 .conteudo > div p > span{
+    font-size: 1.2rem;
+}
+
+/*box resenhista*/
+.resenhista {
+    display: flex; 
+    flex-direction: row; 
+    background-color: var(--principal);
+    height: 20rem;
+    padding: 5%;
+    margin-bottom: 5%;
+    color: var(--text);
+    gap: 2rem; /* opcional: adiciona espaçamento entre os elementos */
+    align-items: center; /* opcional: alinha verticalmente no centro */
+}
+
+
+.imagem {
+    width: 20%;
+    height: 15rem;
+}
+
+.imagem img {
+    max-width: 100%;
+    height: 15rem;
+}
+.sec2 .resenhista .resumo {
+    width: 70%;
+    border: 1px solid var(--text);
+    border-radius: .5rem;
+    height: auto;
+    padding: 2rem 0rem
+}
+.sec2 .resenhista .resumo p{
+    color: var(--text);
+}
+
+.siteFooter {
+    margin-top:4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--principal); /* ou qualquer cor escura */
+    padding: 2rem 5%;
+    color: #fff;
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: 50vh;
+}
+
+.footerLogo img {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footerTexto h3 {
+    font-size: 2rem;
+    margin: 0;
+        color: #fff;
+
+}
+
+.footerTexto p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+        color: #fff;
+        text-decoration: none;
+
+}
+
+.footerRedes {
+    display: flex;
+    gap: 1rem;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+.footerRedes a {
+    color: #fff;
+    transition: transform 0.2s, color 0.2s;
+    text-decoration: none;
+}
+
+.footerRedes a:hover {
+    transform: scale(1.2);
+    color: white; /* destaque ao passar o mouse */
+}
