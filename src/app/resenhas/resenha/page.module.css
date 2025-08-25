@@ -36,7 +36,6 @@
     margin-top:1rem;
     width: auto;
     height: 18rem;
-    border: 2px solid red;
 }
 /*Para deixar a section 1 e 2 uma ao lado da outra*/
 .display{
@@ -58,6 +57,7 @@ display:flex;
     margin: 2rem 0rem;
 }
 .textSinopse{
+    width:100%;
     font-size: 2rem;
     margin: 2rem 0rem;
     margin-right:90%;
@@ -104,12 +104,8 @@ display:flex;
 
 
 .imagem {
-    width: 20%;
-    height: 15rem;
-}
-
-.imagem img {
-    max-width: 100%;
+    margin-right:5rem;
+    width: 10%;
     height: 15rem;
 }
 .sec2 .resenhista .resumo {
