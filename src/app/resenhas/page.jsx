@@ -26,9 +26,11 @@ export default function Resenhas() {
 
 <div className={styles.gridContainer}>
   <div className={`${styles.caixa1} ${styles.caixa}`}>
+    <Link href="/destino" className={styles.linkStyle}>
     <img src="/images/img1.jpg" alt="Imagem 1" className={styles.imagem} />
     <h1 className={styles.textstyle2}>Texto 1</h1>
     <h3 style={{marginTop:'3rem'}}>Malfoy 25 06 17 - 13:47:48</h3>
+    </Link>
 </div>
 
 <div className={`${styles.caixa2} ${styles.caixa}`}>

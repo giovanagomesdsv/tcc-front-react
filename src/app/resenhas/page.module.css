@@ -8,6 +8,11 @@
 
 /*Estilo do perfil da navbar*/
 
+.linkStyle{
+    color:black;
+    text-decoration:none;
+}
+
 .navlinkstyle img {
     width: 14rem;
     height: 14rem;
