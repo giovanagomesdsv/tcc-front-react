@@ -8,11 +8,6 @@
 
 /*Estilo do perfil da navbar*/
 
-.linkStyle{
-    color:black;
-    text-decoration:none;
-}
-
 .navlinkstyle img {
     width: 14rem;
     height: 14rem;
@@ -67,7 +62,7 @@
 /* Linha de cima */
 .caixa1 {
   grid-column: 1 / 2; /* 6 colunas */
-  height: 300px;
+  height: 30rem;
   background-color: #fff;
   
   border-radius:0.3rem;
@@ -75,7 +70,7 @@
 
 .caixa2 {
   grid-column: 0 / 3; /* 6 colunas */
-  height: 300px;
+  height: 30rem;
   background-color: #fff;
   
   border-radius:0.3rem;
@@ -83,8 +78,9 @@
 
 .caixa3 {
   grid-column: 3 / 5; /* 3 colunas */
-  height: 300px;
+  height: 30rem;
   background-color: #fff;
+  border: 2px solid red;
   
   display: flex;
   align-items: center;
@@ -94,7 +90,7 @@
 
 .caixa4 {
   grid-column: 1 / 5; /* 3 colunas */
-  height: 300px;
+  height: 30rem;
   background-color: #fff;
   
   display: flex;         /* Coloca imagem e textos lado a lado */
@@ -125,6 +121,11 @@
   display: flex;
   flex-direction: column; /* Um embaixo do outro */
   justify-content: center;
+}
+
+.linkStyle{
+    color:black;
+    text-decoration:none;
 }
 /*Box vertical (Padrão)*/
 .boxText{

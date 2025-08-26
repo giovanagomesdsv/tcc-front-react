@@ -25,29 +25,30 @@ export default function Resenhas() {
 </div>
 
 <div className={styles.gridContainer}>
-  <div className={`${styles.caixa1} ${styles.caixa}`}>
-    <Link href="/destino" className={styles.linkStyle}>
+
+<Link href="/destino" className={styles.linkStyle}>
+<div className={`${styles.caixa1} ${styles.caixa}`}>
     <img src="/images/img1.jpg" alt="Imagem 1" className={styles.imagem} />
     <h1 className={styles.textstyle2}>Texto 1</h1>
-    <h3 style={{marginTop:'3rem'}}>Malfoy 25 06 17 - 13:47:48</h3>
-    </Link>
+    <h3 style={{ marginTop: '3rem' }}>Malfoy 25 06 17 - 13:47:48</h3>
 </div>
+</Link>
 
+<Link href="/destino" className={styles.linkStyle}>
 <div className={`${styles.caixa2} ${styles.caixa}`}>
     <img src="/images/img1.jpg" alt="Imagem 1" className={styles.imagem} />
     <h1 className={styles.textstyle2}>Texto 1</h1>
     <h3 style={{marginTop:'3rem'}}>Malfoy 25 06 17 - 13:47:48</h3>
 </div>
+</Link>
 
-  <div className={`${styles.caixa3} ${styles.caixa}`}>
+<div className={`${styles.caixa3} ${styles.caixa}` }>
     <img src="/images/img3.jpg" alt="Imagem 3" className={styles.imagem3} />
-
 <div className={styles.textosContainer}>
     <h2 className={styles.textstyle2}>Harry Potter e a Câmara Secreta</h2>
     <h3>Malfoy 2025 - 06 17 13:47:48</h3>
     <h3 className={styles.boxText2}>Texto 3</h3>
   </div>
-
 </div>
 
 <div className={`${styles.caixa4} ${styles.caixa}`}>
