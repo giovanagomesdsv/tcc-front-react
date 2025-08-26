@@ -26,7 +26,7 @@ export default function Resenhas() {
 
       <div className={styles.gridContainer}>
 
-        <Link href="/destino" className={styles.linkStyle}>
+        <Link href="/resenhas/resenha" className={styles.linkStyle}>
           <div className={styles.caixa1}>
             <img src="/images/img1.jpg" alt="Imagem 1" className={styles.imagem} />
             <h1 className={styles.textstyle2}>Texto 1</h1>
