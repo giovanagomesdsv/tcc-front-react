@@ -1,75 +1,52 @@
 :root {
-    --bg: #f0f0f0;
+    --bg: #f4f4f4;
+    --bg2: #f0f0f0;
     --text: #f5f5f5;
-    --principal: #56070C;
-    --secundaria: #11114E;
+    --principal1: #56070C;
+    --secundaria2: #11114E;
 }
 
-.displayContainer{
-    display:flex;
+.headerStyle{
+    background-color: var(--principal1);
 }
 
-.headerStyle {
-    background-color: var(--principal);
-}
-
-.sec1,
-.sec2 {
-    display: flex;
-    flex-direction: column;
-    height: auto;
+.displayContainer {
+  display: flex;
 }
 
 .sec1 {
-    margin-top:5rem;
-    width: 15%;
-    align-items: center;
-    border-right: 1px solid;
-    gap: 5%;
-    padding: 1rem;
+  margin-top: 5rem;
+  margin-bottom:5rem;
+  width: 15%;
+  align-items: center;
+  border-right: 1px solid;
+  gap: 5%;
+  padding: 1rem;
 }
 
 .sec1 img {
-    width: 100%;
-    height: 25rem;
+  width: 100%;
+  height: 25rem;
+}
+
+.sec2 {
+  display: flex;
+  margin-top:3%;
+  flex-direction: column; /* garante que h1 fique em cima e p embaixo */
+  padding: 2rem;
+  width: 85%;
 }
 
 .tituloAutor {
-    font-size: 3.5rem;
-    border: 2px solid red;
-    justify-content:center;
-    align-self:center;
-    margin-left:30%;
+  font-size: 3.5rem;
+  border: 2px solid red;
+  margin-bottom: 1rem;
 }
 
-.displayteste{
-    display:inline;
+.bio {
+  text-align: justify;
+  text-indent: 2rem;
+  margin-top:5%;
+  line-height: 2;
 }
 
-.sec2 .bio {
-    text-align: justify;
-    text-indent: 2rem;
-    padding: 2rem;
-}
-
-.sec2 .bio p {
-    line-height: 2;
-}
-
-.box-livros {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    margin: 2% 5%;
-}
-
-.box-livros img {
-    width: 12rem;
-    height: auto;
-    transition: .5s;
-
-}
-
-.box-livros img:hover {
-    transform: scale(0.9);
-}

@@ -400,3 +400,55 @@ p {
   /* Cor de fundo do input */
   color: #000;
 }
+
+.siteFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--principal1); /* ou qualquer cor escura */
+    padding: 2rem 5%;
+    color: #fff;
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: 50vh;
+}
+
+.footerLogo img {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footerTexto h3 {
+    font-size: 2rem;
+    margin: 0;
+        color: #fff;
+
+}
+
+.footerTexto p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+        color: #fff;
+        text-decoration: none;
+
+}
+
+.footerRedes {
+    display: flex;
+    gap: 1rem;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+.footerRedes a {
+    color: #fff;
+    transition: transform 0.2s, color 0.2s;
+    text-decoration: none;
+}
+
+.footerRedes a:hover {
+    transform: scale(1.2);
+    color: white; /* destaque ao passar o mouse */
+}
