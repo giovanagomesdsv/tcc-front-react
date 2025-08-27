@@ -5,6 +5,10 @@
     --secundaria: #11114E;
 }
 
+.displayContainer{
+    display:flex;
+}
+
 .headerStyle {
     background-color: var(--principal);
 }
@@ -17,7 +21,7 @@
 }
 
 .sec1 {
-    border: 2px solid red;
+    margin-top:5rem;
     width: 15%;
     align-items: center;
     border-right: 1px solid;
@@ -30,8 +34,16 @@
     height: 25rem;
 }
 
-.sec2 h1 {
+.tituloAutor {
     font-size: 3.5rem;
+    border: 2px solid red;
+    justify-content:center;
+    align-self:center;
+    margin-left:30%;
+}
+
+.displayteste{
+    display:inline;
 }
 
 .sec2 .bio {
