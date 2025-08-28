@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import Link from "next/link";
 // import Slider from "@/components/slider";
-import LivrosHome from "@/components/homelivrosBC";
+import LivrosHome from "@/components/homeLivrosBC";
 import Image from "next/image";
 
 export default function Home() {
