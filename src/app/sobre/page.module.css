@@ -1,0 +1,62 @@
+:root {
+    --bg: #f4f4f4;
+    --bg2: #f0f0f0;
+    --text: #f5f5f5;
+    --principal: #56070C;
+    --secundaria: #11114E;
+}
+
+/*FIXO DA PAGINA BAIXO*/
+
+.boxResenhista {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+.boxResenhista .cardRes {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--principal);
+    height: 15rem;
+    width: 100%;
+    padding: 1rem 5%;
+    margin-bottom:10rem;
+}
+.boxResenhista > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boxResenhista .cardRes .imagem{
+    height: 100%;
+    width: 25%;
+}
+.boxResenhista .cardRes .imagem img{
+    height: 100%;
+    object-fit: cover;
+}
+.boxResenhista .cardRes .info{
+    height: 100%;
+    width: 40%;
+}
+.boxResenhista .cardRes .info h1,
+.boxResenhista .cardRes .info h2{
+    color: #fff;
+    margin-top:2rem;
+}
+.boxResenhista .cardRes .info h2 {
+    color: #fff; 
+    font-weight: 200; 
+    font-size: 1.5rem
+}
+
+
+.boxResenhista .cardRes .footerRedes{
+    height: 100%;
+    width: 25%;
+    align-items: center; 
+    justify-content: center
+}
