@@ -85,6 +85,46 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.navlinkstyle img {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.barra {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--principal1);
+    color: white;
+    width: 100%;
+    padding: 1rem 1rem 1rem 0rem;
+}
+
+/* Primeira tela */
+.navbar {
+    background-color: var(--principal1);
+    color: #ffffff;
+    padding: 0.4rem;
+    gap: 10rem;              /* espaçamento entre itens */
+}
+
+/* Estilo do Link da navbar */
+.navlinkstyle {
+    padding:3rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navlinkstyle2 {
+    padding:1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
 .textoAlternativo {
   color: #757575;
   text-align: justify;
