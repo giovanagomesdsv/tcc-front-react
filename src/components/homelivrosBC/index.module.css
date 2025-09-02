@@ -1,0 +1,126 @@
+:root {
+    --bg: #f4f4f4;
+    --bg2: #f0f0f0;
+    --text: #f5f5f5;
+    --principal1: #56070C;
+    --secundaria2: #11114E;
+}
+
+/** 
+ * Caixa1 é o container principal da estrutura. 
+ * Ele centraliza todos os elementos na vertical, com espaçamento entre eles 
+ * e uma borda vermelha ao redor.
+ */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Linha de cima */
+.caixa1 {
+  grid-column: 1 / 7; /* 6 colunas */
+  height: 300px;
+  background-color: #fff;
+}
+
+.caixa2 {
+  grid-column: 7 / 10; /* 3 colunas = 1.5 "virtuais" */
+  height: 300px;
+  background-color: #fff;
+}
+
+.caixa3 {
+  grid-column: 10 / 13; /* 3 colunas */
+  height: 300px;
+  background-color: #fff;
+}
+
+/* Linha de baixo */
+.caixa4 {
+  grid-column: 1 / 5;
+  height: 400px;
+  background-color: #fff;
+}
+
+.caixa56Container {
+  grid-column: 5 / 7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.caixa5,
+.caixa6 {
+  height: 190px;
+}
+
+.caixa5 {
+  background-color: #fff;
+}
+
+.caixa6 {
+  background-color: #fff;
+}
+
+.caixa7 {
+  grid-column: 7 / 13;
+  height: 400px;
+  background-color: #fff;
+}
+
+
+/* Estilo das caixinhas */
+.caixa {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Imagem de fundo usando <img> */
+.caixa img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 8px;
+}
+
+/* Escurece a imagem */
+.caixa::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: background 0.3s ease;
+}
+
+.caixa:hover {
+    transform: scale(0.97);
+}
+
+.caixa:hover::before {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Texto acima da imagem */
+.caixa p, .caixa span {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    color: #fff;
+    font-size: 2rem;
+}
