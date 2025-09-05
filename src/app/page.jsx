@@ -38,24 +38,6 @@ export default function Home() {
       <Link href={"/perfil"}>Perfil</Link>
       <Link href={"/criar-resenha"}>Criar Resenha</Link>
       <Link href={"/minhas-resenhas"}>Minhas Resenhas</Link>
-<<<<<<< HEAD
-    <div className={styles.navbar}>
-      <img src='imagem.png' alt="img.png" className={styles.perfilstyle}/>
-      <Link href={"/login"}  className={styles.navlinkstyle}>Login</Link>
-      <Link href={"#"} className={styles.navlinkstyle}>Home</Link>
-      <Link href={"/resenhas"} className={styles.navlinkstyle}>Resenhas</Link>
-      <Link href={"/autores"} className={styles.navlinkstyle}>Autores</Link>
-      <Link href={"/livros"} className={styles.navlinkstyle}>Livros</Link>
-      <Link href={"/sobre"} className={styles.navlinkstyle}>Sobre</Link>
-    </div>
-    <div className={styles.tela1}>
-      <section className={styles.tela1} id="sec1"/>
-                <div className={styles.letreiro}>
-                    <h3 className={styles.nome1}>Bibliófilos</h3>
-                    <h3 className={styles.nome2}>COMMUNITY</h3>
-                    <br/><br/>
-                    <div className={styles.barra}><p>livros são sonhos que seguramos com as mãos</p></div>
-=======
       <div className={styles.navbar}>
         <img src='imagem.png' alt="img.png" className={styles.perfilstyle} />
         <Link href={"/login"} className={styles.navlinkstyle}>Login</Link>
@@ -103,7 +85,6 @@ export default function Home() {
                     <br /><br /><br /><br />
                     <p style={{ fontSize: '2rem' }}>Texto 2</p>
                   </div>
->>>>>>> Mockup-teste-mariana
                 </div>
               </a>
               <a href="#">
@@ -166,159 +147,6 @@ export default function Home() {
           <hr style={{ width: '100%', border: '1px solid #ccc' }} />
         </div>
 
-<<<<<<< HEAD
-    {/* DIREITA: Imagem com texto ao lado */}
-    <div className={`${styles.box1} ${styles['box-hor1']}`} style={{ width: '50%',}}>
-      <a href="#">
-        <div className={styles.hor1}>
-          <div className={styles.image}>
-            <img src="/imagem2.png" alt="Imagem 2" />
-          </div>
-          <div className={styles.info}>
-            <p>Texto 1</p>
-            <br/>
-            <p>Texto 2</p>
-          </div>
-        </div>
-      </a>
-      <a href="#">
-        <div className={styles.hor1}>
-          <div className={styles.image}>
-            <img src="/imagem2.png" alt="Imagem 2" />
-          </div>
-          <div className={styles.info}>
-            <p>Texto 1</p>
-            <br/>
-            <p>Texto 2</p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-
-<br/><br/>
-
-      {/*Segundas imagens------------------------------------------------------------*/}
-      {/*Segunda barra que separa informações */}
-    <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-      <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
-        <h1>Horror</h1>
-      </div>
-      <hr style={{ width: '100%', border: '1px solid #ccc' }} />
-    </div>
-
-<div>
-<div className={styles.box2}>
-  <a href="#">
-    <div className={styles.hor2}>
-      <div className={styles.image}>
-        <img src="/imagem3.png" alt="Imagem 3" />
-      </div>
-      <div className={styles.info}>
-        <p style={{fontSize: '2rem'}}>Texto 1</p>
-        <br/><br/>
-        <p style={{fontSize: '1rem'}}>Texto 2</p>
-      </div>
-    </div>
-  </a>
-
-  <a href="#">
-    <div className={styles.hor2}>
-      <div className={styles.image}>
-        <img src="/imagem4.png" alt="Imagem 4" />
-      </div>
-      <div className={styles.info}>
-        <p style={{fontSize: '2rem'}}>Texto 1</p>
-        <br/><br/>
-        <p style={{fontSize: '1rem'}}>Texto 2</p>
-      </div>
-    </div>
-  </a>
-</div>
-</div>
-
-<br/><br/>
-      {/*Terceiras imagens------------------------------------------------------------*/}
-      {/*Terceira barra que separa informações */}
-    <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-      <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
-        <h1>Suspense e Mistério</h1>
-      </div>
-      <hr style={{ width: '100%', border: '1px solid #ccc' }} />
-    </div>
-
-<div className={styles.box2}>
-  <a href="#">
-    <div className={styles.hor2}>
-      <div className={styles.image}>
-        <img src="/imagem5.png" alt="Imagem 5" />
-      </div>
-      <div className={styles.info}>
-        <p style={{fontSize: '2rem'}}>Texto 1</p>
-        <br/><br/>
-        <p style={{fontSize: '1rem'}}>Texto 2</p>
-      </div>
-    </div>
-  </a>
-
-  <a href="#">
-    <div className={styles.hor2}>
-      <div className={styles.image}>
-        <img src="/imagem6.png" alt="Imagem 6" />
-      </div>
-      <div className={styles.info}>
-        <p style={{fontSize: '2rem'}}>Texto 1</p>
-        <br/><br/>
-        <p style={{fontSize: '1rem'}}>Texto 2</p>
-      </div>
-    </div>
-  </a>
-
-  <a href="#">
-    <div className={styles.hor2}>
-      <div className={styles.image}>
-        <img src="/imagem7.png" alt="Imagem 7" />
-      </div>
-      <div className={styles.info}>
-        <p style={{fontSize: '2rem'}}>Texto 1</p>
-        <br/><br/>
-        <p style={{fontSize: '1rem'}}>Texto 2</p>
-      </div>
-    </div>
-  </a>
-
-  <a href="#">
-    <div className={styles.hor2}>
-      <div className={styles.image}>
-        <img src="/imagem8.png" alt="Imagem 8" />
-      </div>
-      <div className={styles.info}>
-        <p style={{fontSize: '2rem'}}>Texto 1</p>
-        <br/><br/>
-        <p style={{fontSize: '1rem'}}>Texto 2</p>
-      </div>
-    </div>
-  </a>
-</div>
-
-<br/><br/>
-      {/*Quartas imagens------------------------------------------------------------*/}
-      {/*Quarta barra que separa informações */}
-    <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-      <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
-        <h1>Romance</h1>
-      </div>
-      <hr style={{ width: '100%', border: '1px solid #ccc' }} />
-    </div>
-
-    <div className={styles.box4style}>
-  {/* Item 1 */}
-  <div style={{ width: '22%', textAlign: 'center' }}>
-    <a href="#">
-      <div>
-=======
->>>>>>> Mockup-teste-mariana
         <div>
           <div className={styles.box2}>
             <a href="#">
@@ -626,7 +454,7 @@ export default function Home() {
         {/*Setima barra que separa informações */}
         <div style={{ textAlign: 'center', margin: '2rem 0' }}>
           <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
-            <h1>Drama</h1>
+            <h1>Ficção</h1>
           </div>
           <hr style={{ width: '100%', border: '1px solid #ccc' }} />
         </div>
