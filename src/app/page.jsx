@@ -3,6 +3,7 @@ import Link from "next/link";
 // import Slider from "@/components/slider";
 import LivrosHome from "@/components/homelivrosBC";
 import Image from "next/image";
+import ClassicosBC from "@/components/classicosBC";
 
 export default function Home() {
   return (
@@ -60,6 +61,8 @@ export default function Home() {
       <LivrosHome />
       
       <main>
+
+        <ClassicosBC />
         {/*Primeira barra que separa informações */}
         <div style={{ textAlign: 'center', margin: '2rem 0' }}>
           <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
