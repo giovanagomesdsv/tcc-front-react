@@ -1,15 +1,15 @@
 "use client"; // necessário para hooks 
 
 import styles from './index.module.css';
-import { classicos, livroGenero } from '@/components/mockup/classicos';
+import { suspense, livroSuspense } from '@/components/mockup/suspenseMisterio';
 import Image from 'next/image';
 import { useState } from 'react';
 
-export default function ClassicosBC() {
+export default function suspenseMisterioBC() {
     const [generoSelecionado, setGeneroSelecionado] = useState(2);
 
-    const livrosFiltrados = classicos.filter(livro =>
-        livroGenero.some(
+    const livrosFiltrados = suspense.filter(livro =>
+        livroSuspense.some(
             rel => rel.livro_id === livro.livro_id && rel.gen_id === generoSelecionado
         )
     );
@@ -17,11 +17,11 @@ export default function ClassicosBC() {
     return (
         <div>
             {/* Título */}
-            <h2 className={styles.titulo}>CLÁSSICOS</h2>
+            <h2 className={styles.titulo}>ROGER</h2>
 
             {/* Filtros de gênero */}
             <div className={styles.filtros}>
-                <button onClick={() => setGeneroSelecionado(2)}>Clássicos</button>
+                <button onClick={() => setGeneroSelecionado(2)}>Suspense e Mistério</button>
             </div>
 
             {/* Layout especial de livros */}
