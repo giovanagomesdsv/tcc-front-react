@@ -1,0 +1,35 @@
+.box{
+border: solid 3px red;
+display: flex;
+flex-direction: row;
+ display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+.box1{
+border: solid 3px blue;
+display: flex;
+flex-direction: column;
+    margin: 1rem;
+
+}
+.vert1{
+border: solid 3px black;
+
+display: flex;
+grid-column: 1 / 8;
+}
+.hor1{
+border: solid 3px rgb(255, 0, 157);
+grid-column: 9/ 12;
+height: rem;
+justify-content: center;
+}
+.info{
+border: solid 3px green;
+
+}
+.image{
+border: solid 3px purple;
+margin: 0 0 10rem 0;
+}

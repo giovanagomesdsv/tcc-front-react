@@ -15,54 +15,53 @@ export default function ClassicosBC() {
     );
 
     return (
-        <div>
+        <div className={styles.box}>
             {/* Título */}
             <h2 className={styles.titulo}>CLÁSSICOS</h2>
 
-            {/* Filtros de gênero */}
-            <div className={styles.filtros}>
-                <button onClick={() => setGeneroSelecionado(2)}>Clássicos</button>
-            </div>
+
 
             {/* Layout especial de livros */}
-            <div className={styles.grid}>
-                <div className={styles.container}>
 
-                    {/* Duas imagens lado a lado */}
-                    <div className={styles.ladoALado}>
-                        {livrosFiltrados.slice(0, 2).map((livro) => (
-                            <div key={livro.livro_id} className={styles.card}>
-                                <Image
-                                    src={livro.livro_foto}
-                                    alt={livro.livro_titulo}
-                                    width={200}
-                                    height={280}
-                                />
-                                <p className={styles.autor}>
-                                    {livro.livro_id % 2 === 0 ? 'AtticusR' : 'Malfoy'}
-                                </p>
-                                <h3>{livro.livro_titulo}</h3>
-                            </div>
-                        ))}
+
+            {/* Duas imagens lado a lado */}
+            <div className={styles.vert1}>
+                {livrosFiltrados.slice(0, 2).map((livro) => (
+                    <div key={livro.livro_id} className={styles.image}>
+                        <Image
+                            src={livro.livro_foto}
+                            alt={livro.livro_titulo}
+                            width={200}
+                            height={250}
+                        />
+                        <p className={styles.info}>
+                            {livro.livro_id % 2 === 0 ? 'AtticusR' : 'Malfoy'}
+                        </p>
+                        <h3>{livro.livro_titulo}</h3>
                     </div>
-                    {/* Duas imagens empilhadas */}
-                    <div className={styles.empilhado}>
-                        {livrosFiltrados.slice(2, 4).map((livro) => (
-                            <div key={livro.livro_id} className={styles.card}>
-                                <Image
-                                    src={livro.livro_foto}
-                                    alt={livro.livro_titulo}
-                                    width={200}
-                                    height={280}
-                                />
-                                <p className={styles.autor}>
-                                    {livro.livro_id % 2 === 0 ? 'AtticusR' : 'Malfoy'}
-                                </p>
-                                <h3>{livro.livro_titulo}</h3>
-                            </div>
-                        ))}
+
+
+                ))}
+            </div>
+
+
+            {/* Duas imagens empilhadas */}
+            <div className={styles.hor1}>
+
+                {livrosFiltrados.slice(2, 4).map((livro) => (
+                    <div key={livro.livro_id} className={styles.image}>
+                        <Image
+                            src={livro.livro_foto}
+                            alt={livro.livro_titulo}
+                            width={200}
+                            height={250}
+                        />
+                        <p className={styles.info}>
+                            {livro.livro_id % 2 === 0 ? 'AtticusR' : 'Malfoy'}
+                        </p>
+                        <h3>{livro.livro_titulo}</h3>
                     </div>
-                </div>
+                ))}
             </div>
         </div>
     );
