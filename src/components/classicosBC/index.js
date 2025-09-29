@@ -27,8 +27,8 @@ export default function ClassicosBC() {
             {/* Duas imagens lado a lado */}
             <div className={styles.vert1}>
                 {livrosFiltrados.slice(0, 2).map((livro) => (
-                    <div key={livro.livro_id} className={styles.image}>
-                        <Image
+                    <div key={livro.livro_id} >
+                        <Image className={styles.image}
                             src={livro.livro_foto}
                             alt={livro.livro_titulo}
                             width={200}
@@ -49,8 +49,8 @@ export default function ClassicosBC() {
             <div className={styles.hor1}>
 
                 {livrosFiltrados.slice(2, 4).map((livro) => (
-                    <div key={livro.livro_id} className={styles.image}>
-                        <Image
+                    <div key={livro.livro_id}>
+                        <Image className={styles.image1}
                             src={livro.livro_foto}
                             alt={livro.livro_titulo}
                             width={200}
