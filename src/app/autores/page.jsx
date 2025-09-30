@@ -7,11 +7,11 @@ export default function Autores() {
         <div className="container">
 
         <div className={styles.navbar}>
-        <img src='imagem.png' alt="img.png" className={styles.navlinkstyle}/>
-        <Link href={"/link"}  className={styles.navlinkstyle}>Login</Link>
+        <img src='imagem.png' alt="img.png" className={styles.navlinkstyle} />
+        <Link href={"/link"} className={styles.navlinkstyle}>Login</Link>
         <Link href={"#"} className={styles.navlinkstyle}>Home</Link>
         <Link href="#" className={styles.navlinkstyle}>Resenhas</Link>
-        <Link href={"#"} className={clsx(styles.navlinkstyle, "fix2" , "linkname")}>Autores</Link>
+        <Link href="#" className={clsx(styles.navlinkstyle2, "fix2")}>Autores</Link>
         <Link href={"#"} className={styles.navlinkstyle}>Livros</Link>
         <Link href={"#"} className={styles.navlinkstyle}>Sobre</Link>
         </div>
@@ -19,7 +19,7 @@ export default function Autores() {
 
         <div className="buscacontainer">
             <form action="" method="GET" className="buscaform">
-            <input type="text" name="busca" placeholder="nome do livro" />
+            <input type="text" name="busca" placeholder="nome do autor" />
             <button type="submit"><i className='bx bx-search'></i></button>
             </form>
         </div>
