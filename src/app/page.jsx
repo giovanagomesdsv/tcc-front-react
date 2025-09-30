@@ -4,6 +4,8 @@ import Link from "next/link";
 import LivrosHome from "@/components/homelivrosBC";
 import Image from "next/image";
 import ClassicosBC from "@/components/classicosBC";
+import SuspenseMisterioBC from "@/components/suspenseMisterioBC";
+
 
 export default function Home() {
   return (
@@ -108,6 +110,7 @@ export default function Home() {
         {/*Terceira barra que separa informações */}
         <div style={{ textAlign: 'center', margin: '2rem 0' }}>
           <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
+             <suspenseMisterioBC/>
             <h1>Suspense e Mistério</h1>
           </div>
           <hr style={{ width: '100%', border: '1px solid #ccc' }} />
