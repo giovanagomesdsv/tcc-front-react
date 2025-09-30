@@ -9,9 +9,9 @@ export default function Livros() {
                         <img src='imagem.png' alt="img.png" className="navlinkstyle"/>
                         <Link href={"/link"}  className="navlinkstyle">Login</Link>
                         <Link href={"#"} className="navlinkstyle">Home</Link>
-                        <Link href="#" className="navlinkstyle2 fix2">Resenhas</Link>
+                        <Link href={"#"} className="navlinkstyle">Resenhas</Link>
                         <Link href={"#"} className="navlinkstyle">Autores</Link>
-                        <Link href={"#"} className="navlinkstyle">Livros</Link>
+                        <Link href="#" className="navlinkstyle2 fix2">Livros</Link>
                         <Link href={"#"} className="navlinkstyle">Sobre</Link>
                     </div>
                     <br/><br/>
