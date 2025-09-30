@@ -15,6 +15,14 @@ export default function Autores() {
         <Link href={"#"} className={styles.navlinkstyle}>Livros</Link>
         <Link href={"#"} className={styles.navlinkstyle}>Sobre</Link>
         </div>
+        <br/><br/>
+
+        <div className="buscacontainer">
+            <form action="" method="GET" className="buscaform">
+            <input type="text" name="busca" placeholder="nome do livro" />
+            <button type="submit"><i className='bx bx-search'></i></button>
+            </form>
+        </div>
             
         {/*Segunda barra que separa informações */}
         <div style={{ textAlign: 'center', margin: '2rem 0' }}>
