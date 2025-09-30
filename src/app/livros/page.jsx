@@ -15,6 +15,12 @@ export default function Livros() {
                         <Link href={"#"} className="navlinkstyle">Sobre</Link>
                     </div>
                     <br/><br/>
+                    <div className="buscacontainer">
+                        <form action="" method="GET" className="buscaform">
+                            <input type="text" name="busca" placeholder="nome do livro" />
+                            <button type="submit"><i className='bx bx-search'></i></button>
+                        </form>
+                        </div>
             {/* Cards e Filtragem */}
 
             <div className={styles.container}>
