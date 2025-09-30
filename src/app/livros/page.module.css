@@ -10,12 +10,13 @@
     flex-direction: row;
     height: auto;
     margin-bottom: 1rem;
+    gap: 50px;
 }
 
 .container .boxFilter {
     width: 20%;
-    height:102%;
     background-color:white;
+    
 }
 
 .boxLivros {
@@ -27,6 +28,7 @@
     padding: 1rem 0;
     width: 80%;
     height: 100%;
+    grid-row:1fr, 1fr;
 }
 
 .boxFilter h3 {
@@ -46,7 +48,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     transition: .5s ease-in-out;
-    border: 2px solid blue
+
 }
 
 .boxLivros a .cardLivro:hover {
@@ -87,4 +89,10 @@
 
 .boxLivros a .cardLivro .info .tipo {
     font-size: 1rem
+}
+
+.containerCardLivros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas de tamanho igual */
+    gap: 20px; /* Espaçamento entre os cards (horizontal e vertical) */
 }

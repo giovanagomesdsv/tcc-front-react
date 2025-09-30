@@ -36,13 +36,91 @@ export default function Livros() {
                     <button>filtrar</button>
                 </div>
 
-                <div className={styles.boxLivros}>
-                    
+                <div className={styles.containerCardLivros}>
+                    <div className={styles.boxLivros}>
+                    <a>
                     <div className={styles.cardLivro}>
-                        
+                        <div className={styles.imagem}>
+                        <img src="imagem.png" alt="img.png"/>
+                        </div>
+                        <div className={styles.info}>
+                        <h1>Harry potter e o Enigma do príncipe</h1>
+                        <h2>R$ 16,40</h2>
+                        <p>tipo: capa dura</p>
+                        <p>12+</p>
+                        </div>
                     </div>
-
+                    </a>
+                    </div>
+                    <div className={styles.boxLivros}>
+                    <a>
+                    <div className={styles.cardLivro}>
+                        <div className={styles.imagem}>
+                        <img src="imagem.png" alt="img.png"/>
+                        </div>
+                        <div className={styles.info}>
+                        <h1>Harry potter e o Enigma do príncipe</h1>
+                        <h2>R$ 16,40</h2>
+                        <p>tipo: capa dura</p>
+                        <p>12+</p>
+                        </div>
+                    </div>
+                    </a>
+                    </div>
+                    <div className={styles.boxLivros}>
+                    <a>
+                    <div className={styles.cardLivro}>
+                        <div className={styles.imagem}>
+                        <img src="imagem.png" alt="img.png"/>
+                        </div>
+                        <div className={styles.info}>
+                        <h1>Harry potter e o Enigma do príncipe</h1>
+                        <h2>R$ 16,40</h2>
+                        <p>tipo: capa dura</p>
+                        <p>12+</p>
+                        </div>
+                    </div>
+                    </a>
+                    </div>
+                    <div className={styles.boxLivros}>
+                    <a>
+                    <div className={styles.cardLivro}>
+                        <div className={styles.imagem}>
+                        <img src="imagem.png" alt="img.png"/>
+                        </div>
+                        <div className={styles.info}>
+                        <h1>Harry potter e o Enigma do príncipe</h1>
+                        <h2>R$ 16,40</h2>
+                        <p>tipo: capa dura</p>
+                        <p>12+</p>
+                        </div>
+                    </div>
+                    </a>
+                    </div>
+                    <div className={styles.boxLivros}>
+                    <a>
+                    <div className={styles.cardLivro}>
+                        <div className={styles.imagem}>
+                        <img src="imagem.png" alt="img.png"/>
+                        </div>
+                        <div className={styles.info}>
+                        <h1>Harry potter e o Enigma do príncipe</h1>
+                        <h2>R$ 16,40</h2>
+                        <p>tipo: capa dura</p>
+                        <p>12+</p>
+                        </div>
+                    </div>
+                    </a>
+                    </div>
                 </div>
+                
+            </div>
+
+            <div style={{ textAlign: 'center', margin: '2rem 0' }}>
+            <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
+                <h1></h1>
+            </div>
+            <hr style={{ width: '100%', border: '1px solid #ccc' }} />
             </div>
 
 
