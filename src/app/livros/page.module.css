@@ -19,6 +19,10 @@
     
 }
 
+.spaceBox{
+    width:20%;
+}
+
 .boxLivros {
     display: flex;
     flex-direction: row;
