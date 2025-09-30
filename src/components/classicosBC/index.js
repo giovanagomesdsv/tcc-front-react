@@ -35,9 +35,9 @@ export default function ClassicosBC() {
                             height={250}
                         />
                         <p className={styles.info}>
-                            {livro.livro_id % 2 === 0 ? 'AtticusR' : 'Malfoy'}
+                            {livro.livro_id % 2 === 0 ? 'Malfoy' : 'Malfoy'}
                         </p>
-                        <h3>{livro.livro_titulo}</h3>
+                        <h3 className={styles.nomelivro}>{livro.livro_titulo}</h3>
                     </div>
 
 
@@ -46,23 +46,31 @@ export default function ClassicosBC() {
 
 
             {/* Duas imagens empilhadas */}
-            <div className={styles.hor1}>
 
+            {/* Duas imagens empilhadas */}
+            <div className={styles.hor1}>
                 {livrosFiltrados.slice(2, 4).map((livro) => (
                     <div key={livro.livro_id}>
+                        {/* Imagem */}
                         <Image className={styles.image1}
                             src={livro.livro_foto}
                             alt={livro.livro_titulo}
                             width={200}
                             height={250}
                         />
-                        <p className={styles.info}>
-                            {livro.livro_id % 2 === 0 ? 'AtticusR' : 'Malfoy'}
-                        </p>
-                        <h3>{livro.livro_titulo}</h3>
+
+                        {/* Bloco de texto */}
+                        <div className={styles.texto}>
+                            <p className={styles.info1}>
+                                {livro.livro_id % 2 === 0 ? 'AtticusR' : 'AtticusR'}
+                            </p>
+                            <h3 className={styles.nomelivro}>{livro.livro_titulo}</h3>
+                        </div>
                     </div>
                 ))}
             </div>
+
+
         </div>
     );
 }

@@ -1,49 +1,71 @@
 .box {
-  border: solid 3px red;
-  display: flex;
-  flex-direction: row;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  /* espaço entre as colunas */
 }
-
 .titulo {
   grid-column: 1 / -1;
-  /* ocupa toda a largura da grid */
+  /* ocupa toda a largura */
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 2px solid black;
   margin-bottom: 1rem;
   font-size: 2rem;
+  border-bottom: solid 1px black;
 }
-
+/* BLOCO VERT1 → 2 imagens lado a lado */
 .vert1 {
-  border: solid 3px black;
+  grid-column: 1/7;
   display: flex;
-  grid-column: 1 / 8;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 1rem;
 }
-
+/* BLOCO HOR1 → 2 imagens na horizontal */
 .hor1 {
-  border: solid 3px rgb(255, 0, 157);
-  grid-column: 9/ 12;
-  justify-content: center;
-
+  grid-column: 8 / 13;
+  display: flex;
+  flex-direction: column;
+  /* mantém os blocos um em cima do outro */
+  gap: 1rem;
+}
+/* Cada bloco (imagem + textos) */
+.hor1>div {
+  display: flex;
+  flex-direction: row;
+  /* coloca imagem + texto lado a lado */
+  align-items: center;
+  gap: 1rem;
 }
 
+/* Caixa de texto ao lado da imagem */
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .info {
-  border: solid 3px green;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
 
+}
+.info1 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  
+}
+.nomelivro {
+  font-size: 3rem;
 }
 
 .image {
-  border: solid 3px purple;
-  justify-content: space-between;
-  margin: 0 10rem 5rem 10rem;
+  display: block;
+  margin: 0 auto;
+   margin-bottom: 1.6rem;
 }
-
 .image1 {
-  border: solid 3px purple;
-  justify-content: space-between;
-  margin: 0 0 5rem 0;
+  display: block;
+
 }
