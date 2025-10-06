@@ -110,7 +110,7 @@ export default function Home() {
         {/*Terceira barra que separa informações */}
         <div style={{ textAlign: 'center', margin: '2rem 0' }}>
           <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
-             <suspenseMisterioBC/>
+             <SuspenseMisterioBC/>
             <h1>Suspense e Mistério</h1>
           </div>
           <hr style={{ width: '100%', border: '1px solid #ccc' }} />

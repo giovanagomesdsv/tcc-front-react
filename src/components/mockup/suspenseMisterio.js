@@ -1,6 +1,6 @@
 // imports das imagens
 import azkaban from '../../../public/temp/imagens/livros/Harry Potter e o Prisioneiro de Azkaban.jpg';
-import camaraSecreta from '../../../public/temp/imagens/livros/Harry Potter e a Camara Secreta.jpg';
+import principe from '../../../public/temp/imagens/livros/Harry Potter e o Enigma do Principe.jpg';
 import caliceFogo from '../../../public/temp/imagens/livros/Harry Potter e o Calice de Fogo.jpg';
 import fenix from '../../../public/temp/imagens/livros/Harry Potter e a Ordem da Fenix.jpg';
 
@@ -9,14 +9,14 @@ import fenix from '../../../public/temp/imagens/livros/Harry Potter e a Ordem da
 // ----------------------------
 const suspense = [
     {
-        "livro_id": 1,
-        "livro_titulo": "Harry Potter  e a Camara Secreta ",
+        "livro_id": 5,
+        "livro_titulo": "Harry Potter  e o Enigma do Príncipe ",
         "livro_sinopse": "Depois de férias aborrecidas na casa dos tios trouxas, está na hora de Harry Potter voltar a estudar. Coisas acontecem, no entanto, para dificultar o regresso de Harry. Persistente e astuto, o herói não se deixa intimidar pelos obstáculos e, com a ajuda dos fiéis amigos Weasley, começa o ano letivo na Escola de Magia e Bruxaria de Hogwarts. As novidades não são poucas. Novos colegas, novos professores, muitas e boas descobertas e um grande e perigosos desafio. Alguém ou alguma coisa ameaça a segurança e a tranquilidade dos membros de Hogwarts.",
         "livro_editora": "Rocco",
         "livro_isbn": "-8532529812",
         "livro_ano": 1990,
         "livro_classidd": "12+",
-        "livro_foto": camaraSecreta
+        "livro_foto": principe
     },
     {
         "livro_id": 2,
@@ -29,7 +29,7 @@ const suspense = [
         "livro_foto": azkaban
     },
     {
-         "livro_id": 3,
+        "livro_id": 3,
         "livro_titulo": "Harry Potter  e o Calice de Fogo",
         "livro_sinopse": "Nesta aventura, o feiticeiro cresceu e está com 14 anos. O início do ano letivo de Harry Potter reserva muitas emoções, mágicas, e acontecimentos inesperados, além de um novo torneio em que os alunos de Hogwarts terão de demonstrar todas as habilidade mágicas e nãomágicas que vêm adquirindo ao longo de suas vidas. Harry é escolhido pelo Cálice de Fogo para competir como um dos campeões de Hogwarts, tendo ao lado seus fiéis amigos. Muitos desafios, feitiços, poções e confusões estão reservados para Harry. Além disso, ele terá que lidar ainda com os problemas comuns da adolescência amor, amizade, aceitação e rejeição.",
         "livro_editora": "Rocco",
@@ -39,7 +39,7 @@ const suspense = [
         "livro_foto": caliceFogo
     },
     {
-         "livro_id": 4,
+        "livro_id": 4,
         "livro_titulo": "Harry Potter  e a Ordem da Fenix",
         "livro_sinopse": "Nesta aventura, o feiticeiro cresceu e está com 14 anos. O início do ano letivo de Harry Potter reserva muitas emoções, mágicas, e acontecimentos inesperados, além de um novo torneio em que os alunos de Hogwarts terão de demonstrar todas as habilidade mágicas e nãomágicas que vêm adquirindo ao longo de suas vidas. Harry é escolhido pelo Cálice de Fogo para competir como um dos campeões de Hogwarts, tendo ao lado seus fiéis amigos. Muitos desafios, feitiços, poções e confusões estão reservados para Harry. Além disso, ele terá que lidar ainda com os problemas comuns da adolescência amor, amizade, aceitação e rejeição.",
         "livro_editora": "Rocco",
@@ -55,10 +55,10 @@ const suspense = [
 // ----------------------------
 const livroSuspense = [
 
-    { "livro_id": 1, "gen_id": 9 },
+    { "livro_id": 5, "gen_id": 9 },
     { "livro_id": 2, "gen_id": 9 },
-       { "livro_id": 1, "gen_id": 9 },
-    { "livro_id": 2, "gen_id": 9 }
+    { "livro_id": 3, "gen_id": 9 },
+    { "livro_id": 4, "gen_id": 9 }
 ];
 
 // exportar para usar no React
