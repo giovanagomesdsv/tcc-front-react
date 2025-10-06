@@ -5,6 +5,7 @@ import LivrosHome from "@/components/homelivrosBC";
 import Image from "next/image";
 import ClassicosBC from "@/components/classicosBC";
 import SuspenseMisterioBC from "@/components/suspenseMisterioBC";
+import FantasiaBC from "@/components/fantasiaBC";
 
 
 export default function Home() {
@@ -61,11 +62,11 @@ export default function Home() {
         </div>
       </div>
       <LivrosHome />
-      
+
       <main>
 
         <ClassicosBC />
-       
+
         {/*Segundas imagens------------------------------------------------------------*/}
         {/*Segunda barra que separa informações */}
         <div style={{ textAlign: 'center', margin: '2rem 0' }}>
@@ -108,69 +109,9 @@ export default function Home() {
         <br /><br />
         {/*Terceiras imagens------------------------------------------------------------*/}
         {/*Terceira barra que separa informações */}
-        <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-          <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
-             <SuspenseMisterioBC/>
-            <h1>Suspense e Mistério</h1>
-          </div>
-          <hr style={{ width: '100%', border: '1px solid #ccc' }} />
-        </div>
 
-        <div className={styles.box2}>
-          <a href="#">
-            <div className={styles.hor2}>
-              <div className={styles.image}>
-                <img src="/imagem5.png" alt="Imagem 5" />
-              </div>
-              <div className={styles.info}>
-                <p style={{ fontSize: '2rem' }}>Texto 1</p>
-                <br /><br />
-                <p style={{ fontSize: '1rem' }}>Texto 2</p>
-              </div>
-            </div>
-          </a>
+        <SuspenseMisterioBC />
 
-          <a href="#">
-            <div className={styles.hor2}>
-              <div className={styles.image}>
-                <img src="/imagem6.png" alt="Imagem 6" />
-              </div>
-              <div className={styles.info}>
-                <p style={{ fontSize: '2rem' }}>Texto 1</p>
-                <br /><br />
-                <p style={{ fontSize: '1rem' }}>Texto 2</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div className={styles.hor2}>
-              <div className={styles.image}>
-                <img src="/imagem7.png" alt="Imagem 7" />
-              </div>
-              <div className={styles.info}>
-                <p style={{ fontSize: '2rem' }}>Texto 1</p>
-                <br /><br />
-                <p style={{ fontSize: '1rem' }}>Texto 2</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div className={styles.hor2}>
-              <div className={styles.image}>
-                <img src="/imagem8.png" alt="Imagem 8" />
-              </div>
-              <div className={styles.info}>
-                <p style={{ fontSize: '2rem' }}>Texto 1</p>
-                <br /><br />
-                <p style={{ fontSize: '1rem' }}>Texto 2</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <br /><br />
         {/*Quartas imagens------------------------------------------------------------*/}
         {/*Quarta barra que separa informações */}
         <div style={{ textAlign: 'center', margin: '2rem 0' }}>
@@ -261,77 +202,9 @@ export default function Home() {
         <br /><br />
         {/*Quinta imagens ------------------------------------------------------------*/}
         {/*Quinta barra que separa informações */}
-        <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-          <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
-            <h1>Fantasia</h1>
-          </div>
-          <hr style={{ width: '100%', border: '1px solid #ccc' }} />
-        </div>
 
-        {/*Caixa total das primeiras imagems*/}
-        <div>
-          <div className={styles.box}>
-            {/* ESQUERDA: Imagem com texto abaixo */}
-            <div className={`${styles.box1} ${styles['box-vert1']}`} style={{ width: '50%', }}>
-              <a href="#">
-                <div className={styles.vert1}>
-                  <div className={styles.image}>
-                    <img src="/imagem1.png" alt="Imagem 1" />
-                  </div>
-                  <div className={styles.info}>
-                    <br /><br /><br /><br />
-                    <p style={{ fontSize: '1rem' }}>Texto 1</p>
-                    <br /><br />
-                    <p style={{ fontSize: '2rem' }}>Texto 2</p>
-                  </div>
-                </div>
-              </a>
-              <a href="#">
-                <div className={styles.vert1}>
-                  <div className={styles.image}>
-                    <img src="/imagem1.png" alt="Imagem 1" />
-                  </div>
-                  <div className={styles.info}>
-                    <br /><br /><br /><br />
-                    <p style={{ fontSize: '1rem' }}>Texto 1</p>
-                    <br /><br />
-                    <p style={{ fontSize: '2rem' }}>Texto 2</p>
-                  </div>
-                </div>
-              </a>
-            </div>
+        <FantasiaBC />
 
-            {/* DIREITA: Imagem com texto ao lado */}
-            <div className={`${styles.box1} ${styles['box-hor1']}`} style={{ width: '50%', }}>
-              <a href="#">
-                <div className={styles.hor1}>
-                  <div className={styles.image}>
-                    <img src="/imagem2.png" alt="Imagem 2" />
-                  </div>
-                  <div className={styles.info}>
-                    <p style={{ fontSize: '1rem' }}>Texto 1</p>
-                    <br /><br />
-                    <p style={{ fontSize: '2rem' }}>Texto 2</p>
-                  </div>
-                </div>
-              </a>
-              <a href="#">
-                <div className={styles.hor1}>
-                  <div className={styles.image}>
-                    <img src="/imagem2.png" alt="Imagem 2" />
-                  </div>
-                  <div className={styles.info}>
-                    <p style={{ fontSize: '1rem' }}>Texto 1</p>
-                    <br /><br />
-                    <p style={{ fontSize: '2rem' }}>Texto 2</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <br /><br />
 
         {/*Sexta imagens------------------------------------------------------------*/}
         {/*Sexta barra que separa informações */}
