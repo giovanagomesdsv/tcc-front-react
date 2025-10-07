@@ -17,7 +17,7 @@ export default function fantasiaBC() {
     return (
         <div className={styles.box}>
             {/* Título */}
-            <h2 className={styles.titulo}>Fantasia</h2>
+            <h2 className={styles.titulo}>FANTASIA</h2>
 
 
 

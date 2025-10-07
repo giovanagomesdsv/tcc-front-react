@@ -17,7 +17,7 @@ export default function suspenseMisterioBC() {
     return (
         <div>
             {/* Título */}
-            <h2 className={styles.titulo}>Suspense e Mistério </h2>
+            <h2 className={styles.titulo}>SUSPENSE E MISTÉRIO </h2>
 
             <div className={styles.cubo}>
 
