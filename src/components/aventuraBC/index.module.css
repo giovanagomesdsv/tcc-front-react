@@ -24,3 +24,10 @@
   align-items: center;
   gap: 1rem;
 }
+.nome{
+font-size: 3rem;
+margin: 5rem 0 5rem 0 ;
+}
+.sinopse{
+  font-size: 1.6rem;
+}

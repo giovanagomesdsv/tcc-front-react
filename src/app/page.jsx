@@ -210,52 +210,9 @@ export default function Home() {
 
         {/*Sexta imagens------------------------------------------------------------*/}
         {/*Sexta barra que separa informações */}
-        <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-          <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
-           
-             <AventuraBC />
-            <h1>Aventura</h1>
-          </div>
-          <hr style={{ width: '100%', border: '1px solid #ccc' }} />
-        </div>
 
-        <div>
-          <div className={styles.box2}>
-            <a href="#">
-              <div className={styles.hor2}>
-                <div className={styles.image}>
-                  <img src="/imagem3.png" alt="Imagem 3" />
-                </div>
-                <div className={styles.info}>
-                  <br /><br /><br /><br />
-                  <p style={{ fontSize: '1rem' }}>Texto 1</p>
-                  <br /><br />
-                  <p style={{ fontSize: '2rem' }}>Texto 2</p>
-                  <br /><br />
-                  <p style={{ fontSize: '1rem' }}>Texto 3</p>
-                </div>
-              </div>
-            </a>
+        <AventuraBC />
 
-            <a href="#">
-              <div className={styles.hor2}>
-                <div className={styles.image}>
-                  <img src="/imagem4.png" alt="Imagem 4" />
-                </div>
-                <div className={styles.info}>
-                  <br /><br /><br /><br />
-                  <p style={{ fontSize: '1rem' }}>Texto 1</p>
-                  <br /><br />
-                  <p style={{ fontSize: '2rem' }}>Texto 2</p>
-                  <br /><br />
-                  <p style={{ fontSize: '1rem' }}>Texto 3</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <br /><br />
         {/*Setima imagens------------------------------------------------------------*/}
         {/*Setima barra que separa informações */}
         <div style={{ textAlign: 'center', margin: '2rem 0' }}>

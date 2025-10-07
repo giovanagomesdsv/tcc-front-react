@@ -31,7 +31,7 @@ export default function aventuraBC() {
                             <p className={styles.info1}>
                                 {livro.livro_id % 11 === 0 ? 'Malfoy' : 'Malfoy'}
                             </p>
-                            <h3 className={styles.nome}>{livro.titulo}</h3>
+                            <h3 className={styles.nome}>{livro.livro_titulo}</h3>
                             <h3 className={styles.sinopse}>{livro.livro_sinopse}</h3>
                         </div>
                     </div>
