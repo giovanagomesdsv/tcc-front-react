@@ -24,7 +24,7 @@ export default function ficcaoBC() {
 
                 {/* Layout especial de livros */}
                 <div className={styles.hor2}>
-                    {livrosFiltrados.slice(0, 2).map((livro) => (
+                    {livrosFiltrados.slice(0, 1).map((livro) => (
                         <div key={livro.livro_id} >
                             <Image className={styles.image}
                                 src={livro.livro_foto}
@@ -38,6 +38,29 @@ export default function ficcaoBC() {
                                 </p>
 
                                 <h3 className={styles.nomelivro}>{livro.livro_titulo}</h3>
+                                <h3 className={styles.sinopse}>{livro.livro_sinopse}</h3>
+
+                            </div>
+                        </div>
+
+
+                    ))}
+                    {livrosFiltrados.slice(1, 2).map((livro) => (
+                        <div key={livro.livro_id} >
+                            <Image className={styles.image}
+                                src={livro.livro_foto}
+                                alt={livro.livro_titulo}
+                                width={200}
+                                height={250}
+                            />
+                            <div className={styles.texto}>
+                                <p className={styles.info1}>
+                                    {livro.livro_id % 7 === 0 ? 'Malfoy' : 'Malfoy'}
+                                </p>
+
+                                <h3 className={styles.nomelivro}>{livro.livro_titulo}</h3>
+                                <h3 className={styles.sinopse}>{livro.livro_sinopse}</h3>
+
                             </div>
                         </div>
 
@@ -50,7 +73,7 @@ export default function ficcaoBC() {
 
                 {/* Duas imagens empilhadas */}
                 <div className={styles.hor1}>
-                    {livrosFiltrados.slice(2, 4).map((livro) => (
+                    {livrosFiltrados.slice(2, 3).map((livro) => (
                         <div key={livro.livro_id}>
                             {/* Imagem */}
                             <Image className={styles.image}
@@ -63,9 +86,32 @@ export default function ficcaoBC() {
                             {/* Bloco de texto */}
                             <div className={styles.texto}>
                                 <p className={styles.info1}>
-                                    {livro.livro_id % 9 === 0 ? 'LisRennet' : 'LisRennet'}
+                                    {livro.livro_id % 7 === 0 ? 'LisRennet' : 'LisRennet'}
                                 </p>
                                 <h3 className={styles.nomelivro}>{livro.livro_titulo}</h3>
+                                <h3 className={styles.sinopse}>{livro.livro_sinopse}</h3>
+
+                            </div>
+                        </div>
+                    ))}
+                    {livrosFiltrados.slice(3, 4).map((livro) => (
+                        <div key={livro.livro_id}>
+                            {/* Imagem */}
+                            <Image className={styles.image}
+                                src={livro.livro_foto}
+                                alt={livro.livro_titulo}
+                                width={200}
+                                height={250}
+                            />
+
+                            {/* Bloco de texto */}
+                            <div className={styles.texto}>
+                                <p className={styles.info1}>
+                                    {livro.livro_id % 7 === 0 ? 'LisRennet' : 'LisRennet'}
+                                </p>
+                                <h3 className={styles.nomelivro}>{livro.livro_titulo}</h3>
+                                <h3 className={styles.sinopse}>{livro.livro_sinopse}</h3>
+
                             </div>
                         </div>
                     ))}
