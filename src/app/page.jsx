@@ -7,6 +7,8 @@ import ClassicosBC from "@/components/classicosBC";
 import SuspenseMisterioBC from "@/components/suspenseMisterioBC";
 import FantasiaBC from "@/components/fantasiaBC";
 import AventuraBC from "@/components/aventuraBC";
+import HorrorBC from "@/components/horrorBC";
+
 
 
 
@@ -71,44 +73,8 @@ export default function Home() {
 
         {/*Segundas imagens------------------------------------------------------------*/}
         {/*Segunda barra que separa informações */}
-        <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-          <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
-            <h1>Horror</h1>
-          </div>
-          <hr style={{ width: '100%', border: '1px solid #ccc' }} />
-        </div>
-
-        <div>
-          <div className={styles.box2}>
-            <a href="#">
-              <div className={styles.hor2}>
-                <div className={styles.image}>
-                  <img src="/imagem3.png" alt="Imagem 3" />
-                </div>
-                <div className={styles.info}>
-                  <p style={{ fontSize: '2rem' }}>Texto 1</p>
-                  <br /><br />
-                  <p style={{ fontSize: '1rem' }}>Texto 2</p>
-                </div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div className={styles.hor2}>
-                <div className={styles.image}>
-                  <img src="/imagem4.png" alt="Imagem 4" />
-                </div>
-                <div className={styles.info}>
-                  <p style={{ fontSize: '2rem' }}>Texto 1</p>
-                  <br /><br />
-                  <p style={{ fontSize: '1rem' }}>Texto 2</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <br /><br />
+               <HorrorBC />
+                  
         {/*Terceiras imagens------------------------------------------------------------*/}
         {/*Terceira barra que separa informações */}
 
