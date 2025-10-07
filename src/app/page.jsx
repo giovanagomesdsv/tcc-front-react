@@ -8,6 +8,8 @@ import FantasiaBC from "@/components/fantasiaBC";
 import AventuraBC from "@/components/aventuraBC";
 import HorrorBC from "@/components/horrorBC";
 import RomanceBC from "@/components/romanceBC";
+import FiccaoBC from "@/components/ficcaoBC";
+
 
 export default function Home() {
   return (
@@ -66,6 +68,7 @@ export default function Home() {
         <RomanceBC />
         <FantasiaBC />
         <AventuraBC />
+              <FiccaoBC />
         {/*Setima imagens------------------------------------------------------------*/}
         {/*Setima barra que separa informações */}
         <div style={{ textAlign: 'center', margin: '2rem 0' }}>
