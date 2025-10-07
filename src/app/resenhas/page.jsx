@@ -5,15 +5,15 @@ import clsx from 'clsx';
 export default function Resenhas() {
     return(
 <div className="container">
-    <div className={styles.navbar}>
-      <img src='imagem.png' alt="img.png" className={styles.navlinkstyle}/>
-      <Link href={"/link"}  className={styles.navlinkstyle}>Login</Link>
-      <Link href={"#"} className={styles.navlinkstyle}>Home</Link>
-      <Link href="#" className={clsx(styles.navlinkstyle2, "fix2")}>Resenhas</Link>
-      <Link href={"#"} className={styles.navlinkstyle}>Autores</Link>
-      <Link href={"#"} className={styles.navlinkstyle}>Livros</Link>
-      <Link href={"#"} className={styles.navlinkstyle}>Sobre</Link>
-    </div>
+    <div className="navbar">
+                        <img src='imagem.png' alt="img.png" className="navlinkstyle"/>
+                        <Link href={"/link"}  className="navlinkstyle">Login</Link>
+                        <Link href={"#"} className="navlinkstyle">Home</Link>
+                        <Link href={"#"} className="navlinkstyle2 fix2">Resenhas</Link>
+                        <Link href={"#"} className="navlinkstyle">Autores</Link>
+                        <Link href="#" className="navlinkstyle">Livros</Link>
+                        <Link href={"#"} className="navlinkstyle">Sobre</Link>
+                    </div>
     <br/><br/>
     {/*Segundas imagens------------------------------------------------------------*/}
       {/*Segunda barra que separa informações */}
