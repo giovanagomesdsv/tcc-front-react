@@ -2,23 +2,17 @@ import styles from "./page.module.css";
 import Link from "next/link";
 // import Slider from "@/components/slider";
 import LivrosHome from "@/components/homelivrosBC";
-import Image from "next/image";
 import ClassicosBC from "@/components/classicosBC";
 import SuspenseMisterioBC from "@/components/suspenseMisterioBC";
 import FantasiaBC from "@/components/fantasiaBC";
 import AventuraBC from "@/components/aventuraBC";
 import HorrorBC from "@/components/horrorBC";
-
-
-
+import RomanceBC from "@/components/romanceBC";
 
 export default function Home() {
   return (
     <div className="container">
       {/* <Slider /> */}
-
-
-
       <h1>Home</h1>
 
       <Link href={"/login"}>Login</Link>
@@ -27,7 +21,6 @@ export default function Home() {
       <Link href={"/autores"}>Autores</Link>
       <Link href={"/livros"}>Livros</Link>
       <Link href={"/sobre"}>Sobre</Link>
-
 
       <h1>Navegação</h1>
 
@@ -66,119 +59,13 @@ export default function Home() {
         </div>
       </div>
       <LivrosHome />
-
       <main>
-
         <ClassicosBC />
-
-        {/*Segundas imagens------------------------------------------------------------*/}
-        {/*Segunda barra que separa informações */}
-               <HorrorBC />
-                  
-        {/*Terceiras imagens------------------------------------------------------------*/}
-        {/*Terceira barra que separa informações */}
-
+        <HorrorBC />
         <SuspenseMisterioBC />
-
-        {/*Quartas imagens------------------------------------------------------------*/}
-        {/*Quarta barra que separa informações */}
-        <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-          <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
-            <h1>Romance</h1>
-          </div>
-          <hr style={{ width: '100%', border: '1px solid #ccc' }} />
-        </div>
-
-        <div className={styles.box4style}>
-          {/* Item 1 */}
-          <div style={{ width: '22%', textAlign: 'center' }}>
-            <a href="#">
-              <div>
-                <div>
-                  <img src="/imagem1.png" alt="Imagem 1" style={{ width: '100%' }} />
-                </div>
-                <div className={styles.info}>
-                  <br /><br /><br /><br />
-                  <p style={{ fontSize: '1rem' }}>Texto 1</p>
-                  <br /><br />
-                  <p style={{ fontSize: '2rem' }}>Texto 2</p>
-                  <br /><br />
-                  <p style={{ fontSize: '1rem' }}>Texto 3</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          {/* Item 2 */}
-          <div style={{ width: '22%', textAlign: 'center' }}>
-            <a href="#">
-              <div>
-                <div>
-                  <img src="/imagem2.png" alt="Imagem 2" style={{ width: '100%' }} />
-                </div>
-                <div className={styles.info}>
-                  <br /><br /><br /><br />
-                  <p style={{ fontSize: '1rem' }}>Texto 1</p>
-                  <br /><br />
-                  <p style={{ fontSize: '2rem' }}>Texto 2</p>
-                  <br /><br />
-                  <p style={{ fontSize: '1rem' }}>Texto 3</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          {/* Item 3 */}
-          <div style={{ width: '22%', textAlign: 'center' }}>
-            <a href="#">
-              <div>
-                <div>
-                  <img src="/imagem3.png" alt="Imagem 3" style={{ width: '100%' }} />
-                </div>
-                <div className={styles.info}>
-                  <br /><br /><br /><br />
-                  <p style={{ fontSize: '1rem' }}>Texto 1</p>
-                  <br /><br />
-                  <p style={{ fontSize: '2rem' }}>Texto 2</p>
-                  <br /><br />
-                  <p style={{ fontSize: '1rem' }}>Texto 3</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          {/* Item 4 */}
-          <div style={{ width: '22%', textAlign: 'center' }}>
-            <a href="#">
-              <div>
-                <div>
-                  <img src="/imagem4.png" alt="Imagem 4" style={{ width: '100%' }} />
-                </div>
-                <div className={styles.info}>
-                  <br /><br /><br /><br />
-                  <p style={{ fontSize: '1rem' }}>Texto 1</p>
-                  <br /><br />
-                  <p style={{ fontSize: '2rem' }}>Texto 2</p>
-                  <br /><br />
-                  <p style={{ fontSize: '1rem' }}>Texto 3</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <br /><br />
-        {/*Quinta imagens ------------------------------------------------------------*/}
-        {/*Quinta barra que separa informações */}
-
+        <RomanceBC />
         <FantasiaBC />
-
-
-        {/*Sexta imagens------------------------------------------------------------*/}
-        {/*Sexta barra que separa informações */}
-
         <AventuraBC />
-
         {/*Setima imagens------------------------------------------------------------*/}
         {/*Setima barra que separa informações */}
         <div style={{ textAlign: 'center', margin: '2rem 0' }}>
