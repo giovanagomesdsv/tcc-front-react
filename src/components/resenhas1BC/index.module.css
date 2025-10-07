@@ -1,0 +1,101 @@
+.gridContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #fafafa;
+}
+
+/* Linha superior: 3 cards */
+.caixa1, .caixa2, .caixa3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.caixa {
+  position: relative;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 30%;
+  min-width: 280px;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.caixa:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Imagem dos livros */
+.imagem {
+  position: relative !important;
+  width: 140px !important;
+  height: 210px !important;
+  object-fit: cover;
+  margin: 0 auto 1rem auto;
+  border-radius: 8px;
+}
+
+/* Título */
+.textoCanto {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+
+/* Texto pequeno abaixo do título (data, autor) */
+.textoInfo {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Resenhas longas (parte de baixo) */
+.resenha3, .resenha4 {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+
+/* Layout da parte inferior (livro grande) */
+.caixa3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  gap: 2rem;
+}
+
+.caixa3 img, 
+.caixa3 .imagem {
+  width: 220px !important;
+  height: auto !important;
+  flex-shrink: 0;
+}
+
+.caixa3 .textoCanto {
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+.caixa3 .resenha3 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}

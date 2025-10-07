@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import Link from "next/link";
-import clsx from 'clsx';
+import Resenhas1BC from "@/components/resenhas1BC";
+
 
 export default function Resenhas() {
     return(
@@ -23,6 +24,7 @@ export default function Resenhas() {
       </div>
       <hr style={{ width: '100%', border: '1px solid #ccc' }} />
 </div>
+      <Resenhas1BC/>
 
 <div className={styles.gridContainer}>
   <div className={`${styles.caixa1} ${styles.caixa}`}>
