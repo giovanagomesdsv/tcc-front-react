@@ -5,7 +5,7 @@ import principe from '../../../public/temp/imagens/livros/Harry Potter e o Enigm
 // ----------------------------
 // Mockup de LIVROS
 // ----------------------------
-const fantasia = [
+const aventura = [
     {
         "livro_id": 5,
         "livro_titulo": "Harry Potter  e o Enigma do Príncipe ",
@@ -32,7 +32,7 @@ const fantasia = [
 // ----------------------------
 // Mockup de RELAÇÕES LIVRO ↔ GÊNERO
 // ----------------------------
-const livroFantasia = [
+const livroAventura = [
 
     { "livro_id": 5, "gen_id": 11 },
     { "livro_id": 2, "gen_id": 11 }
@@ -40,4 +40,4 @@ const livroFantasia = [
 
 // exportar para usar no React
 // suspense/livroSuspense
-export { fantasia, livroFantasia };
+export { aventura, livroAventura };

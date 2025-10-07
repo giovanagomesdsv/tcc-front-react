@@ -6,6 +6,8 @@ import Image from "next/image";
 import ClassicosBC from "@/components/classicosBC";
 import SuspenseMisterioBC from "@/components/suspenseMisterioBC";
 import FantasiaBC from "@/components/fantasiaBC";
+import AventuraBC from "@/components/aventuraBC";
+
 
 
 export default function Home() {
@@ -210,6 +212,8 @@ export default function Home() {
         {/*Sexta barra que separa informações */}
         <div style={{ textAlign: 'center', margin: '2rem 0' }}>
           <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
+           
+             <AventuraBC />
             <h1>Aventura</h1>
           </div>
           <hr style={{ width: '100%', border: '1px solid #ccc' }} />
