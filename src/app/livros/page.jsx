@@ -1,9 +1,261 @@
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Livros() {
     return(
         <div className="container">
-            
+            {/* Header */}
+                    <div className="navbar">
+                        <img src='imagem.png' alt="img.png" className="navlinkstyle"/>
+                        <Link href={"/link"}  className="navlinkstyle">Login</Link>
+                        <Link href={"#"} className="navlinkstyle">Home</Link>
+                        <Link href={"#"} className="navlinkstyle">Resenhas</Link>
+                        <Link href={"#"} className="navlinkstyle">Autores</Link>
+                        <Link href="#" className="navlinkstyle2 fix2">Livros</Link>
+                        <Link href={"#"} className="navlinkstyle">Sobre</Link>
+                    </div>
+                    <br/><br/>
+                    <div className="buscacontainer">
+                        <form action="" method="GET" className="buscaform">
+                            <input type="text" name="busca" placeholder="nome do livro" />
+                            <button type="submit"><i className='bx bx-search'></i></button>
+                        </form>
+                        </div>
+            {/* Cards e Filtragem */}
+
+            <div className={styles.container}>
+                <div className={styles.boxFilter}>
+                    <h3>Preço</h3>
+                    <p><input type="checkbox"/> Até R$20</p>
+                    <p><input type="checkbox"/> R$20 a R$40</p>
+                    <p><input type="checkbox"/> R$40 a R$60</p>
+                    <p><input type="checkbox"/> R$80 a R$100</p>
+                    <p><input type="checkbox"/> Mais de R$100</p>
+                    <br/><br/>
+                    <h3>classificação</h3>
+                    <p><input type="checkbox"/> Livre</p>
+                    <p><input type="checkbox"/> 10+</p>
+                    <p><input type="checkbox"/> 12+</p>
+                    <p><input type="checkbox"/> 16+</p>
+                    <p><input type="checkbox"/> 18+</p>
+                    <br/><br/>
+                    <button>filtrar</button>
+                </div>
+
+                <div className={styles.containerCardLivros}>
+                    <div className={styles.boxLivros}>
+                    <a>
+                    <div className={styles.cardLivro}>
+                        <div className={styles.imagem}>
+                        <img src="imagem.png" alt="img.png"/>
+                        </div>
+                        <div className={styles.info}>
+                        <h1>Harry potter e o Enigma do príncipe</h1>
+                        <h2>R$ 16,40</h2>
+                        <p>tipo: capa dura</p>
+                        <p>12+</p>
+                        </div>
+                    </div>
+                    </a>
+                    </div>
+                    <div className={styles.boxLivros}>
+                    <a>
+                    <div className={styles.cardLivro}>
+                        <div className={styles.imagem}>
+                        <img src="imagem.png" alt="img.png"/>
+                        </div>
+                        <div className={styles.info}>
+                        <h1>Harry potter e o Enigma do príncipe</h1>
+                        <h2>R$ 16,40</h2>
+                        <p>tipo: capa dura</p>
+                        <p>12+</p>
+                        </div>
+                    </div>
+                    </a>
+                    </div>
+                    <div className={styles.boxLivros}>
+                    <a>
+                    <div className={styles.cardLivro}>
+                        <div className={styles.imagem}>
+                        <img src="imagem.png" alt="img.png"/>
+                        </div>
+                        <div className={styles.info}>
+                        <h1>Harry potter e o Enigma do príncipe</h1>
+                        <h2>R$ 16,40</h2>
+                        <p>tipo: capa dura</p>
+                        <p>12+</p>
+                        </div>
+                    </div>
+                    </a>
+                    </div>
+                    <div className={styles.boxLivros}>
+                    <a>
+                    <div className={styles.cardLivro}>
+                        <div className={styles.imagem}>
+                        <img src="imagem.png" alt="img.png"/>
+                        </div>
+                        <div className={styles.info}>
+                        <h1>Harry potter e o Enigma do príncipe</h1>
+                        <h2>R$ 16,40</h2>
+                        <p>tipo: capa dura</p>
+                        <p>12+</p>
+                        </div>
+                    </div>
+                    </a>
+                    </div>
+                    <div className={styles.boxLivros}>
+                    <a>
+                    <div className={styles.cardLivro}>
+                        <div className={styles.imagem}>
+                        <img src="imagem.png" alt="img.png"/>
+                        </div>
+                        <div className={styles.info}>
+                        <h1>Harry potter e o Enigma do príncipe</h1>
+                        <h2>R$ 16,40</h2>
+                        <p>tipo: capa dura</p>
+                        <p>12+</p>
+                        </div>
+                    </div>
+                    </a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div style={{ textAlign: 'center', margin: '2rem 0' }}>
+            <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
+                <h1></h1>
+            </div>
+            <hr style={{ width: '79%', border: '1px solid #ccc', float:'right' }} />
+            </div>
+
+            <div className={styles.container}>
+                <div className={styles.spaceBox}>
+                </div>
+                
+                <div className={styles.containerCardLivros}>
+                    <div className={styles.boxLivros}>
+                    <a>
+                    <div className={styles.cardLivro}>
+                        <div className={styles.imagem}>
+                        <img src="imagem.png" alt="img.png"/>
+                        </div>
+                        <div className={styles.info}>
+                        <h1>Harry potter e o Enigma do príncipe</h1>
+                        <h2>R$ 16,40</h2>
+                        <p>tipo: capa dura</p>
+                        <p>12+</p>
+                        </div>
+                    </div>
+                    </a>
+                    </div>
+                    <div className={styles.boxLivros}>
+                    <a>
+                    <div className={styles.cardLivro}>
+                        <div className={styles.imagem}>
+                        <img src="imagem.png" alt="img.png"/>
+                        </div>
+                        <div className={styles.info}>
+                        <h1>Harry potter e o Enigma do príncipe</h1>
+                        <h2>R$ 16,40</h2>
+                        <p>tipo: capa dura</p>
+                        <p>12+</p>
+                        </div>
+                    </div>
+                    </a>
+                    </div>
+                    <div className={styles.boxLivros}>
+                    <a>
+                    <div className={styles.cardLivro}>
+                        <div className={styles.imagem}>
+                        <img src="imagem.png" alt="img.png"/>
+                        </div>
+                        <div className={styles.info}>
+                        <h1>Harry potter e o Enigma do príncipe</h1>
+                        <h2>R$ 16,40</h2>
+                        <p>tipo: capa dura</p>
+                        <p>12+</p>
+                        </div>
+                    </div>
+                    </a>
+                    </div>
+                    <div className={styles.boxLivros}>
+                    <a>
+                    <div className={styles.cardLivro}>
+                        <div className={styles.imagem}>
+                        <img src="imagem.png" alt="img.png"/>
+                        </div>
+                        <div className={styles.info}>
+                        <h1>Harry potter e o Enigma do príncipe</h1>
+                        <h2>R$ 16,40</h2>
+                        <p>tipo: capa dura</p>
+                        <p>12+</p>
+                        </div>
+                    </div>
+                    </a>
+                    </div>
+                    <div className={styles.boxLivros}>
+                    <a>
+                    <div className={styles.cardLivro}>
+                        <div className={styles.imagem}>
+                        <img src="imagem.png" alt="img.png"/>
+                        </div>
+                        <div className={styles.info}>
+                        <h1>Harry potter e o Enigma do príncipe</h1>
+                        <h2>R$ 16,40</h2>
+                        <p>tipo: capa dura</p>
+                        <p>12+</p>
+                        </div>
+                    </div>
+                    </a>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            {/* Footer */}
+            <footer className="siteFooter">
+                {/* Logo redonda no canto esquerdo */}
+                <div className="footerLogo">
+                    <img src="/logo.png" alt="Logo do site" className="footerLogo"/>
+                </div>
+
+                {/* Texto centralizado */}
+                <div>
+                <h3>Participe da nossa comunidade.</h3>
+                <br/>
+                <p className="footerTexto">Se torne um resenhista.<br/><br/>Entre em contato já!</p>
+                </div>
+
+                {/* Ícones das redes sociais no canto direito */}
+                <div className="footerRedes">
+                <a
+                    href="https://twitter.com/seuperfil"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bx bxl-twitter"
+                    aria-label="Twitter"
+                ></a>
+
+                <a
+                    href="https://instagram.com/seuperfil"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bx bxl-instagram"
+                    aria-label="Instagram"
+                ></a>
+
+                <a
+                    href="https://tiktok.com/@seuperfil"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bx bxl-tiktok"
+                    aria-label="TikTok"
+                ></a>
+                </div>
+            </footer>
+
         </div>
     )
 }
