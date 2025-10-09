@@ -62,25 +62,25 @@
 /* Linha de cima */
 .caixa1 {
   grid-column: 1 / 2; /* 6 colunas */
-  height: 300px;
+  height: 30rem;
   background-color: #fff;
-  
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   border-radius:0.3rem;
 }
 
 .caixa2 {
   grid-column: 0 / 3; /* 6 colunas */
-  height: 300px;
+  height: 30rem;
   background-color: #fff;
-  
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   border-radius:0.3rem;
 }
 
 .caixa3 {
   grid-column: 3 / 5; /* 3 colunas */
-  height: 300px;
+  height: 30rem;
   background-color: #fff;
-  
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -89,17 +89,14 @@
 
 .caixa4 {
   grid-column: 1 / 5; /* 3 colunas */
-  height: 300px;
+  height: 30rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   background-color: #fff;
   
   display: flex;         /* Coloca imagem e textos lado a lado */
   align-items: center;   /* Alinha verticalmente */
   gap: 10px;             /* Espaço entre a imagem e os textos */
   border-radius:0.3rem;
-}
-
-.caixadisplay{
-    display:flex;
 }
 
 .imagem{
@@ -121,6 +118,13 @@
   flex-direction: column; /* Um embaixo do outro */
   justify-content: center;
 }
+
+.linkStyle {
+  color: black;
+  text-decoration: none;
+  display: contents; /* 💡 Adicione esta linha! */
+}
+
 /*Box vertical (Padrão)*/
 .boxText{
     border-radius: 0.3rem;
