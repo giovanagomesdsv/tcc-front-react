@@ -1,0 +1,34 @@
+:root {
+    --bg: #f4f4f4;
+    --bg2: #f0f0f0;
+    --text: #f5f5f5;
+    --principal1: #56070C;
+    --secundaria2: #11114E;
+}
+
+.containerLivro{
+    margin-top:5rem;
+    display: flex;
+    flex-direction:row;
+    width:100%;
+    height:90rem;
+    border-radius:2rem;
+    box-shadow: 0rem 0rem 1rem 1rem rgba(0,0,0,0.2);
+    background-color: var(--bg);
+}
+
+.espacoEsq{
+    border-right: 1px solid black;
+}
+
+.livroFoto{
+    margin-left:5rem;
+    margin-right:5rem;
+    width:20rem;
+    height:20%;
+    border-radius:2rem 0rem 0rem 2rem;
+    border: 2px solid red;
+}
+
+.espacoDir{
+}
