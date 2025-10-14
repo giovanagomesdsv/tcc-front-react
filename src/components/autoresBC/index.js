@@ -10,7 +10,7 @@ export default function autoresBC() {
         <div className={styles.cardContainer}>
             {
                 autores.map(aut =>
-                    <div key={aut.aut_id} className={styles.cardAut}>
+                    <Link href={`/autores/autor/${aut.aut_id}`} key={aut.aut_id} className={styles.cardAut}>
 
                         <div className={styles.cardInner}>
                             <div className={styles.cardFront}>
@@ -29,7 +29,7 @@ export default function autoresBC() {
                                 </Link>
                             </div>
                         </div>
-                    </div>
+                    </Link>
 
                 )
             }
