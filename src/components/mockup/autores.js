@@ -1,9 +1,9 @@
-import bernardo from '../../public/imagens/foto_bernardo_guimaraes.jpg';
-import machado from '../../public/imagens/foto_machado_assis.jpg';
-import aluisio from '../../public/imagens/foto_aluisio_azevendo.jpg';
-import olavo from '../../public/imagens/foto_olavo_bilac.jpg';
-import cruz from '../../public/imagens/foto_cruz_sousa.jpg';
-import monteiro from '../../public/imagens/foto_monteiro_lobato.jpg';
+import bernardo from '../../../public/temp/imagens/autores/foto_bernardo_guimaraes.jpg';
+import machado from '../../../public/temp/imagens/autores/foto_machado_assis.jpg';
+import aluisio from '../../../public/temp/imagens/autores/foto_aluisio_azevendo.jpg';
+import olavo from '../../../public/temp/imagens/autores/foto_olavo_bilac.jpg';
+import cruz from '../../../public/temp/imagens/autores/foto_cruz_sousa.jpg';
+import monteiro from '../../../public/temp/imagens/autores/foto_monteiro_lobato.jpg';
 
 const autores = [
     	{
@@ -43,3 +43,5 @@ const autores = [
 			"aut_foto": monteiro
 		}
 ]
+
+export default autores;
