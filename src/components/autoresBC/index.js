@@ -10,7 +10,7 @@ export default function autoresBC() {
         <div className={styles.cardContainer}>
             {
                 autores.map(aut =>
-                    <Link href={`/autores/autor/${aut.aut_id}`} key={aut.aut_id} className={styles.cardAut}>
+                    <div key={aut.aut_id} className={styles.cardAut}>
 
                         <div className={styles.cardInner}>
                             <div className={styles.cardFront}>
@@ -24,12 +24,15 @@ export default function autoresBC() {
                             </div>
                             <div className={styles.cardBack}>
                                 <p>{aut.aut_bio}</p>
-                                <Link href={`/autores/autor`} className={styles.infoButton}>
-                                    Mais Informações
+                                <Link href={`/autores/autor/${aut.aut_id}`}>
+                                    <button className={styles.infoButton}>
+                                        Mais Informações
+                                    </button>
                                 </Link>
                             </div>
                         </div>
-                    </Link>
+                        
+                    </div>
 
                 )
             }

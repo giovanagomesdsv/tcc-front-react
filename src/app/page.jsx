@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import Link from "next/link";
+import clsx from 'clsx';
 // import Slider from "@/components/slider";
 import LivrosHome from "@/components/homelivrosBC";
 import ClassicosBC from "@/components/classicosBC";
@@ -18,7 +19,7 @@ export default function Home() {
       <h1>Home</h1>
 
       <Link href={"/login"}>Login</Link>
-      <Link href={"#"}>Home</Link>
+      <Link href={"/"}>Home</Link>
       <Link href={"/resenhas"}>Resenhas</Link>
       <Link href={"/autores"}>Autores</Link>
       <Link href={"/livros"}>Livros</Link>
@@ -44,12 +45,11 @@ export default function Home() {
       <div className={styles.navbar}>
         <img src='imagem.png' alt="img.png" className={styles.perfilstyle} />
         <Link href={"/login"} className={styles.navlinkstyle}>Login</Link>
-        <Link href={"#"} className={styles.navlinkstyle}>Home</Link>
+        <Link href={"/"} className={styles.navlinkstyle}>Home</Link>
         <Link href={"/resenhas"} className={styles.navlinkstyle}>Resenhas</Link>
         <Link href={"/autores"} className={styles.navlinkstyle}>Autores</Link>
         <Link href={"/livros"} className={styles.navlinkstyle}>Livros</Link>
         <Link href={"/sobre"} className={styles.navlinkstyle}>Sobre</Link>
-
       </div>
       <div className={styles.tela1}>
         <section className={styles.tela1} id="sec1" />

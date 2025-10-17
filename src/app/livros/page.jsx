@@ -7,12 +7,12 @@ export default function Livros() {
             {/* Header */}
                     <div className="navbar">
                         <img src='imagem.png' alt="img.png" className="navlinkstyle"/>
-                        <Link href={"/link"}  className="navlinkstyle">Login</Link>
-                        <Link href={"#"} className="navlinkstyle">Home</Link>
-                        <Link href={"#"} className="navlinkstyle">Resenhas</Link>
-                        <Link href={"#"} className="navlinkstyle">Autores</Link>
-                        <Link href="#" className="navlinkstyle2 fix2">Livros</Link>
-                        <Link href={"#"} className="navlinkstyle">Sobre</Link>
+                        <Link href="/login" className="navlinkstyle">Login</Link>
+                        <Link href="/" className="navlinkstyle">Home</Link>
+                        <Link href="/resenhas" className="navlinkstyle">Resenhas</Link>
+                        <Link href="/autores" className="navlinkstyle">Autores</Link>
+                        <Link href="/livros" className="navlinkstyle2 fix2">Livros</Link>
+                        <Link href="/sobre" className="navlinkstyle">Sobre</Link>
                     </div>
                     <br/><br/>
                     <div className="buscacontainer">
