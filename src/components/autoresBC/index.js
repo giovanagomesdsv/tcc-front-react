@@ -24,11 +24,14 @@ export default function autoresBC() {
                             </div>
                             <div className={styles.cardBack}>
                                 <p>{aut.aut_bio}</p>
-                                <Link href={`/autores/autor`} className={styles.infoButton}>
-                                    Mais Informações
+                                <Link href={`/autores/autor/${aut.aut_id}`}>
+                                    <button className={styles.infoButton}>
+                                        Mais Informações
+                                    </button>
                                 </Link>
                             </div>
                         </div>
+                        
                     </div>
 
                 )

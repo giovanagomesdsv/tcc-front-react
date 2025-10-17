@@ -7,12 +7,12 @@ export default function Resenhas() {
     <div className="container">
       <div className={styles.navbar}>
         <img src='imagem.png' alt="img.png" className={styles.navlinkstyle} />
-        <Link href={"/link"} className={styles.navlinkstyle}>Login</Link>
-        <Link href={"#"} className={styles.navlinkstyle}>Home</Link>
-        <Link href="#" className={clsx(styles.navlinkstyle2, "fix2")}>Resenhas</Link>
-        <Link href={"#"} className={styles.navlinkstyle}>Autores</Link>
-        <Link href={"#"} className={styles.navlinkstyle}>Livros</Link>
-        <Link href={"#"} className={styles.navlinkstyle}>Sobre</Link>
+        <Link href="/login" className={styles.navlinkstyle}>Login</Link>
+        <Link href="/" className={styles.navlinkstyle}>Home</Link>
+        <Link href="/resenhas" className={clsx(styles.navlinkstyle2, "fix2")}>Resenhas</Link>
+        <Link href="/autores" className={styles.navlinkstyle}>Autores</Link>
+        <Link href="/livros" className={styles.navlinkstyle}>Livros</Link>
+        <Link href="/sobre" className={styles.navlinkstyle}>Sobre</Link>
       </div>
       <br /><br />
       {/*Segundas imagens------------------------------------------------------------*/}
