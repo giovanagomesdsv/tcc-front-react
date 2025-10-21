@@ -1,6 +1,10 @@
+'use client';
+
+import Image from 'next/image';
+
 import styles from "./page.module.css";
 
-export default function Resenha() {
+export default function Resenha({ respage }) {
     return (
     <div className="container">
         <header className={styles.headerStyle}>
