@@ -25,6 +25,11 @@ export default function Resenhas() {
       </div>
 
       
+
+
+
+
+      
       <footer className={styles.siteFooter}>
         {/* Logo redonda no canto esquerdo */}
         <div className={styles.footerLogo}>

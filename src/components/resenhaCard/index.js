@@ -1,79 +1,39 @@
+import styles from './page.module.css';
+
 import Link from "next/link";
 import Image from "next/image";
-
-import res from '@/components/mockup/resenha';;
+import resCard from '@/components/mockup/resenha';
 
 export default function ResenhaCard() {
   return (
     <div className={styles.gridContainer}>
-
-      <Link href="/resenhas/resenha" className={styles.linkStyle}>
-        <div className={styles.caixa1}>
-          <img src="/images/img1.jpg" alt="Imagem 1" className={styles.imagem} />
-          <h1 className={styles.textstyle2}>Texto 1</h1>
-          <h3 style={{ marginTop: '3rem' }}>Malfoy 25 06 17 - 13:47:48</h3>
-        </div>
-      </Link>
-
-      <Link href="/destino" className={styles.linkStyle}>
-        <div className={styles.caixa2}>
-          <img src="/images/img1.jpg" alt="Imagem 1" className={styles.imagem} />
-          <h1 className={styles.textstyle2}>Texto 1</h1>
-          <h3 style={{ marginTop: '3rem' }}>Malfoy 25 06 17 - 13:47:48</h3>
-        </div>
-      </Link>
-
-      <Link href="/destino" className={styles.linkStyle}>
-        <div className={styles.caixa3}>
-          <img src="/images/img3.jpg" alt="Imagem 3" className={styles.imagem3} />
-          <div className={styles.textosContainer}>
-            <h2 className={styles.textstyle2}>Harry Potter e a Câmara Secreta</h2>
-            <h3>Malfoy 2025 - 06 17 13:47:48</h3>
-            <h3 className={styles.boxText2}>Texto 3</h3>
-          </div>
-        </div>
-      </Link>
-
-      <Link href="/destino" className={styles.linkStyle}>
-        <div className={styles.caixa4}>
-          <img src="/images/img3.jpg" alt="Imagem 4" className={styles.imagem2} />
-
-          <div className={styles.textosContainer}>
-            <h1 className={styles.textstyle1}>Harry Potter e a Ordem da Fenix</h1>
-            <br />
-            <h3>Malfoy - 25-06-17 13:47:48</h3>
-            <div className={styles.boxText}>
-              <h3 style={{ marginLeft: '1rem' }}>Harry potter...</h3>
+      {/* Static blocks for the first 4 resenhas */}
+      {resCard.resenha.slice(0, 4).map((item, index) => (
+        <Link key={item.resenha_id} href={`/resenhas/${item.resenha_id}`} className={styles.linkStyle}>
+          <div className={styles[`caixa${index + 1}`]}>
+            <Image src={item.livro_imagem} alt={item.resenha_titulo} className={styles.imagem} width={200} height={300} />
+            <div className={styles.textosContainer}>
+              <h2 className={styles.textstyle2}>{item.resenha_titulo}</h2>
+              <h3>{item.resenhista_nome} - {new Date(item.resenha_dtpublicacao).toLocaleDateString()}</h3>
+              <h3 className={styles.boxText2}>{item.resenha_texto.substring(0, 100)}...</h3>
             </div>
           </div>
-        </div>
-      </Link>
+        </Link>
+      ))}
 
-      <Link href="/destino" className={styles.linkStyle}>
-        <div className={`${styles.caixa1} ${styles.caixa}`}>
-          <img src="/images/img1.jpg" alt="Imagem 1" className={styles.imagem} />
-          <h1 className={styles.textstyle2}>Texto 1</h1>
-          <h3 style={{ marginTop: '3rem' }}>Malfoy 25 06 17 - 13:47:48</h3>
-        </div>
-
-        <div className={`${styles.caixa2} ${styles.caixa}`}>
-          <img src="/images/img1.jpg" alt="Imagem 1" className={styles.imagem} />
-          <h1 className={styles.textstyle2}>Texto 1</h1>
-          <h3 style={{ marginTop: '3rem' }}>Malfoy 25 06 17 - 13:47:48</h3>
-        </div>
-      </Link>
-
-      <Link href="/destino" className={styles.linkStyle}>
-        <div className={styles.caixa3}>
-          <img src="/images/img4.jpg" alt="Imagem 3" className={styles.imagem3} />
-
-          <div className={styles.textosContainer}>
-            <h2 className={styles.textstyle2}>Harry Potter e a Câmara Secreta</h2>
-            <h3>Malfoy 2025 - 06 17 13:47:48</h3>
-            <h3 className={styles.boxText2}>Texto 3</h3>
+      {/* Dynamic blocks for the remaining resenhas */}
+      {resCard.resenha.slice(4).map((item, index) => (
+        <Link key={item.resenha_id} href={`/resenhas/${item.resenha_id}`} className={styles.linkStyle}>
+          <div className={styles[`caixa${(index % 4) + 1}`]}>
+            <Image src={item.livro_imagem} alt={item.resenha_titulo} className={styles.imagem} width={200} height={300} />
+            <div className={styles.textosContainer}>
+              <h2 className={styles.textstyle2}>{item.resenha_titulo}</h2>
+              <h3>{item.resenhista_nome} - {new Date(item.resenha_dtpublicacao).toLocaleDateString()}</h3>
+              <h3 className={styles.boxText2}>{item.resenha_texto.substring(0, 100)}...</h3>
+            </div>
           </div>
-        </div>
-      </Link>
+        </Link>
+      ))}
     </div>
-  )
+  );
 }

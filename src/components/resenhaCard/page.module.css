@@ -1,0 +1,109 @@
+/** 
+ * Caixa1 é o container principal da estrutura. 
+ * Ele centraliza todos os elementos na vertical, com espaçamento entre eles 
+ * e uma borda vermelha ao redor.
+ */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Linha de cima */
+.caixa1 {
+  grid-column: 1 / 2; /* 6 colunas */
+  height: 30rem;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  border-radius:0.3rem;
+}
+
+.caixa2 {
+  grid-column: 0 / 3; /* 6 colunas */
+  height: 30rem;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  border-radius:0.3rem;
+}
+
+.caixa3 {
+  grid-column: 3 / 5; /* 3 colunas */
+  height: 30rem;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius:0.3rem;
+}
+
+.caixa4 {
+  grid-column: 1 / 5; /* 3 colunas */
+  height: 30rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  
+  display: flex;         /* Coloca imagem e textos lado a lado */
+  align-items: center;   /* Alinha verticalmente */
+  gap: 10px;             /* Espaço entre a imagem e os textos */
+  border-radius:0.3rem;
+}
+
+.imagem{
+    margin-top:10rem;
+}
+
+.imagem2{
+    margin-right:10rem;
+    margin-left:20rem;
+}
+
+.imagem3{
+    margin-left:10rem;
+    margin-right:10rem;
+}
+
+.textosContainer {
+  display: flex;
+  flex-direction: column; /* Um embaixo do outro */
+  justify-content: center;
+}
+
+.linkStyle {
+  color: black;
+  text-decoration: none;
+  display: contents; /* 💡 Adicione esta linha! */
+}
+
+/*Box vertical (Padrão)*/
+.boxText{
+    border-radius: 0.3rem;
+    padding: 1rem 0rem;
+    overflow: hidden;
+    text-align:start;
+    width:90rem;
+    margin-top:1rem;
+    background-color: #c9c9c9d8;
+}
+/*Box vertical (Pequena)*/
+.boxText2{
+    border-radius: 0.3rem;
+    padding: 1rem 0rem;
+    overflow: hidden;
+    text-align:start;
+    width:30rem;
+    margin-top:1rem;
+    background-color: #c9c9c9d8;
+}
+/*Estilo da fonte da Box TITULO (Padrão)*/
+.textstyle1{
+    font-weight: bold;
+}
+
+/*Estilo da fonte da Box TITULO (Pequena)*/
+.textstyle2{
+    margin-top:2rem;
+    font-size:2rem;
+    font-weight: bold;
+}
