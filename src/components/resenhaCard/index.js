@@ -11,7 +11,7 @@ export default function ResenhaCard() {
       {resCard.resenha.slice(0, 4).map((item, index) => (
         <Link key={item.resenha_id} href={`/resenhas/${item.resenha_id}`} className={styles.linkStyle}>
           <div className={styles[`caixa${index + 1}`]}>
-            <Image src={item.livro_imagem} alt={item.resenha_titulo} className={styles.imagem} width={200} height={300} />
+            <Image src={item.img} alt={item.resenha_titulo} className={styles.imagem} width={200} height={300} />
             <div className={styles.textosContainer}>
               <h2 className={styles.textstyle2}>{item.resenha_titulo}</h2>
               <h3>{item.resenhista_nome} - {new Date(item.resenha_dtpublicacao).toLocaleDateString()}</h3>

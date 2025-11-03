@@ -2,6 +2,8 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import clsx from 'clsx';
 
+import ResenhaCard from '@/components/resenhaCard';
+
 export default function Resenhas() {
   return (
     <div className="container">
@@ -24,9 +26,8 @@ export default function Resenhas() {
         <hr style={{ width: '100%', border: '1px solid #ccc' }} />
       </div>
 
-      
-
-
+      {/* Renderização do componente ResenhaCard */}
+      <ResenhaCard />
 
 
       

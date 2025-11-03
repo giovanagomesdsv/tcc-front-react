@@ -1,9 +1,9 @@
-import hCamaraSecreta from "../../../public/temp/imagens/livros/livros/Harry Potter e a Camara Secreta.jpg";
+import hCamaraSecreta from "../../../public/temp/imagens/livros/Harry Potter e a Camara Secreta.jpg";
 import hPrisioneiroAzkaban from "../../../public/temp/imagens/livros/Harry Potter e o Prisioneiro de Azkaban.jpg"   
 import hPotterCaliceFogo from "../../../public/temp/imagens/livros/Harry Potter e o Calice de Fogo.jpg"
-import hRelíquiasMorte from "../../../public/temp/imagens/livros/Harry Potter e as Relíquias da Morte.jpg";
-import hOrdemFenix from "../../../public/temp/imagens/livros/Harry Potter e a Ordem da Fênix.jpg";
-import oChamadoSelvagem from "../../../livros/public/temp/imagens/livros/O chamado selvagem.jpg";
+import hRelíquiasMorte from "../../../public/temp/imagens/livros/Harry Potter e as Reliquias da Morte.jpg";
+import hOrdemFenix from "../../../public/temp/imagens/livros/Harry Potter e a Ordem da Fenix.jpg";
+import oChamadoSelvagem from "../../../public/temp/imagens/livros/O chamado selvagem.jpg";
 
 const livros = [
     { id: 1, img: hCamaraSecreta },
