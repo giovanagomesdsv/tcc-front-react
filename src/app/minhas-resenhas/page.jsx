@@ -24,7 +24,7 @@ export default function MResenhas() {
             </form>
           </div>
         </div>
-
+    <div className={styles.resenhasContainer}>
         <div className={styles.resenhaBox}>
         <div className={styles.resenhaImgEBox}>
           <img src="resenhafoto.png" className={styles.resenhaImg} alt="Capa do livro" />
@@ -41,6 +41,24 @@ export default function MResenhas() {
           <button className={styles.btn}><p className={styles.btnTexto}>ATUALIZAR</p></button>
         </div>
       </div>
+
+      <div className={styles.resenhaBox}>
+        <div className={styles.resenhaImgEBox}>
+          <img src="resenhafoto.png" className={styles.resenhaImg} alt="Capa do livro" />
+
+          <div className={styles.resenhaTextoBox}>
+            <p className={styles.tituloResenha}>Título do livro</p>
+            <p className={styles.sinopseResenha}>Sinopse do livro</p>
+          </div>
+        </div>
+
+        <div className={styles.resenhaBotoes}>
+          <button className={styles.btn}><p className={styles.btnTexto}>ABRIR</p></button>
+          <button className={styles.btn}><p className={styles.btnTexto}>STATUS:</p></button>
+          <button className={styles.btn}><p className={styles.btnTexto}>ATUALIZAR</p></button>
+        </div>
+      </div>
+    </div>
 
     </div>
 
