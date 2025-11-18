@@ -36,9 +36,9 @@ export default function MResenhas() {
         </div>
 
         <div className={styles.resenhaBotoes}>
-          <button className={styles.btn}><p className={styles.btnTexto}>ABRIR</p></button>
+          <button className={styles.btn}><a href="/minhas-resenhas/abrir" className={styles.btnLink}><p className={styles.btnTexto}>ABRIR</p></a></button>
           <button className={styles.btn}><p className={styles.btnTexto}>STATUS:</p></button>
-          <button className={styles.btn}><p className={styles.btnTexto}>ATUALIZAR</p></button>
+          <button className={styles.btn}><a href="/minhas-resenhas/atualizar" className={styles.btnLink}><p className={styles.btnTexto}>ATUALIZAR</p></a></button>
         </div>
       </div>
 

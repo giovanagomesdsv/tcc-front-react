@@ -110,3 +110,9 @@
 .btnTexto{
     font-weight:bold;
 }
+
+.btnLink {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
+}
