@@ -30,7 +30,7 @@
 .resenhaBox{
     display:flex;
     background:var(--principal);
-    border: 2px solid red;
+    border: 2px solid black;
     width:50%;
     height:23rem;
     border-radius:1rem;
