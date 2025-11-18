@@ -12,7 +12,7 @@ export default function Sobre() {
         <Link href="#" className="navlinkstyle2">Resenhas</Link>
         <Link href={"#"} className="navlinkstyle">Autores</Link>
         <Link href={"#"} className="navlinkstyle">Livros</Link>
-        <Link href={"#"} className="navlinkstyle fix2">Sobre</Link>
+        <Link href={"#"} className="navlinkstyle2 fix2">Sobre</Link>
       </div>
       <br /><br />
 
