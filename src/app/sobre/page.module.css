@@ -1,0 +1,53 @@
+:root {
+    --bg: #f4f4f4;
+    --bg2: #f0f0f0;
+    --text: #f5f5f5;
+    --principal1: #56070C;
+    --secundaria2: #11114E;
+}
+
+.boxResenhistas{
+    background-color: var(--principal1);
+    width: 100%;
+    padding: 5rem 0rem 5rem 0rem;
+    margin-bottom:2rem;
+    gap:10rem;
+    display:flex;
+}
+
+.imgResenhista{
+    margin-left:20rem;
+    width:20rem;
+    background-color: white;
+    height:10rem;
+}
+
+.boxResenhistasTexto{
+    margin-left:20rem;
+    margin-top:2rem;
+    color:white;
+}
+
+.resenhistaNome{
+    font-weight:bold;
+}
+
+.footerRedes {
+    margin-top:2rem;
+    margin-left:20rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+.footerRedes a {
+    color: #fff;
+    transition: transform 0.2s, color 0.2s;
+    text-decoration: none;
+}
+
+.footerRedes a:hover {
+    transform: scale(1.2);
+    color: white; /* destaque ao passar o mouse */
+}
