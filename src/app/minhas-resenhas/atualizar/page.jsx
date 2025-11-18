@@ -30,9 +30,14 @@ export default function Atualizar() {
                 <p className={styles.PublicadoEAtualizadoText}>Publicado em:</p><p className={styles.AtualizadoEPublicadoData}> 20/10/2023 04:22:32</p>
                 </div>
 
+                <br></br>
+
                 <div>
-                    <button className={styles.btn}><a href="/minhas-resenhas" className={styles.btnLink}><p className={styles.btnTexto}>VOLTAR</p></a></button>
+                    <button className={styles.btn}><a href="/minhas-resenhas" className={styles.btnLink}><p className={styles.btnTexto}>CANCELAR</p></a></button>
+                    <br></br><br></br>
+                    <button className={styles.btn}><a href="/minhas-resenhas" className={styles.btnLink}><p className={styles.btnTexto}>ATUALIZAR</p></a></button>
                 </div>
+                <br></br>
 
             </div>
         </div>
